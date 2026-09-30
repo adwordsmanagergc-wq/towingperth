@@ -1,0 +1,11 @@
+{
+  "name": "towingperth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit:crawl": "node scripts/crawl-old-site.mjs"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
+  }
+}
