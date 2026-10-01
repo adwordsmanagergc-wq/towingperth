@@ -1,0 +1,59 @@
+---
+// Suburb finder. Without JS the form submits to /areas (the full A to Z list).
+// With JS, a matching suburb name jumps straight to its page.
+import { getCollection } from 'astro:content';
+import Search from '@lucide/astro/icons/search';
+interface Props {
+  id?: string;
+  label?: string;
+}
+const { id = 'area-search', label = 'Find your suburb' } = Astro.props;
+const suburbs = (await getCollection('suburbs')).map((s) => ({ name: s.data.name, slug: s.id })).sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<form action="/areas" method="get" class="area-search flex max-w-xl gap-2" role="search">
+  <label for={id} class="sr-only">{label}</label>
+  <div class="relative flex-1">
+    <Search class="pointer-events-none absolute top-1/2 left-3.5 size-5 -translate-y-1/2 text-mute" aria-hidden="true" />
+    <input
+      id={id}
+      name="q"
+      list={`${id}-list`}
+      autocomplete="off"
+      placeholder="Start typing a suburb"
+      class="min-h-14 w-full rounded-md border-2 border-steel bg-ink pr-3 pl-11 text-lg text-white placeholder:text-mute focus:border-hivis focus:outline-none"
+    />
+    <datalist id={`${id}-list`}>
+      {suburbs.map((s) => <option value={s.name} data-slug={s.slug} />)}
+    </datalist>
+  </div>
+  <button type="submit" class="min-h-14 rounded-md bg-hivis px-5 font-display text-xl font-bold uppercase text-ink hover:bg-white">Go</button>
+</form>
+
+<script>
+  function slugFor(form: HTMLFormElement, q: string) {
+    const v = q.trim().toLowerCase();
+    if (!v) return null;
+    const options = [...form.querySelectorAll<HTMLOptionElement>('datalist option')];
+    const hit = options.find((o) => o.value.toLowerCase() === v) ?? options.find((o) => o.value.toLowerCase().startsWith(v));
+    return hit?.dataset.slug ?? null;
+  }
+  document.querySelectorAll<HTMLFormElement>('form.area-search').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      const input = form.querySelector('input');
+      const slug = input && slugFor(form, input.value);
+      if (slug) {
+        e.preventDefault();
+        location.href = `/areas/${slug}`;
+      }
+    });
+  });
+  // Arriving on /areas?q=... (e.g. from a no-match search): try once more, else jump to the letter.
+  const q = new URLSearchParams(location.search).get('q');
+  const first = document.querySelector<HTMLFormElement>('form.area-search');
+  if (q && first && location.pathname === '/areas') {
+    const slug = slugFor(first, q);
+    if (slug) location.replace(`/areas/${slug}`);
+    else document.getElementById('all-suburbs')?.scrollIntoView();
+  }
+</script>

@@ -1,0 +1,373 @@
+---
+// Renders both region hubs (/areas/northern-suburbs) and suburb pages (/areas/joondalup).
+import { getCollection, getEntry, getEntries, render, type CollectionEntry } from 'astro:content';
+import MapPin from '@lucide/astro/icons/map-pin';
+import Route from '@lucide/astro/icons/route';
+import Building from '@lucide/astro/icons/landmark';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import ServiceCard from '~/components/ServiceCard.astro';
+import SuburbGrid from '~/components/SuburbGrid.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTASection from '~/components/CTASection.astro';
+import { faqPage, service, suburbPlace } from '~/lib/schema';
+import { suburbDescription, suburbTitle } from '~/lib/seo';
+
+type Props =
+  | { kind: 'region'; region: CollectionEntry<'regions'> }
+  | { kind: 'suburb'; suburb: CollectionEntry<'suburbs'> };
+
+export async function getStaticPaths() {
+  const regions = await getCollection('regions');
+  const suburbs = await getCollection('suburbs');
+  return [
+    ...regions.map((region) => ({ params: { slug: region.id }, props: { kind: 'region' as const, region } })),
+    ...suburbs.map((suburb) => ({ params: { slug: suburb.id }, props: { kind: 'suburb' as const, suburb } })),
+  ];
+}
+
+const props = Astro.props as Props;
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const roads = await getCollection('roads');
+const roadPage = (name: string) => roads.find((r) => r.data.name.toLowerCase() === name.toLowerCase());
+
+// Which services a suburb page leads with, based on its local callouts.
+const SERVICE_WEIGHTS: Record<string, string[]> = {
+  freeway: ['accident-towing-perth', 'breakdown-towing-perth'],
+  arterial: ['accident-towing-perth', 'breakdown-towing-perth'],
+  'coastal-4wd': ['4wd-recovery-perth'],
+  'hills-4wd': ['4wd-recovery-perth'],
+  rural: ['4wd-recovery-perth', 'vehicle-transport-perth'],
+  industrial: ['container-transport-perth', 'vehicle-transport-perth'],
+  port: ['container-transport-perth'],
+  airport: ['breakdown-towing-perth', 'vehicle-transport-perth'],
+  shopping: ['breakdown-towing-perth'],
+  cbd: ['breakdown-towing-perth', 'vehicle-transport-perth'],
+  beach: ['breakdown-towing-perth'],
+  'new-estate': ['breakdown-towing-perth', 'container-transport-perth'],
+  university: ['breakdown-towing-perth'],
+  hospital: ['breakdown-towing-perth'],
+  river: ['vehicle-transport-perth'],
+};
+function rankServices(callouts: string[]) {
+  const score = new Map<string, number>();
+  callouts.forEach((c, i) => SERVICE_WEIGHTS[c]?.forEach((s) => score.set(s, (score.get(s) ?? 0) + (callouts.length - i))));
+  return [...services].sort((a, b) => (score.get(b.id) ?? 0) - (score.get(a.id) ?? 0) || a.data.order - b.data.order);
+}
+
+let page: {
+  title: string;
+  description: string;
+  path: string;
+  crumbs: { name: string; href: string }[];
+  schema: Record<string, unknown>[];
+};
+
+let regionView: null | {
+  region: CollectionEntry<'regions'>;
+  suburbs: { name: string; href: string }[];
+  others: CollectionEntry<'regions'>[];
+} = null;
+let suburbView: null | {
+  suburb: CollectionEntry<'suburbs'>;
+  region: CollectionEntry<'regions'>;
+  nearby: CollectionEntry<'suburbs'>[];
+  ranked: typeof services;
+} = null;
+
+if (props.kind === 'region') {
+  const { region } = props;
+  const path = `/areas/${region.id}`;
+  const all = await getCollection('suburbs', (s) => s.data.region.id === region.id);
+  regionView = {
+    region,
+    suburbs: all.map((s) => ({ name: s.data.name, href: `/areas/${s.id}` })),
+    others: (await getCollection('regions')).filter((r) => r.id !== region.id).sort((a, b) => a.data.order - b.data.order),
+  };
+  page = {
+    title: region.data.metaTitle,
+    description: region.data.metaDescription,
+    path,
+    crumbs: [
+      { name: 'Home', href: '/' },
+      { name: 'Areas', href: '/areas' },
+      { name: region.data.name, href: path },
+    ],
+    schema: [
+      service({
+        name: `Towing in Perth's ${region.data.name}`,
+        serviceType: 'Towing',
+        description: region.data.metaDescription,
+        path,
+        areaServed: all.map((s) => suburbPlace(s.data.name, region.data.name)),
+      }),
+      faqPage(region.data.faqs),
+    ],
+  };
+} else {
+  const { suburb } = props;
+  const region = (await getEntry(suburb.data.region))!;
+  const nearby = (await getEntries(suburb.data.nearby)).filter(Boolean) as CollectionEntry<'suburbs'>[];
+  const path = `/areas/${suburb.id}`;
+  const d = suburb.data;
+  suburbView = { suburb, region, nearby, ranked: rankServices(d.callouts) };
+  const description = d.metaDescription ?? suburbDescription(d.name, region.data.name.toLowerCase());
+  page = {
+    title: d.metaTitle ?? suburbTitle(d.name),
+    description,
+    path,
+    crumbs: [
+      { name: 'Home', href: '/' },
+      { name: 'Areas', href: '/areas' },
+      { name: region.data.name, href: `/areas/${region.id}` },
+      { name: d.name, href: path },
+    ],
+    schema: [
+      service({
+        name: `Tow truck service in ${d.name}`,
+        serviceType: 'Towing',
+        description,
+        path,
+        areaServed: suburbPlace(d.name, region.data.name),
+      }),
+      faqPage(d.faqs),
+    ],
+  };
+}
+
+const { Content } = props.kind === 'region' ? await render(props.region) : await render(props.suburb);
+---
+
+<BaseLayout title={page.title} description={page.description} path={page.path} og="area" crumbs={page.crumbs} schema={page.schema}>
+  {
+    regionView && (
+      <>
+        <PageHero crumbs={page.crumbs} eyebrow={`${regionView.suburbs.length} suburbs, 24/7`} h1={regionView.region.data.h1} lead={regionView.region.data.lead} />
+
+        <section class="py-14 sm:py-20">
+          <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem]">
+            <article class="prose-copy">
+              <Content />
+            </article>
+            <aside class="rounded-lg border border-steel bg-coal p-6 lg:self-start">
+              <h2 class="flex items-center gap-2 text-2xl">
+                <Route class="size-6 text-hivis" aria-hidden="true" /> Main roads we cover
+              </h2>
+              <ul class="mt-4 flex flex-wrap gap-2">
+                {regionView.region.data.mainRoads.map((r) => {
+                  const rp = roadPage(r);
+                  return (
+                    <li>
+                      {rp ? (
+                        <a href={`/roads/${rp.id}`} class="inline-flex min-h-10 items-center rounded-full border border-hivis px-3 text-sm text-hivis hover:bg-hivis hover:text-ink">
+                          {r}
+                        </a>
+                      ) : (
+                        <span class="inline-flex min-h-10 items-center rounded-full border border-steel px-3 text-sm text-white">{r}</span>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="on-light bg-paper py-14 text-ink sm:py-20" aria-labelledby="suburbs-heading">
+          <div class="wrap">
+            <p class="eyebrow">A to Z</p>
+            <h2 id="suburbs-heading" class="mt-3 text-4xl sm:text-5xl">
+              Suburbs we cover in the {regionView.region.data.name.toLowerCase()}
+            </h2>
+            <div class="mt-10">
+              <SuburbGrid suburbs={regionView.suburbs} light />
+            </div>
+          </div>
+        </section>
+
+        <section class="py-14 sm:py-20" aria-labelledby="svc-heading">
+          <div class="wrap">
+            <h2 id="svc-heading" class="text-3xl sm:text-4xl">
+              Services in the {regionView.region.data.name.toLowerCase()}
+            </h2>
+            <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+              {services.map((s) => (
+                <ServiceCard href={`/services/${s.id}`} title={s.data.name} blurb={s.data.cardBlurb} icon={s.data.icon} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section class="border-t border-steel bg-coal py-14 sm:py-20" aria-labelledby="faq-heading">
+          <div class="wrap grid gap-10 lg:grid-cols-[1fr_2fr]">
+            <div>
+              <p class="eyebrow">FAQ</p>
+              <h2 id="faq-heading" class="mt-3 text-4xl sm:text-5xl">
+                {regionView.region.data.shortName} Perth towing questions
+              </h2>
+              <p class="mt-6 text-mute">Other regions:</p>
+              <ul class="mt-2 space-y-1">
+                {regionView.others.map((r) => (
+                  <li>
+                    <a href={`/areas/${r.id}`} class="inline-flex min-h-10 items-center text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">
+                      {r.data.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <FAQ faqs={regionView.region.data.faqs} openFirst />
+          </div>
+        </section>
+      </>
+    )
+  }
+
+  {
+    suburbView && (
+      <>
+        <PageHero
+          crumbs={page.crumbs}
+          eyebrow={`24/7 towing in ${suburbView.suburb.data.name}`}
+          h1={`Tow Truck ${suburbView.suburb.data.name}`}
+          lead={suburbView.suburb.data.intro}
+        />
+
+        <section class="py-14 sm:py-20">
+          <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem]">
+            <article class="prose-copy">
+              <Content />
+            </article>
+            <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
+              <div class="rounded-lg border border-steel bg-coal p-6">
+                <h2 class="text-2xl">{suburbView.suburb.data.name} at a glance</h2>
+                <dl class="mt-4 space-y-4 text-sm">
+                  <div>
+                    <dt class="font-semibold uppercase tracking-wider text-mute">Region</dt>
+                    <dd class="mt-1">
+                      <a href={`/areas/${suburbView.region.id}`} class="text-base text-hivis underline underline-offset-4">
+                        {suburbView.region.data.name}
+                      </a>
+                    </dd>
+                  </div>
+                  {suburbView.suburb.data.council && (
+                    <div>
+                      <dt class="font-semibold uppercase tracking-wider text-mute">Council</dt>
+                      <dd class="mt-1 flex items-center gap-2 text-base text-white">
+                        <Building class="size-4 text-hivis" aria-hidden="true" />
+                        {suburbView.suburb.data.council}
+                      </dd>
+                    </div>
+                  )}
+                  <div>
+                    <dt class="font-semibold uppercase tracking-wider text-mute">Main roads</dt>
+                    <dd class="mt-2">
+                      <ul class="flex flex-wrap gap-1.5">
+                        {suburbView.suburb.data.roads.map((r) => {
+                          const rp = roadPage(r);
+                          return (
+                            <li>
+                              {rp ? (
+                                <a href={`/roads/${rp.id}`} class="inline-flex min-h-9 items-center rounded-full border border-hivis px-3 text-hivis hover:bg-hivis hover:text-ink">
+                                  {r}
+                                </a>
+                              ) : (
+                                <span class="inline-flex min-h-9 items-center rounded-full border border-steel px-3 text-white">{r}</span>
+                              )}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </dd>
+                  </div>
+                  {suburbView.suburb.data.landmarks.length > 0 && (
+                    <div>
+                      <dt class="font-semibold uppercase tracking-wider text-mute">We often tow from near</dt>
+                      <dd class="mt-2">
+                        <ul class="space-y-1.5">
+                          {suburbView.suburb.data.landmarks.map((l) => (
+                            <li class="flex gap-2 text-base text-white">
+                              <MapPin class="mt-1 size-4 shrink-0 text-hivis" aria-hidden="true" />
+                              {l}
+                            </li>
+                          ))}
+                        </ul>
+                      </dd>
+                    </div>
+                  )}
+                </dl>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="on-light bg-paper py-14 text-ink sm:py-20" aria-labelledby="svc-heading">
+          <div class="wrap">
+            <p class="eyebrow">Services</p>
+            <h2 id="svc-heading" class="mt-3 text-4xl sm:text-5xl">
+              What we do in {suburbView.suburb.data.name}
+            </h2>
+            <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {suburbView.ranked.map((s) => (
+                <li>
+                  <a href={`/services/${s.id}`} class="group flex h-full flex-col rounded-lg border-2 border-ink bg-white p-5 hover:bg-hivis">
+                    <span class="font-display text-2xl font-extrabold uppercase">{s.data.name}</span>
+                    <span class="mt-2 text-slate group-hover:text-ink">{s.data.cardBlurb}</span>
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a href="/insurance-towing" class="group flex h-full flex-col rounded-lg border-2 border-ink bg-ink p-5 text-white hover:bg-coal">
+                  <span class="font-display text-2xl font-extrabold uppercase text-hivis">Insurance towing</span>
+                  <span class="mt-2 text-mute">Crashed in {suburbView.suburb.data.name}? We bill your insurer directly.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="border-b border-steel bg-coal py-14 sm:py-20" aria-labelledby="faq-heading">
+          <div class="wrap grid gap-10 lg:grid-cols-[1fr_2fr]">
+            <div>
+              <p class="eyebrow">Local FAQ</p>
+              <h2 id="faq-heading" class="mt-3 text-4xl sm:text-5xl">
+                Towing in {suburbView.suburb.data.name}: questions
+              </h2>
+            </div>
+            <FAQ faqs={suburbView.suburb.data.faqs} openFirst />
+          </div>
+        </section>
+
+        <section class="py-14 sm:py-20" aria-labelledby="nearby-heading">
+          <div class="wrap">
+            <h2 id="nearby-heading" class="text-3xl sm:text-4xl">
+              Also towing near {suburbView.suburb.data.name}
+            </h2>
+            <ul class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+              {suburbView.nearby.map((n) => (
+                <li>
+                  <a href={`/areas/${n.id}`} class="flex min-h-14 items-center gap-2 rounded-md border border-steel bg-coal px-4 py-3 font-semibold hover:border-hivis hover:text-hivis">
+                    <MapPin class="size-4 shrink-0 text-hivis" aria-hidden="true" />
+                    {n.data.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p class="mt-6 text-mute">
+              See every suburb in the{' '}
+              <a href={`/areas/${suburbView.region.id}`} class="font-semibold text-hivis underline underline-offset-4">
+                {suburbView.region.data.name.toLowerCase()}
+              </a>{' '}
+              or <a href="/areas" class="font-semibold text-hivis underline underline-offset-4">all Perth areas</a>.
+            </p>
+          </div>
+        </section>
+      </>
+    )
+  }
+
+  <CTASection
+    heading={suburbView ? `Need a tow in ${suburbView.suburb.data.name}?` : undefined}
+    position={suburbView ? 'suburb-cta-band' : 'region-cta-band'}
+  />
+</BaseLayout>

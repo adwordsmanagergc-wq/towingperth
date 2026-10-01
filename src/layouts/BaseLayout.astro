@@ -1,0 +1,101 @@
+---
+import { Font } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import '~/styles/global.css';
+import { SITE } from '~/config/site';
+import { absoluteUrl } from '~/lib/seo';
+import { breadcrumbList, graph, localBusiness, webPage, website, type Crumb } from '~/lib/schema';
+import Analytics from '~/components/Analytics.astro';
+import Header from '~/components/Header.astro';
+import Footer from '~/components/Footer.astro';
+import MobileCallBar from '~/components/MobileCallBar.astro';
+
+export type OgKind = 'home' | 'service' | 'area' | 'road' | 'general';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Canonical path, e.g. "/areas/joondalup". */
+  path: string;
+  og?: OgKind;
+  crumbs?: Crumb[];
+  schema?: Record<string, unknown>[];
+  noindex?: boolean;
+  /** List every suburb in the business areaServed (homepage and /areas only). */
+  allSuburbsInSchema?: boolean;
+  /** Preload the hero image as a responsive set (from getImage). */
+  preloadImage?: { srcset: string; sizes: string; type: string };
+}
+
+const { title, description, path, og = 'general', crumbs, schema = [], noindex = false, allSuburbsInSchema = false, preloadImage } =
+  Astro.props;
+
+const canonical = absoluteUrl(path);
+const ogImage = absoluteUrl(`/og/${og}.jpg`);
+const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
+const suburbs = allSuburbsInSchema ? (await getCollection('suburbs')).map((s) => s.data.name).sort() : undefined;
+
+const jsonLd = graph([
+  localBusiness({ regions: regions.map((r) => r.data.name), suburbs }),
+  website(),
+  webPage({ path, title, description }),
+  ...(crumbs ? [breadcrumbList(crumbs)] : []),
+  ...schema,
+]);
+---
+
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta name="theme-color" content="#0f1113" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <Font cssVariable="--font-barlow" preload={[{ weight: 800 }]} />
+    <Font cssVariable="--font-inter" preload />
+    {
+      preloadImage && (
+        <link rel="preload" as="image" imagesrcset={preloadImage.srcset} imagesizes={preloadImage.sizes} type={preloadImage.type} fetchpriority="high" />
+      )
+    }
+
+    <script type="application/ld+json" set:html={jsonLd} />
+    <Analytics />
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="sr-only z-[100] bg-hivis px-4 py-3 font-bold text-ink focus:not-sr-only focus:fixed focus:top-2 focus:left-2"
+      >Skip to content</a
+    >
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <MobileCallBar />
+  </body>
+</html>

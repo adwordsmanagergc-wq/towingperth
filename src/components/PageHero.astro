@@ -1,0 +1,40 @@
+---
+// Hero for inner pages: breadcrumbs, H1, lead, call/quote CTAs and trust chips.
+import { SELLING_POINTS } from '~/config/site';
+import type { Crumb } from '~/lib/schema';
+import Breadcrumbs from './Breadcrumbs.astro';
+import CallButton from './CallButton.astro';
+import Button from './Button.astro';
+import TrustChip from './TrustChip.astro';
+
+interface Props {
+  crumbs: Crumb[];
+  eyebrow?: string;
+  h1: string;
+  lead: string;
+  chips?: boolean;
+}
+const { crumbs, eyebrow, h1, lead, chips = true } = Astro.props;
+---
+
+<section class="relative overflow-hidden border-b border-steel bg-coal">
+  <div class="pointer-events-none absolute inset-0 opacity-[0.06]" style="background-image: repeating-linear-gradient(-45deg, #fff 0 2px, transparent 2px 22px)" aria-hidden="true"></div>
+  <div class="wrap relative py-8 sm:py-12 lg:py-16">
+    <Breadcrumbs crumbs={crumbs} />
+    {eyebrow && <p class="eyebrow mt-8">{eyebrow}</p>}
+    <h1 class:list={['max-w-4xl text-[2.75rem] text-white sm:text-6xl lg:text-7xl', eyebrow ? 'mt-3' : 'mt-8']}>{h1}</h1>
+    <p class="mt-5 max-w-3xl text-lg text-mute sm:text-xl">{lead}</p>
+    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+      <CallButton position="page-hero" size="lg" label="Call now" />
+      <Button href="/contact#quote">Get a quote</Button>
+    </div>
+    {
+      chips && (
+        <ul class="mt-8 flex flex-wrap gap-2" aria-label="Why choose us">
+          {SELLING_POINTS.map((p) => <TrustChip label={p.label} />)}
+        </ul>
+      )
+    }
+    <slot />
+  </div>
+</section>

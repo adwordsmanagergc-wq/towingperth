@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import TriangleAlert from '@lucide/astro/icons/triangle-alert';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import CTASection from '~/components/CTASection.astro';
+import Button from '~/components/Button.astro';
+
+const roads = (await getCollection('roads')).sort((a, b) => a.data.order - b.data.order);
+const path = '/roads';
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Dangerous roads', href: path },
+];
+const kindLabel = { road: 'Road', intersection: 'Intersection', precinct: 'Hotspot' } as const;
+---
+
+<BaseLayout
+  title="Perth's Most Dangerous Roads | Crash Help | Quik Tow & Transport"
+  description="The Perth roads and intersections with the most crashes, why they're risky and what to do after an accident. 24/7 accident towing: 0419 857 070."
+  path={path}
+  og="road"
+  crumbs={crumbs}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Road safety"
+    h1="Perth's Most Dangerous Roads"
+    lead="We tow from these roads more than almost anywhere else. Here's why they're risky, how to stay safe, and what to do if you crash."
+    chips={false}
+  />
+
+  <section class="py-14 sm:py-20">
+    <div class="wrap">
+      <div class="prose-copy">
+        <p>
+          Every year, RAC WA asks West Australians to nominate the roads and intersections where they feel least safe, and the same names keep coming
+          up. Most are busy arterial roads and highways that mix fast traffic, heavy freight, frequent intersections and driveways. Some are single
+          intersections with poor sight lines. Others, like the area around Garden City, are simply so busy that minor crashes happen every day.
+        </p>
+        <p>
+          If you're involved in a crash on any of them, put safety first: hazard lights on, get out of the traffic if you can, and call 000 if anyone
+          is hurt or the road is blocked. When everyone is safe, we can tow your car and <a href="/insurance-towing">bill your insurer directly</a>.
+        </p>
+      </div>
+
+      <ul class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          roads.map((r) => (
+            <li>
+              <a href={`/roads/${r.id}`} class="group reveal flex h-full flex-col rounded-lg border border-steel bg-coal p-6 hover:border-hivis">
+                <span class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-hivis">
+                  <TriangleAlert class="size-4" aria-hidden="true" /> {kindLabel[r.data.kind]}
+                </span>
+                <h2 class="mt-3 text-3xl group-hover:text-hivis">{r.data.name}</h2>
+                <p class="mt-2 flex-1 text-mute">{r.data.lead}</p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="mt-10">
+        <Button href="/services/accident-towing-perth" variant="primary">Accident towing</Button>
+      </div>
+    </div>
+  </section>
+  <CTASection heading="Crashed? We'll handle the tow." position="roads-cta-band" />
+</BaseLayout>

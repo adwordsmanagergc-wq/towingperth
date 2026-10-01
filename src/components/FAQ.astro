@@ -1,0 +1,39 @@
+---
+// Native <details> accordion: works without JS, keyboard accessible.
+// Answers support light markdown links (**bold**, [text](/path)).
+import ChevronDown from '@lucide/astro/icons/chevron-down';
+import type { Faq } from '~/lib/schema';
+interface Props {
+  faqs: Faq[];
+  light?: boolean;
+  /** Open the first item by default. */
+  openFirst?: boolean;
+  headingLevel?: 'h3' | 'h4';
+}
+const { faqs, light = false, openFirst = false, headingLevel: H = 'h3' } = Astro.props;
+
+function md(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .split(/\n{2,}/)
+    .map((p) => `<p>${p}</p>`)
+    .join('');
+}
+---
+
+<div class:list={['divide-y border-y', light ? 'divide-ink/15 border-ink/15' : 'divide-steel border-steel']}>
+  {
+    faqs.map((f, i) => (
+      <details class="group" open={openFirst && i === 0}>
+        <summary class="flex min-h-14 items-center justify-between gap-4 py-4 text-left">
+          <H class:list={['font-sans text-lg font-semibold normal-case leading-snug tracking-normal sm:text-xl', light ? 'text-ink' : 'text-white']}>{f.q}</H>
+          <ChevronDown class:list={['size-6 shrink-0 transition-transform group-open:rotate-180', light ? 'text-ink' : 'text-hivis']} aria-hidden="true" />
+        </summary>
+        <div class="prose-copy pb-6" set:html={md(f.a)} />
+      </details>
+    ))
+  }
+</div>

@@ -1,0 +1,110 @@
+---
+import { getCollection } from 'astro:content';
+import Phone from '@lucide/astro/icons/phone';
+import Menu from '@lucide/astro/icons/menu';
+import ChevronDown from '@lucide/astro/icons/chevron-down';
+import { SITE } from '~/config/site';
+import Logo from './Logo.astro';
+import CallButton from './CallButton.astro';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const links = [
+  { href: '/areas', label: 'Areas' },
+  { href: '/roads', label: 'Dangerous roads' },
+  { href: '/insurance-towing', label: 'Insurance' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+const current = Astro.url.pathname;
+const isActive = (href: string) => current === href || current.startsWith(href + '/');
+---
+
+<header class="sticky top-0 z-50 border-b border-steel bg-ink/95 backdrop-blur supports-[backdrop-filter]:bg-ink/85">
+  <div class="hazard h-1" aria-hidden="true"></div>
+  <div class="wrap flex h-16 items-center justify-between gap-4 lg:h-20">
+    <a href="/" class="shrink-0" aria-label={`${SITE.name} home`}><Logo /></a>
+
+    <nav aria-label="Main" class="hidden lg:block">
+      <ul class="flex items-center gap-1 font-display text-lg font-bold uppercase tracking-wide">
+        <li class="relative">
+          <details class="group/nav">
+            <summary
+              class:list={[
+                'flex min-h-12 items-center gap-1 rounded px-3 hover:text-hivis',
+                current.startsWith('/services') && 'text-hivis',
+              ]}
+            >
+              Services <ChevronDown class="size-4 transition-transform group-open/nav:rotate-180" aria-hidden="true" />
+            </summary>
+            <ul class="absolute top-full left-0 mt-2 w-72 rounded-lg border border-steel bg-coal p-2 shadow-2xl">
+              {
+                services.map((s) => (
+                  <li>
+                    <a href={`/services/${s.id}`} class="flex min-h-12 items-center rounded px-3 font-sans text-base font-semibold normal-case tracking-normal hover:bg-steel hover:text-hivis">
+                      {s.data.navLabel}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </details>
+        </li>
+        {
+          links.map((l) => (
+            <li>
+              <a href={l.href} class:list={['flex min-h-12 items-center rounded px-3 hover:text-hivis', isActive(l.href) && 'text-hivis']} aria-current={isActive(l.href) ? 'page' : undefined}>
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <div class="hidden flex-col items-end leading-tight lg:flex">
+        <span class="text-xs font-semibold uppercase tracking-widest text-mute">24/7 across Perth</span>
+      </div>
+      <div class="hidden lg:block"><CallButton position="header" size="md" label="" /></div>
+      <a
+        href={SITE.phoneHref}
+        data-position="header-mobile"
+        class="grid size-12 place-items-center rounded-md bg-hivis text-ink lg:hidden"
+        aria-label={`Call ${SITE.phoneDisplay}`}
+      >
+        <Phone class="size-6" stroke-width={2.5} aria-hidden="true" />
+      </a>
+      <details class="group/menu lg:hidden">
+        <summary class="grid size-12 place-items-center rounded-md border border-steel text-white" aria-label="Menu">
+          <Menu class="size-6" aria-hidden="true" />
+        </summary>
+        <nav aria-label="Mobile" class="absolute inset-x-0 top-full max-h-[calc(100dvh-4rem)] overflow-y-auto border-b border-steel bg-ink px-4 pb-8 shadow-2xl">
+          <p class="eyebrow mt-5 mb-2">Services</p>
+          <ul class="grid gap-1">
+            {
+              services.map((s) => (
+                <li>
+                  <a href={`/services/${s.id}`} class="flex min-h-12 items-center rounded px-2 text-lg font-semibold hover:bg-coal">
+                    {s.data.navLabel}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+          <p class="eyebrow mt-6 mb-2">More</p>
+          <ul class="grid gap-1">
+            {
+              links.map((l) => (
+                <li>
+                  <a href={l.href} class="flex min-h-12 items-center rounded px-2 text-lg font-semibold hover:bg-coal">
+                    {l.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>

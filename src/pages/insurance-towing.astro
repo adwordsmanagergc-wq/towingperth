@@ -1,0 +1,160 @@
+---
+import ShieldCheck from '@lucide/astro/icons/shield-check';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTASection from '~/components/CTASection.astro';
+import { SITE } from '~/config/site';
+import { faqPage, service } from '~/lib/schema';
+
+const path = '/insurance-towing';
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Insurance towing', href: path },
+];
+const description =
+  'Crashed in Perth? We tow your car and bill your insurance company directly, so you usually pay nothing on the day. 24/7 on 0419 857 070.';
+
+const steps = [
+  {
+    title: 'Make the scene safe',
+    text: 'Hazard lights on and get everyone away from traffic. Call 000 first if anyone is hurt, there is a fire or fuel leak, or the road is blocked.',
+  },
+  {
+    title: 'Swap details and take photos',
+    text: "Get the other driver's name, phone number, licence, rego and insurer. Photograph both cars, the damage, number plates and the scene.",
+  },
+  {
+    title: 'Call us',
+    text: `Ring ${SITE.phoneDisplay}. Tell us your location, your car, your insurer and your claim number if you have one. If you haven't lodged a claim yet, you can do it while we're on the way.`,
+  },
+  {
+    title: 'We tow your car',
+    text: 'We load the car carefully on a tilt tray and take it to your repairer, your insurer’s nominated repairer or assessing centre, or your home.',
+  },
+  {
+    title: 'We bill your insurer',
+    text: 'We send the towing invoice straight to your insurance company with the claim details, so for a covered claim you usually have nothing to pay us on the day.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Will I have to pay anything for the tow?',
+    a: "For a claim your policy covers, we bill your insurer directly, so you usually pay us nothing on the day. You may still owe your insurer an excess under your policy, but that's between you and them, not part of our bill. If your policy doesn't cover towing, we'll tell you the price upfront before we tow.",
+  },
+  {
+    q: "What if I don't have a claim number yet?",
+    a: "That's fine. Call us first so the car is off the road, then lodge your claim by phone or app while we're on our way. Give us the claim number when you have it and we'll attach it to the invoice.",
+  },
+  {
+    q: 'Can I choose which tow truck company to use after a crash?',
+    a: "It's your car and your choice who tows it. If a tow truck you didn't call turns up at the scene, you're free to say no and call the company you want. Check your policy too, since some insurers have their own arrangements.",
+  },
+  {
+    q: 'Where will my car go?',
+    a: "Wherever you and your insurer want it. That's usually your chosen repairer or the insurer's assessing centre. If the car needs to be held while the claim is assessed, we'll arrange that with your insurer.",
+  },
+  {
+    q: 'The other driver was at fault. Who pays for the tow?',
+    a: "Give us both insurers' details. Where the other driver's insurer accepts the claim, the tow is usually covered under that claim. If you're uninsured and the other driver is at fault, tell us when you call and we'll explain your options before we tow.",
+  },
+  {
+    q: 'Which insurance companies do you work with?',
+    a: "We deal directly with insurance companies on behalf of our customers. Tell us your insurer when you call and we'll confirm how billing will work for your claim.",
+  },
+];
+---
+
+<BaseLayout
+  title="Insurance Towing Perth | We Bill Your Insurer | Quik Tow"
+  description={description}
+  path={path}
+  og="service"
+  crumbs={crumbs}
+  schema={[service({ name: 'Insurance towing in Perth', serviceType: 'Accident towing with direct insurer billing', description, path }), faqPage(faqs)]}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Insurance towing"
+    h1="Insurance Towing in Perth: We Bill Your Insurer"
+    lead="After a crash, you shouldn't have to pay a tow bill and chase it back. We tow your car and send the invoice straight to your insurance company."
+  />
+
+  <section class="py-14 sm:py-20">
+    <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem]">
+      <div class="prose-copy">
+        <h2>How direct insurance billing works</h2>
+        <p>
+          Most comprehensive car insurance policies in Australia cover the cost of towing your car after an accident. The catch is that some tow
+          operators want payment at the roadside, which leaves you out of pocket and filling in reimbursement forms on top of everything else.
+        </p>
+        <p>
+          We do it the other way around. When the tow is part of an insurance claim, <strong>we bill your insurance company directly</strong>. You give us
+          your insurer and claim number, we tow the car where it needs to go, and we send the paperwork straight to them. For a covered claim, that
+          usually means you have nothing to pay us on the day.
+        </p>
+        <h2>What we need from you</h2>
+        <ul>
+          <li>Your name and phone number</li>
+          <li>Where the car is, and where it should go (if you know)</li>
+          <li>The make, model and rego of your car</li>
+          <li>Your insurance company and claim number, or let us know you're lodging one</li>
+          <li>The other driver's details if another vehicle was involved</li>
+        </ul>
+        <h2>Third-party and not-at-fault crashes</h2>
+        <p>
+          If someone else caused the crash, make sure you've got their name, phone number, rego and insurer before you leave the scene. Pass those on to
+          us and to your own insurer. Where the other driver's insurer accepts responsibility, the tow is normally handled through that claim. If you're
+          not sure who's paying, tell us when you call and we'll explain your options before we hook up the car.
+        </p>
+        <h2>Not insured?</h2>
+        <p>
+          We'll still help. You'll get a clear, upfront quote before we tow, with no hidden fees and backed by our best rates guarantee. See our
+          <a href="/services/accident-towing-perth">accident towing</a> page for more on what happens after a crash.
+        </p>
+      </div>
+      <aside class="lg:sticky lg:top-28 lg:self-start">
+        <div class="rounded-lg border border-steel bg-coal p-6">
+          <h2 class="flex items-center gap-2 text-2xl"><ShieldCheck class="size-6 text-hivis" aria-hidden="true" /> In short</h2>
+          <ul class="mt-4 space-y-3 text-mute">
+            <li>We invoice your insurer, not you, for covered claims.</li>
+            <li>Your car goes to your chosen or insurer-approved repairer.</li>
+            <li>Available 24/7 across every Perth suburb.</li>
+            <li>Upfront pricing if you're not claiming.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="on-light bg-paper py-14 text-ink sm:py-20" aria-labelledby="steps-heading">
+    <div class="wrap">
+      <p class="eyebrow">Step by step</p>
+      <h2 id="steps-heading" class="mt-3 text-4xl sm:text-5xl">From crash to claim</h2>
+      <ol class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+        {
+          steps.map((s, i) => (
+            <li class="reveal rounded-lg border-2 border-ink bg-white p-5">
+              <span class="font-display text-5xl font-extrabold text-hivis-deep">{i + 1}</span>
+              <h3 class="mt-2 text-2xl">{s.title}</h3>
+              <p class="mt-2 text-slate">{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section class="border-b border-steel bg-coal py-14 sm:py-20" aria-labelledby="faq-heading">
+    <div class="wrap grid gap-10 lg:grid-cols-[1fr_2fr]">
+      <div>
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-heading" class="mt-3 text-4xl sm:text-5xl">Insurance towing questions</h2>
+      </div>
+      <FAQ faqs={faqs} openFirst />
+    </div>
+  </section>
+
+  <CTASection heading="Crashed? Call us first." position="insurance-cta-band" />
+</BaseLayout>

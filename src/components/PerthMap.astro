@@ -1,0 +1,83 @@
+---
+// Schematic (not to scale) map of Perth's five service regions. Each region
+// links to its hub. A plain list of the same links sits beside it for
+// screen readers and anyone who prefers text.
+const regions = [
+  {
+    slug: 'northern-suburbs',
+    label: 'North',
+    d: 'M88 18 L300 18 L318 120 L262 168 L214 206 L118 214 Q104 160 98 120 Q92 70 88 18Z',
+    x: 196,
+    y: 112,
+  },
+  {
+    slug: 'western-suburbs',
+    label: 'West & CBD',
+    d: 'M118 214 L214 206 L232 236 L214 268 L172 282 L132 296 Q124 254 118 214Z',
+    x: 166,
+    y: 238,
+  },
+  {
+    slug: 'eastern-suburbs',
+    label: 'East & Hills',
+    d: 'M262 168 L318 120 L392 150 L392 320 L300 300 L256 272 L232 236 L214 206Z',
+    x: 316,
+    y: 220,
+  },
+  {
+    slug: 'south-eastern-suburbs',
+    label: 'South East',
+    d: 'M214 268 L232 236 L256 272 L300 300 L392 320 L392 462 L256 462 L232 352 L212 304Z',
+    x: 306,
+    y: 380,
+  },
+  {
+    slug: 'southern-suburbs',
+    label: 'South',
+    d: 'M132 296 L172 282 L214 268 L212 304 L232 352 L256 462 L150 462 Q146 400 140 350 Q136 320 132 296Z',
+    x: 190,
+    y: 396,
+  },
+];
+---
+
+<div class="relative">
+  <svg viewBox="0 0 400 480" class="h-auto w-full" role="img" aria-labelledby="perth-map-title">
+    <title id="perth-map-title">Map of the Perth regions we cover. Select a region to see its suburbs.</title>
+    <!-- Ocean -->
+    <rect x="0" y="0" width="400" height="480" fill="#0b1a24"></rect>
+    <path d="M0 0 L88 18 Q92 70 98 120 Q104 160 118 214 Q124 254 132 296 Q136 320 140 350 Q146 400 150 462 L0 480Z" fill="#0d2230" opacity="0.8"></path>
+    {
+      regions.map((r) => (
+        <a href={`/areas/${r.slug}`} class="group outline-none" aria-label={`Towing in Perth's ${r.label} region`}>
+          <path
+            d={r.d}
+            class="fill-steel stroke-ink transition-colors group-hover:fill-hivis group-focus-visible:fill-hivis"
+            stroke-width="3"
+            stroke-linejoin="round"
+          />
+          <text
+            x={r.x}
+            y={r.y}
+            text-anchor="middle"
+            class="pointer-events-none fill-white font-display text-[19px] font-extrabold uppercase tracking-wide group-hover:fill-ink group-focus-visible:fill-ink"
+          >
+            {r.label}
+          </text>
+        </a>
+      ))
+    }
+    <!-- Swan River, schematic -->
+    <path
+      d="M132 296 Q170 290 190 268 Q206 252 214 248 Q236 244 246 226 Q258 206 272 196 Q290 186 300 170"
+      fill="none"
+      stroke="#3b82c4"
+      stroke-width="6"
+      stroke-linecap="round"
+      opacity="0.85"
+      pointer-events="none"></path>
+    <circle cx="214" cy="248" r="7" fill="#ffc20e" stroke="#0f1113" stroke-width="3" pointer-events="none"></circle>
+    <text x="200" y="278" class="pointer-events-none fill-white text-[12px] font-bold" aria-hidden="true">Perth CBD</text>
+    <text x="34" y="250" class="pointer-events-none fill-mute text-[13px] font-semibold italic" aria-hidden="true">Indian Ocean</text>
+  </svg>
+</div>

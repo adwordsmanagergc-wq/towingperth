@@ -1,0 +1,39 @@
+---
+// A to Z grid of suburb links, grouped by first letter.
+interface Props {
+  suburbs: { name: string; href: string }[];
+  light?: boolean;
+}
+const { suburbs, light = false } = Astro.props;
+const sorted = [...suburbs].sort((a, b) => a.name.localeCompare(b.name));
+const groups = new Map<string, typeof sorted>();
+for (const s of sorted) {
+  const k = s.name[0].toUpperCase();
+  groups.set(k, [...(groups.get(k) ?? []), s]);
+}
+---
+
+<div class="columns-2 gap-x-8 sm:columns-3 lg:columns-4">
+  {
+    [...groups].map(([letter, list]) => (
+      <div class="mb-6 break-inside-avoid">
+        <p class:list={['mb-1 font-display text-2xl font-extrabold', light ? 'text-ink' : 'text-hivis']} aria-hidden="true">{letter}</p>
+        <ul class="space-y-0.5">
+          {list.map((s) => (
+            <li>
+              <a
+                href={s.href}
+                class:list={[
+                  'inline-flex min-h-10 items-center py-1 underline-offset-4 hover:underline',
+                  light ? 'text-slate hover:text-ink' : 'text-white hover:text-hivis',
+                ]}
+              >
+                {s.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>

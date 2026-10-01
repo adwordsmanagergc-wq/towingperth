@@ -1,0 +1,19 @@
+---
+// Maps a service icon key from content to a Lucide icon.
+import Siren from '@lucide/astro/icons/siren';
+import Wrench from '@lucide/astro/icons/wrench';
+import Mountain from '@lucide/astro/icons/mountain';
+import Container from '@lucide/astro/icons/container';
+import Truck from '@lucide/astro/icons/truck';
+import ShieldCheck from '@lucide/astro/icons/shield-check';
+
+interface Props {
+  name: string;
+  class?: string;
+}
+const icons = { accident: Siren, breakdown: Wrench, '4wd': Mountain, container: Container, transport: Truck, insurance: ShieldCheck };
+const { name, class: cls = 'size-8' } = Astro.props;
+const Icon = icons[name as keyof typeof icons] ?? Truck;
+---
+
+<Icon class={cls} stroke-width={2} aria-hidden="true" />

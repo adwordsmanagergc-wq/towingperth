@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+import Check from '@lucide/astro/icons/check';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import CTASection from '~/components/CTASection.astro';
+import { SITE } from '~/config/site';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const path = '/about';
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: path },
+];
+const promises = [
+  { title: 'We answer 24/7', text: 'Nights, weekends and public holidays. When you call, a real person picks up and organises your truck.' },
+  { title: 'Upfront, transparent pricing', text: 'You get the price before we dispatch. No hidden fees, and our best rates guarantee backs it.' },
+  { title: 'We deal with your insurer', text: 'For insurance jobs we bill your insurance company directly, so you are not left chasing a refund.' },
+  { title: 'Enough trucks to move fast', text: 'With 10+ tow trucks on the road across Perth, we send the nearest available one, not whoever is free across town.' },
+];
+---
+
+<BaseLayout
+  title="About Quik Tow & Transport | Perth Towing Company"
+  description="Quik Tow & Transport is a Perth towing and transport company with 10+ trucks, running 24/7 across every suburb. We bill insurers directly."
+  path={path}
+  og="general"
+  crumbs={crumbs}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="About us"
+    h1="About Quik Tow & Transport"
+    lead="A Perth towing and transport company built around one idea: when you're stuck, getting help should be quick, fair and simple."
+  />
+
+  <section class="py-14 sm:py-20">
+    <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_24rem]">
+      <div class="prose-copy">
+        <!-- TODO: add the company story here: when and why Quik Tow started, who runs it, and anything that sets the team apart. Add licence/accreditation details if you want them shown. -->
+        <h2>Towing and transport for all of Perth</h2>
+        <p>
+          {SITE.name} runs a fleet of more than 10 tow trucks across the Perth metro area, 24 hours a day. Our drivers handle everything from
+          freeway crashes and flat batteries in shopping centre car parks to 4WDs bogged on the coast and shipping containers on the move between
+          industrial yards.
+        </p>
+        <p>
+          We know how stressful it is to be stuck at the side of the road, especially at night or after a crash. That's why we keep things simple. One
+          phone number, a clear price before we send a truck, and no surprises on the bill. When it's an insurance job, we deal with your insurer
+          directly so you can focus on getting home.
+        </p>
+        <h2>What we do</h2>
+        <ul>
+          {services.map((s) => <li><a href={`/services/${s.id}`}>{s.data.name}</a>: {s.data.cardBlurb}</li>)}
+          <li><a href="/insurance-towing">Insurance towing</a>: we bill your insurer directly.</li>
+        </ul>
+        <h2>Where we work</h2>
+        <p>
+          Every suburb in Perth, from Two Rocks and Yanchep in the north to Secret Harbour and Byford in the south, and from the beaches of the western
+          suburbs to Mundaring in the Hills. <a href="/areas">See all the suburbs we cover</a>.
+        </p>
+      </div>
+      <aside class="space-y-4 lg:self-start">
+        {
+          promises.map((p) => (
+            <div class="rounded-lg border border-steel bg-coal p-5">
+              <h2 class="flex items-center gap-2 text-2xl">
+                <Check class="size-6 text-hivis" stroke-width={3} aria-hidden="true" />
+                {p.title}
+              </h2>
+              <p class="mt-2 text-mute">{p.text}</p>
+            </div>
+          ))
+        }
+      </aside>
+    </div>
+  </section>
+  <CTASection position="about-cta-band" />
+</BaseLayout>

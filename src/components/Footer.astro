@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE } from '~/config/site';
+import Logo from './Logo.astro';
+import CallButton from './CallButton.astro';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
+const year = new Date().getFullYear();
+const heading = 'mb-4 font-display text-lg font-bold uppercase tracking-widest text-hivis';
+const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
+---
+
+<footer class="border-t border-steel bg-coal">
+  <div class="wrap grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <div>
+      <Logo />
+      <p class="mt-4 max-w-sm text-mute">
+        24/7 towing and transport across every Perth suburb. Accident towing, breakdowns, 4WD recovery and container moves, with
+        insurance billed direct.
+      </p>
+      <CallButton position="footer" size="md" class="mt-6" />
+      {SITE.email && <p class="mt-4"><a href={`mailto:${SITE.email}`} class={link}>{SITE.email}</a></p>}
+    </div>
+    <nav aria-label="Services">
+      <p class={heading}>Services</p>
+      <ul>
+        {services.map((s) => <li><a href={`/services/${s.id}`} class={link}>{s.data.navLabel}</a></li>)}
+        <li><a href="/insurance-towing" class={link}>Insurance towing</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Service areas">
+      <p class={heading}>Areas</p>
+      <ul>
+        {regions.map((r) => <li><a href={`/areas/${r.id}`} class={link}>{r.data.name}</a></li>)}
+        <li><a href="/areas" class={link}>All Perth suburbs</a></li>
+        <li><a href="/roads" class={link}>Dangerous roads</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <p class={heading}>Company</p>
+      <ul>
+        <li><a href="/about" class={link}>About us</a></li>
+        <li><a href="/contact" class={link}>Contact and quotes</a></li>
+        <li><a href="/faq" class={link}>FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-steel">
+    <div class="wrap flex flex-col gap-2 py-6 text-sm text-mute sm:flex-row sm:justify-between">
+      <p>&copy; {year} {SITE.name}. Towing across Perth, WA.{SITE.abn && ` ABN ${SITE.abn}.`}</p>
+      <p>Open 24 hours, 7 days. <a href={SITE.phoneHref} data-position="footer-legal" class="font-semibold text-white">{SITE.phoneDisplay}</a></p>
+    </div>
+  </div>
+</footer>

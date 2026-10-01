@@ -1,0 +1,304 @@
+---
+import { getCollection } from 'astro:content';
+import { Picture, getImage } from 'astro:assets';
+import ShieldCheck from '@lucide/astro/icons/shield-check';
+import Phone from '@lucide/astro/icons/phone';
+import Truck from '@lucide/astro/icons/truck';
+import FileText from '@lucide/astro/icons/file-text';
+import TriangleAlert from '@lucide/astro/icons/triangle-alert';
+import ChevronRight from '@lucide/astro/icons/chevron-right';
+import Clock from '@lucide/astro/icons/clock';
+import MapPin from '@lucide/astro/icons/map-pin';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import CallButton from '~/components/CallButton.astro';
+import Button from '~/components/Button.astro';
+import TrustChip from '~/components/TrustChip.astro';
+import ServiceCard from '~/components/ServiceCard.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTASection from '~/components/CTASection.astro';
+import PerthMap from '~/components/PerthMap.astro';
+import heroImg from '~/assets/images/hero-placeholder.jpg';
+import { SITE, SELLING_POINTS } from '~/config/site';
+import { HOME_FAQS } from '~/data/faqs';
+import { faqPage } from '~/lib/schema';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
+const roads = (await getCollection('roads')).sort((a, b) => a.data.order - b.data.order);
+const suburbs = await getCollection('suburbs');
+const featured = suburbs.filter((s) => s.data.featured).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const countByRegion = (id: string) => suburbs.filter((s) => s.data.region.id === id).length;
+
+const HERO_WIDTHS = [640, 960, 1280, 1920, 2400];
+const HERO_SIZES = '100vw';
+const preload = await getImage({ src: heroImg, format: 'avif', widths: HERO_WIDTHS, sizes: HERO_SIZES });
+
+const title = 'Towing Perth 24/7 | Tow Truck Perth | Quik Tow & Transport';
+const description =
+  '24/7 tow truck across every Perth suburb. Accident and breakdown towing, 4WD recovery and container transport. We bill your insurer directly. Call 0419 857 070.';
+
+const steps = [
+  { icon: Phone, title: 'Call us', text: `Ring ${SITE.phoneDisplay}. Tell us where you are, what you drive and where it needs to go. You'll get a clear quote upfront.` },
+  { icon: Truck, title: 'We dispatch the nearest truck', text: 'With 10+ trucks working across Perth, we send the closest one and give you a realistic ETA.' },
+  { icon: FileText, title: 'We tow and bill your insurer', text: 'We take your car where you want it. For insurance jobs we bill your insurer directly, so you usually pay nothing on the day.' },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path="/"
+  og="home"
+  allSuburbsInSchema
+  schema={[faqPage(HOME_FAQS)]}
+  preloadImage={{ srcset: preload.srcSet.attribute, sizes: HERO_SIZES, type: 'image/avif' }}
+>
+  <!-- Hero -->
+  <section class="relative isolate overflow-hidden">
+    <Picture
+      src={heroImg}
+      formats={['avif', 'webp']}
+      widths={HERO_WIDTHS}
+      sizes={HERO_SIZES}
+      alt=""
+      loading="eager"
+      fetchpriority="high"
+      class="absolute inset-0 -z-20 h-full w-full object-cover"
+      pictureAttributes={{ class: 'absolute inset-0 -z-20' }}
+    />
+    <!-- TODO: replace placeholder with a real photo of a Quik Tow truck; give it descriptive alt text. -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/40" aria-hidden="true"></div>
+    <div class="wrap py-14 sm:py-20 lg:py-28">
+      <p class="eyebrow">Tow truck Perth &middot; Open 24/7</p>
+      <h1 class="mt-4 max-w-3xl text-[3.25rem] text-white sm:text-7xl lg:text-8xl">
+        24/7 Towing <span class="text-hivis">Across Perth</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg text-white/90 sm:text-xl">
+        Accident towing, breakdowns, 4WD recovery, shipping containers and vehicle transport, in every Perth suburb, day and night.
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <CallButton position="home-hero" size="xl" label="Call now" />
+        <Button href="/contact#quote" class="sm:min-h-16 sm:text-2xl">Get a quote</Button>
+      </div>
+      <ul class="mt-10 flex flex-wrap gap-2.5" aria-label="Why choose Quik Tow">
+        {SELLING_POINTS.map((p) => <TrustChip label={p.label} />)}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section aria-label="At a glance" class="border-y border-steel bg-coal">
+    <div class="hazard h-1.5" aria-hidden="true"></div>
+    <ul class="wrap grid grid-cols-2 gap-px py-2 lg:grid-cols-4">
+      {
+        [
+          { icon: Clock, big: '24/7', small: 'Day, night, weekends and public holidays' },
+          { icon: Truck, big: '10+ trucks', small: 'On the road across Perth' },
+          { icon: ShieldCheck, big: 'Insurer billed', small: 'We deal with your insurer directly' },
+          { icon: MapPin, big: 'All of Perth', small: 'Every suburb, the CBD and the Hills' },
+        ].map((s) => (
+          <li class="flex items-start gap-3 px-2 py-5 sm:px-4">
+            <s.icon class="mt-1 size-7 shrink-0 text-hivis" aria-hidden="true" />
+            <div>
+              <p class="font-display text-2xl font-extrabold uppercase leading-none text-white sm:text-3xl">{s.big}</p>
+              <p class="mt-1 text-sm text-mute">{s.small}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16 sm:py-24" aria-labelledby="services-heading">
+    <div class="wrap">
+      <p class="eyebrow">What we do</p>
+      <h2 id="services-heading" class="mt-3 text-4xl sm:text-6xl">Towing and transport services</h2>
+      <p class="mt-4 max-w-2xl text-lg text-mute">
+        One call covers it, whether you've crashed, broken down, bogged a 4WD or need a container moved.
+      </p>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {services.map((s) => <ServiceCard href={`/services/${s.id}`} title={s.data.name} blurb={s.data.cardBlurb} icon={s.data.icon} />)}
+        <ServiceCard
+          href="/insurance-towing"
+          title="Insurance Towing"
+          blurb="Crashed? We bill your insurer directly and deliver your car to the repairer, so you can focus on getting home."
+          icon="insurance"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="on-light bg-paper py-16 text-ink sm:py-24" aria-labelledby="how-heading">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-heading" class="mt-3 text-4xl sm:text-6xl">Three steps to off the road</h2>
+      <ol class="mt-10 grid gap-6 lg:grid-cols-3">
+        {
+          steps.map((s, i) => (
+            <li class="reveal relative rounded-lg border-2 border-ink bg-white p-6 sm:p-8">
+              <span class="absolute -top-5 left-6 grid size-10 place-items-center rounded-full bg-hivis font-display text-2xl font-extrabold text-ink ring-4 ring-paper">
+                {i + 1}
+              </span>
+              <s.icon class="mt-2 size-9 text-ink" aria-hidden="true" />
+              <h3 class="mt-4 text-3xl">{s.title}</h3>
+              <p class="mt-3 text-slate">{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+      <div class="mt-10">
+        <CallButton position="how-it-works" variant="dark" size="lg" label="Step 1: call" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Insurance explainer -->
+  <section class="py-16 sm:py-24" aria-labelledby="insurance-heading">
+    <div class="wrap grid items-center gap-10 lg:grid-cols-2">
+      <div>
+        <p class="eyebrow">Insurance jobs</p>
+        <h2 id="insurance-heading" class="mt-3 text-4xl sm:text-6xl">We bill your insurer directly</h2>
+        <p class="mt-5 text-lg text-mute">
+          After a crash, the last thing you need is a tow bill and a reimbursement claim. When your car is covered, we deal with your insurance company
+          for you. Give us your claim number (or we'll help you get one), and we'll tow the car to your repairer or a safe yard and send the invoice to
+          your insurer.
+        </p>
+        <ul class="mt-6 space-y-3">
+          {
+            [
+              'Usually nothing to pay on the day for covered claims',
+              'Your choice of destination, or your insurer’s approved repairer',
+              'Clear paperwork for your claim',
+            ].map((t) => (
+              <li class="flex gap-3 text-white">
+                <ShieldCheck class="mt-0.5 size-6 shrink-0 text-hivis" aria-hidden="true" />
+                {t}
+              </li>
+            ))
+          }
+        </ul>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <Button href="/insurance-towing" variant="primary">How insurance towing works</Button>
+        </div>
+      </div>
+      <div class="rounded-lg border border-steel bg-coal p-6 sm:p-8">
+        <p class="font-display text-xl font-bold uppercase tracking-wide text-hivis">Had an accident? Do this first</p>
+        <ol class="mt-4 space-y-4">
+          {
+            [
+              'Make sure everyone is safe. Call 000 if anyone is hurt or the road is blocked.',
+              'Hazard lights on. Get behind a barrier or well off the road.',
+              'Swap names, phone numbers, licence and rego details with the other driver.',
+              'Take photos of the cars, the damage and the scene.',
+              `Call us on ${SITE.phoneDisplay}. We'll tow it and handle your insurer.`,
+            ].map((t, i) => (
+              <li class="flex gap-4">
+                <span class="grid size-8 shrink-0 place-items-center rounded bg-steel font-display text-lg font-extrabold text-hivis">{i + 1}</span>
+                <span class="pt-1 text-mute">{t}</span>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage -->
+  <section class="border-y border-steel bg-coal py-16 sm:py-24" aria-labelledby="coverage-heading">
+    <div class="wrap grid items-center gap-10 lg:grid-cols-[1fr_1.1fr]">
+      <div class="order-2 mx-auto w-full max-w-md lg:order-1">
+        <PerthMap />
+      </div>
+      <div class="order-1 lg:order-2">
+        <p class="eyebrow">Where we tow</p>
+        <h2 id="coverage-heading" class="mt-3 text-4xl sm:text-6xl">Every suburb across Perth</h2>
+        <p class="mt-5 text-lg text-mute">
+          From Two Rocks to Secret Harbour and from Cottesloe to Mundaring, our trucks cover the whole metro area, 24/7. Pick your region to find your
+          suburb.
+        </p>
+        <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+          {
+            regions.map((r) => (
+              <li>
+                <a
+                  href={`/areas/${r.id}`}
+                  class="group flex min-h-14 items-center justify-between rounded-md border border-steel bg-ink px-4 py-3 hover:border-hivis"
+                >
+                  <span>
+                    <span class="block font-display text-xl font-bold uppercase text-white group-hover:text-hivis">{r.data.name}</span>
+                    <span class="text-sm text-mute">{countByRegion(r.id)} suburbs</span>
+                  </span>
+                  <ChevronRight class="size-5 text-hivis" aria-hidden="true" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        {
+          featured.length > 0 && (
+            <p class="mt-6 text-mute">
+              Popular:{' '}
+              {featured.map((s, i) => (
+                <>
+                  <a href={`/areas/${s.id}`} class="text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">
+                    {s.data.name}
+                  </a>
+                  {i < featured.length - 1 ? ', ' : '. '}
+                </>
+              ))}
+              <a href="/areas" class="font-semibold text-hivis underline underline-offset-4">All suburbs A to Z</a>
+            </p>
+          )
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Dangerous roads teaser -->
+  <section class="py-16 sm:py-24" aria-labelledby="roads-heading">
+    <div class="wrap">
+      <div class="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+        <div>
+          <p class="eyebrow">Road safety</p>
+          <h2 id="roads-heading" class="mt-3 text-4xl sm:text-6xl">Perth's most dangerous roads</h2>
+          <p class="mt-4 max-w-2xl text-lg text-mute">
+            The roads and intersections where we see the most crashes, why they're risky, and what to do if it happens to you.
+          </p>
+        </div>
+        <Button href="/roads" variant="ghost" class="shrink-0">See all roads</Button>
+      </div>
+      <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          roads.slice(0, 6).map((r) => (
+            <li>
+              <a href={`/roads/${r.id}`} class="group reveal flex h-full gap-4 rounded-lg border border-steel bg-coal p-5 hover:border-hivis">
+                <TriangleAlert class="mt-1 size-7 shrink-0 text-hivis" aria-hidden="true" />
+                <span>
+                  <span class="block font-display text-2xl font-bold uppercase text-white group-hover:text-hivis">{r.data.name}</span>
+                  <span class="mt-1 block text-sm text-mute">{r.data.lead}</span>
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="border-t border-steel bg-coal py-16 sm:py-24" aria-labelledby="faq-heading">
+    <div class="wrap grid gap-10 lg:grid-cols-[1fr_2fr]">
+      <div>
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-heading" class="mt-3 text-4xl sm:text-6xl">Towing in Perth: your questions</h2>
+        <p class="mt-4 text-mute">Can't see your question? Call us any time and ask.</p>
+        <Button href="/faq" variant="ghost" class="mt-4">More answers</Button>
+      </div>
+      <FAQ faqs={HOME_FAQS} openFirst />
+    </div>
+  </section>
+
+  <CTASection position="home-cta-band" />
+</BaseLayout>

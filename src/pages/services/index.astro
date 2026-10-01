@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import ServiceCard from '~/components/ServiceCard.astro';
+import CTASection from '~/components/CTASection.astro';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const path = '/services';
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: path },
+];
+---
+
+<BaseLayout
+  title="Towing & Transport Services Perth | Quik Tow & Transport"
+  description="Accident towing, breakdown recovery, 4WD recovery, shipping container transport and vehicle transport across Perth, 24/7. Call 0419 857 070."
+  path={path}
+  og="service"
+  crumbs={crumbs}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="24/7 across Perth"
+    h1="Towing and Transport Services in Perth"
+    lead="Whatever's stuck, crashed or needs moving, one call to us sorts it. Every service runs 24/7 across every Perth suburb."
+  />
+  <section class="py-14 sm:py-20">
+    <div class="wrap grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {services.map((s) => <ServiceCard href={`/services/${s.id}`} title={s.data.name} blurb={s.data.cardBlurb} icon={s.data.icon} headingLevel="h2" />)}
+      <ServiceCard
+        href="/insurance-towing"
+        title="Insurance Towing"
+        blurb="Crashed? We bill your insurer directly and deliver your car to the repairer, so you can focus on getting home."
+        icon="insurance"
+        headingLevel="h2"
+      />
+    </div>
+  </section>
+  <CTASection position="services-cta-band" />
+</BaseLayout>

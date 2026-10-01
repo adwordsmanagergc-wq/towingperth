@@ -1,0 +1,41 @@
+---
+import Phone from '@lucide/astro/icons/phone';
+import { SITE } from '~/config/site';
+
+interface Props {
+  /** Where on the page this sits; sent with the click_to_call event. */
+  position: string;
+  size?: 'md' | 'lg' | 'xl';
+  variant?: 'solid' | 'dark' | 'outline';
+  label?: string;
+  showNumber?: boolean;
+  class?: string;
+}
+const { position, size = 'lg', variant = 'solid', label = 'Call', showNumber = true, class: cls = '' } = Astro.props;
+
+const sizes = {
+  md: 'min-h-12 px-5 text-lg gap-2',
+  lg: 'min-h-14 px-6 text-xl gap-2.5',
+  xl: 'min-h-16 px-7 text-2xl sm:text-3xl gap-3',
+};
+const variants = {
+  solid: 'bg-hivis text-ink hover:bg-white',
+  dark: 'bg-ink text-hivis hover:bg-coal',
+  outline: 'border-2 border-hivis text-hivis hover:bg-hivis hover:text-ink',
+};
+---
+
+<a
+  href={SITE.phoneHref}
+  data-position={position}
+  class:list={[
+    'inline-flex items-center justify-center rounded-md font-display font-extrabold uppercase tracking-wide transition-colors',
+    sizes[size],
+    variants[variant],
+    cls,
+  ]}
+  aria-label={`Call ${SITE.name} on ${SITE.phoneDisplay}`}
+>
+  <Phone class="size-[1.1em] shrink-0" stroke-width={2.5} aria-hidden="true" />
+  <span>{label}{label && showNumber && " "}{showNumber && <span class="whitespace-nowrap">{SITE.phoneDisplay}</span>}</span>
+</a>

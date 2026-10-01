@@ -1,0 +1,1717 @@
+[
+  {
+    "slug": "alexander-heights",
+    "name": "Alexander Heights",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-alexander-heights"
+    ]
+  },
+  {
+    "slug": "alfred-cove",
+    "name": "Alfred Cove",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+    ]
+  },
+  {
+    "slug": "alkimos",
+    "name": "Alkimos",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-alkimos"
+    ]
+  },
+  {
+    "slug": "applecross",
+    "name": "Applecross",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-applecross"
+    ]
+  },
+  {
+    "slug": "ardross",
+    "name": "Ardross",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-ardross"
+    ]
+  },
+  {
+    "slug": "armadale",
+    "name": "Armadale",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-armadale"
+    ]
+  },
+  {
+    "slug": "ascot",
+    "name": "Ascot",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-ascot"
+    ]
+  },
+  {
+    "slug": "ashby",
+    "name": "Ashby",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-ashby"
+    ]
+  },
+  {
+    "slug": "ashendon",
+    "name": "Ashendon",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-ashendon"
+    ]
+  },
+  {
+    "slug": "atwell",
+    "name": "Atwell",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-atwell"
+    ]
+  },
+  {
+    "slug": "aubin-grove",
+    "name": "Aubin Grove",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-aubin-grove"
+    ]
+  },
+  {
+    "slug": "balcatta",
+    "name": "Balcatta",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-balcatta"
+    ]
+  },
+  {
+    "slug": "baldivis",
+    "region": "southern-suburbs",
+    "name": "Baldivis",
+    "legacyPaths": []
+  },
+  {
+    "slug": "balga",
+    "region": "northern-suburbs",
+    "name": "Balga",
+    "legacyPaths": []
+  },
+  {
+    "slug": "ballajura",
+    "name": "Ballajura",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-ballajura"
+    ]
+  },
+  {
+    "slug": "banksia-grove",
+    "name": "Banksia Grove",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-banksia-grove"
+    ]
+  },
+  {
+    "slug": "bassendean",
+    "name": "Bassendean",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-bassendean"
+    ]
+  },
+  {
+    "slug": "bateman",
+    "name": "Bateman",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-bateman"
+    ]
+  },
+  {
+    "slug": "bayswater",
+    "name": "Bayswater",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-bayswater"
+    ]
+  },
+  {
+    "slug": "beaconsfield",
+    "name": "Beaconsfield",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-beaconsfield"
+    ]
+  },
+  {
+    "slug": "beckenham",
+    "name": "Beckenham",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-beckenham"
+    ]
+  },
+  {
+    "slug": "bedfordale",
+    "name": "Bedfordale",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-bedfordale"
+    ]
+  },
+  {
+    "slug": "beechboro",
+    "name": "Beechboro",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-beechboro"
+    ]
+  },
+  {
+    "slug": "beeliar",
+    "name": "Beeliar",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-beeliar"
+    ]
+  },
+  {
+    "slug": "bellevue",
+    "name": "Bellevue",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-bellevue"
+    ]
+  },
+  {
+    "slug": "belmont",
+    "name": "Belmont",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-belmont",
+      "/home/towing-south-eastern-suburbs-perth/towing-belmont"
+    ]
+  },
+  {
+    "slug": "bentley",
+    "name": "Bentley",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-bentley"
+    ]
+  },
+  {
+    "slug": "bibra-lake",
+    "name": "Bibra Lake",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-bibra-lake"
+    ]
+  },
+  {
+    "slug": "bickley",
+    "name": "Bickley",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-bickley"
+    ]
+  },
+  {
+    "slug": "bicton",
+    "name": "Bicton",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-bicton"
+    ]
+  },
+  {
+    "slug": "booragoon",
+    "name": "Booragoon",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-booragoon"
+    ]
+  },
+  {
+    "slug": "boya",
+    "name": "Boya",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-boya"
+    ]
+  },
+  {
+    "slug": "brentwood",
+    "name": "Brentwood",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-brentwood"
+    ]
+  },
+  {
+    "slug": "brookdale",
+    "name": "Brookdale",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-brookdale"
+    ]
+  },
+  {
+    "slug": "bull-creek",
+    "name": "Bull Creek",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-bull-creek"
+    ]
+  },
+  {
+    "slug": "butler",
+    "name": "Butler",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-butler"
+    ]
+  },
+  {
+    "slug": "byford",
+    "region": "south-eastern-suburbs",
+    "name": "Byford",
+    "legacyPaths": []
+  },
+  {
+    "slug": "camillo",
+    "name": "Camillo",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-camillo"
+    ]
+  },
+  {
+    "slug": "canning-vale",
+    "name": "Canning Vale",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-canning-vale"
+    ]
+  },
+  {
+    "slug": "cannington",
+    "name": "Cannington",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-cannington"
+    ]
+  },
+  {
+    "slug": "cardup",
+    "name": "Cardup",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-cardup"
+    ]
+  },
+  {
+    "slug": "carine",
+    "name": "Carine",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-carine"
+    ]
+  },
+  {
+    "slug": "champion-lakes",
+    "name": "Champion Lakes",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-champion-lakes"
+    ]
+  },
+  {
+    "slug": "chidlow",
+    "name": "Chidlow",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-chidlow"
+    ]
+  },
+  {
+    "slug": "city-beach",
+    "name": "City Beach",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-city-beach"
+    ]
+  },
+  {
+    "slug": "claremont",
+    "name": "Claremont",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-claremont"
+    ]
+  },
+  {
+    "slug": "clarkson",
+    "name": "Clarkson",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-clarkson"
+    ]
+  },
+  {
+    "slug": "cloverdale",
+    "name": "Cloverdale",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-cloverdale"
+    ]
+  },
+  {
+    "slug": "cockburn-central",
+    "name": "Cockburn Central",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-cockburn-central"
+    ]
+  },
+  {
+    "slug": "coogee",
+    "name": "Coogee",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-coogee"
+    ]
+  },
+  {
+    "slug": "coolbellup",
+    "name": "Coolbellup",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-coolbellup"
+    ]
+  },
+  {
+    "slug": "cottesloe",
+    "name": "Cottesloe",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-cottesloe"
+    ]
+  },
+  {
+    "slug": "craigie",
+    "name": "Craigie",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-craigie"
+    ]
+  },
+  {
+    "slug": "crawley",
+    "name": "Crawley",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-crawley"
+    ]
+  },
+  {
+    "slug": "currambine",
+    "name": "Currambine",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-currambine"
+    ]
+  },
+  {
+    "slug": "dalkeith",
+    "name": "Dalkeith",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-dalkeith"
+    ]
+  },
+  {
+    "slug": "darch",
+    "name": "Darch",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-darch"
+    ]
+  },
+  {
+    "slug": "darlington",
+    "name": "Darlington",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-darlington"
+    ]
+  },
+  {
+    "slug": "dianella",
+    "name": "Dianella",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-dianella"
+    ]
+  },
+  {
+    "slug": "doubleview",
+    "region": "western-suburbs",
+    "name": "Doubleview",
+    "legacyPaths": []
+  },
+  {
+    "slug": "duncraig",
+    "name": "Duncraig",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-duncraig"
+    ]
+  },
+  {
+    "slug": "east-cannington",
+    "name": "East Cannington",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-east-cannington"
+    ]
+  },
+  {
+    "slug": "east-fremantle",
+    "region": "southern-suburbs",
+    "name": "East Fremantle",
+    "legacyPaths": []
+  },
+  {
+    "slug": "east-perth",
+    "region": "eastern-suburbs",
+    "name": "East Perth",
+    "legacyPaths": []
+  },
+  {
+    "slug": "eden-hill",
+    "name": "Eden Hill",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-eden-hill"
+    ]
+  },
+  {
+    "slug": "edgewater",
+    "name": "Edgewater",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-edgewater"
+    ]
+  },
+  {
+    "slug": "eglinton",
+    "name": "Eglinton",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-eglinton"
+    ]
+  },
+  {
+    "slug": "ellenbrook",
+    "region": "eastern-suburbs",
+    "name": "Ellenbrook",
+    "legacyPaths": []
+  },
+  {
+    "slug": "ferndale",
+    "name": "Ferndale",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-ferndale"
+    ]
+  },
+  {
+    "slug": "floreat",
+    "name": "Floreat",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-floreat"
+    ]
+  },
+  {
+    "slug": "forrestfield",
+    "name": "Forrestfield",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-forrestfield",
+      "/home/towing-south-eastern-suburbs-perth/towing-forrestfield"
+    ]
+  },
+  {
+    "slug": "fremantle",
+    "region": "southern-suburbs",
+    "name": "Fremantle",
+    "legacyPaths": []
+  },
+  {
+    "slug": "girrawheen",
+    "name": "Girrawheen",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-girrawheen"
+    ]
+  },
+  {
+    "slug": "glen-forrest",
+    "name": "Glen Forrest",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-glen-forrest"
+    ]
+  },
+  {
+    "slug": "glendalough",
+    "name": "Glendalough",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-glendalough"
+    ]
+  },
+  {
+    "slug": "gooseberry-hill",
+    "name": "Gooseberry Hill",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-gooseberry-hill"
+    ]
+  },
+  {
+    "slug": "gosnells",
+    "name": "Gosnells",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-gosnells"
+    ]
+  },
+  {
+    "slug": "greenmount",
+    "name": "Greenmount",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-greenmount"
+    ]
+  },
+  {
+    "slug": "greenwood",
+    "name": "Greenwood",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-greenwood"
+    ]
+  },
+  {
+    "slug": "guildford",
+    "name": "Guildford",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-guildford"
+    ]
+  },
+  {
+    "slug": "hamilton-hill",
+    "name": "Hamilton Hill",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-hamilton-hil"
+    ]
+  },
+  {
+    "slug": "hammond-park",
+    "name": "Hammond Park",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-hammond-park"
+    ]
+  },
+  {
+    "slug": "heathridge",
+    "name": "Heathridge",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-heathridge"
+    ]
+  },
+  {
+    "slug": "helena-valley",
+    "name": "Helena Valley",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-helena-valley"
+    ]
+  },
+  {
+    "slug": "henderson",
+    "name": "Henderson",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-henderson"
+    ]
+  },
+  {
+    "slug": "herne-hill",
+    "name": "Herne Hill",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-herne-hill"
+    ]
+  },
+  {
+    "slug": "high-wycombe",
+    "name": "High Wycombe",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-high-wycombe"
+    ]
+  },
+  {
+    "slug": "hillarys",
+    "name": "Hillarys",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-hillarys"
+    ]
+  },
+  {
+    "slug": "hilton",
+    "name": "Hilton",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-hilton"
+    ]
+  },
+  {
+    "slug": "hocking",
+    "name": "Hocking",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-hocking"
+    ]
+  },
+  {
+    "slug": "huntingdale",
+    "name": "Huntingdale",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-huntingdale"
+    ]
+  },
+  {
+    "slug": "iluka",
+    "name": "Iluka",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-iluka"
+    ]
+  },
+  {
+    "slug": "inglewood",
+    "region": "eastern-suburbs",
+    "name": "Inglewood",
+    "legacyPaths": []
+  },
+  {
+    "slug": "innaloo",
+    "name": "Innaloo",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-innaloo"
+    ]
+  },
+  {
+    "slug": "jandakot",
+    "name": "Jandakot",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-jandakot"
+    ]
+  },
+  {
+    "slug": "jane-brook",
+    "name": "Jane Brook",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-jane-brook"
+    ]
+  },
+  {
+    "slug": "jindalee",
+    "name": "Jindalee",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-jindalee"
+    ]
+  },
+  {
+    "slug": "jolimont",
+    "name": "Jolimont",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-jolimont"
+    ]
+  },
+  {
+    "slug": "joondalup",
+    "name": "Joondalup",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-joondalup",
+      "/home/towing-northern-suburbs-perth/towing-joondalup_1"
+    ]
+  },
+  {
+    "slug": "kalamunda",
+    "name": "Kalamunda",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-kalamunda"
+    ]
+  },
+  {
+    "slug": "kallaroo",
+    "name": "Kallaroo",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-kallaroo"
+    ]
+  },
+  {
+    "slug": "karawara",
+    "name": "Karawara",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-karawara"
+    ]
+  },
+  {
+    "slug": "kardinya",
+    "name": "Kardinya",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-kardinya"
+    ]
+  },
+  {
+    "slug": "karrakatta",
+    "name": "Karrakatta",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-karrakatta"
+    ]
+  },
+  {
+    "slug": "karrinyup",
+    "name": "Karrinyup",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-karrinyup"
+    ]
+  },
+  {
+    "slug": "kelmscott",
+    "region": "south-eastern-suburbs",
+    "name": "Kelmscott",
+    "legacyPaths": []
+  },
+  {
+    "slug": "kenwick",
+    "name": "Kenwick",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-kenwick"
+    ]
+  },
+  {
+    "slug": "kewdale",
+    "name": "Kewdale",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-kewdale"
+    ]
+  },
+  {
+    "slug": "kiara",
+    "name": "Kiara",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-kiara"
+    ]
+  },
+  {
+    "slug": "kingsley",
+    "name": "Kingsley",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-kingsley"
+    ]
+  },
+  {
+    "slug": "kinross",
+    "name": "Kinross",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-kinross"
+    ]
+  },
+  {
+    "slug": "koongamia",
+    "name": "Koongamia",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-koongamia"
+    ]
+  },
+  {
+    "slug": "kwinana",
+    "name": "Kwinana",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-kwinana"
+    ]
+  },
+  {
+    "slug": "landsdale",
+    "name": "Landsdale",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-landsdale"
+    ]
+  },
+  {
+    "slug": "langford",
+    "name": "Langford",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-langford"
+    ]
+  },
+  {
+    "slug": "lathlain",
+    "name": "Lathlain",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-lathlain"
+    ]
+  },
+  {
+    "slug": "leederville",
+    "region": "western-suburbs",
+    "name": "Leederville",
+    "legacyPaths": []
+  },
+  {
+    "slug": "leeming",
+    "name": "Leeming",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-leeming"
+    ]
+  },
+  {
+    "slug": "lesmurdie",
+    "name": "Lesmurdie",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-lesmurdie"
+    ]
+  },
+  {
+    "slug": "lockridge",
+    "name": "Lockridge",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-lockridge"
+    ]
+  },
+  {
+    "slug": "lynwood",
+    "name": "Lynwood",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-lynwood"
+    ]
+  },
+  {
+    "slug": "maddington",
+    "name": "Maddington",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-maddington"
+    ]
+  },
+  {
+    "slug": "madeley",
+    "name": "Madeley",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-madeley"
+    ]
+  },
+  {
+    "slug": "mahogany-creek",
+    "name": "Mahogany Creek",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-mahogany-creek"
+    ]
+  },
+  {
+    "slug": "maida-vale",
+    "name": "Maida Vale",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-maida-vale"
+    ]
+  },
+  {
+    "slug": "malaga",
+    "region": "northern-suburbs",
+    "name": "Malaga",
+    "legacyPaths": []
+  },
+  {
+    "slug": "marangaroo",
+    "name": "Marangaroo",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-marangaroo"
+    ]
+  },
+  {
+    "slug": "marmion",
+    "name": "Marmion",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-marmion"
+    ]
+  },
+  {
+    "slug": "martin",
+    "name": "Martin",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-martin"
+    ]
+  },
+  {
+    "slug": "maylands",
+    "region": "eastern-suburbs",
+    "name": "Maylands",
+    "legacyPaths": []
+  },
+  {
+    "slug": "melville",
+    "name": "Melville",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-melville"
+    ]
+  },
+  {
+    "slug": "midland",
+    "name": "Midland",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-midland"
+    ]
+  },
+  {
+    "slug": "midvale",
+    "name": "Midvale",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-midvale"
+    ]
+  },
+  {
+    "slug": "mindarie",
+    "name": "Mindarie",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-mindarie"
+    ]
+  },
+  {
+    "slug": "mirrabooka",
+    "region": "northern-suburbs",
+    "name": "Mirrabooka",
+    "legacyPaths": []
+  },
+  {
+    "slug": "morley",
+    "region": "northern-suburbs",
+    "name": "Morley",
+    "legacyPaths": []
+  },
+  {
+    "slug": "mosman-park",
+    "name": "Mosman Park",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-mosman-park"
+    ]
+  },
+  {
+    "slug": "mount-claremont",
+    "name": "Mount Claremont",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-mount-claremont"
+    ]
+  },
+  {
+    "slug": "mount-helena",
+    "name": "Mount Helena",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-mount-helena"
+    ]
+  },
+  {
+    "slug": "mount-lawley",
+    "region": "eastern-suburbs",
+    "name": "Mount Lawley",
+    "legacyPaths": []
+  },
+  {
+    "slug": "mullaloo",
+    "name": "Mullaloo",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-mullaloo"
+    ]
+  },
+  {
+    "slug": "mundaring",
+    "name": "Mundaring",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-mundaring"
+    ]
+  },
+  {
+    "slug": "munster",
+    "name": "Munster",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-munster"
+    ]
+  },
+  {
+    "slug": "murdoch",
+    "name": "Murdoch",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-murdoch"
+    ]
+  },
+  {
+    "slug": "myaree",
+    "name": "Myaree",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-myaree"
+    ]
+  },
+  {
+    "slug": "naval-base",
+    "name": "Naval Base",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-naval-base"
+    ]
+  },
+  {
+    "slug": "nedlands",
+    "name": "Nedlands",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-nedlands"
+    ]
+  },
+  {
+    "slug": "nollamara",
+    "region": "northern-suburbs",
+    "name": "Nollamara",
+    "legacyPaths": []
+  },
+  {
+    "slug": "north-coogee",
+    "name": "North Coogee",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-north-coogee"
+    ]
+  },
+  {
+    "slug": "north-fremantle",
+    "name": "North Fremantle",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-north-fremantle"
+    ]
+  },
+  {
+    "slug": "north-lake",
+    "name": "North Lake",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-north-lake"
+    ]
+  },
+  {
+    "slug": "northbridge",
+    "region": "western-suburbs",
+    "name": "Northbridge",
+    "legacyPaths": []
+  },
+  {
+    "slug": "ocean-reef",
+    "name": "Ocean Reef",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-ocean-reef"
+    ]
+  },
+  {
+    "slug": "oconnor",
+    "region": "southern-suburbs",
+    "name": "O'Connor",
+    "legacyPaths": []
+  },
+  {
+    "slug": "orange-grove",
+    "name": "Orange Grove",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-orange-grove"
+    ]
+  },
+  {
+    "slug": "osborne-park",
+    "name": "Osborne Park",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-osborne-park"
+    ]
+  },
+  {
+    "slug": "padbury",
+    "name": "Padbury",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-padbury"
+    ]
+  },
+  {
+    "slug": "palmyra",
+    "name": "Palmyra",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-palmyra"
+    ]
+  },
+  {
+    "slug": "parkerville",
+    "name": "Parkerville",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-parkerville"
+    ]
+  },
+  {
+    "slug": "parkwood",
+    "name": "Parkwood",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-parkwood"
+    ]
+  },
+  {
+    "slug": "pearsall",
+    "name": "Pearsall",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-pearsall"
+    ]
+  },
+  {
+    "slug": "peppermint-grove",
+    "name": "Peppermint Grove",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-peppermint-grove"
+    ]
+  },
+  {
+    "slug": "perth-cbd",
+    "region": "western-suburbs",
+    "name": "Perth CBD",
+    "legacyPaths": []
+  },
+  {
+    "slug": "piara-waters",
+    "name": "Piara Waters",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-piara-waters"
+    ]
+  },
+  {
+    "slug": "port-kennedy",
+    "region": "southern-suburbs",
+    "name": "Port Kennedy",
+    "legacyPaths": []
+  },
+  {
+    "slug": "queens-park",
+    "name": "Queens Park",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-queens-park"
+    ]
+  },
+  {
+    "slug": "quinns-rocks",
+    "name": "Quinns Rocks",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-quinns-rocks"
+    ]
+  },
+  {
+    "slug": "redcliffe",
+    "name": "Redcliffe",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-redcliffe"
+    ]
+  },
+  {
+    "slug": "ridgewood",
+    "name": "Ridgewood",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-ridgewood"
+    ]
+  },
+  {
+    "slug": "riverton",
+    "name": "Riverton",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-riverton"
+    ]
+  },
+  {
+    "slug": "rivervale",
+    "name": "Rivervale",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-rivervale"
+    ]
+  },
+  {
+    "slug": "rockingham",
+    "region": "southern-suburbs",
+    "name": "Rockingham",
+    "legacyPaths": []
+  },
+  {
+    "slug": "rossmoyne",
+    "name": "Rossmoyne",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-rossmoyne"
+    ]
+  },
+  {
+    "slug": "safety-bay",
+    "region": "southern-suburbs",
+    "name": "Safety Bay",
+    "legacyPaths": []
+  },
+  {
+    "slug": "salter-point",
+    "name": "Salter Point",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-salter-point"
+    ]
+  },
+  {
+    "slug": "samson",
+    "name": "Samson",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-samson"
+    ]
+  },
+  {
+    "slug": "scarborough",
+    "name": "Scarborough",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-scarborough"
+    ]
+  },
+  {
+    "slug": "secret-harbour",
+    "region": "southern-suburbs",
+    "name": "Secret Harbour",
+    "legacyPaths": []
+  },
+  {
+    "slug": "shelley",
+    "name": "Shelley",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-shelley"
+    ]
+  },
+  {
+    "slug": "shenton-park",
+    "name": "Shenton Park",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-shenton-park"
+    ]
+  },
+  {
+    "slug": "sorrento",
+    "name": "Sorrento",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-sorrento"
+    ]
+  },
+  {
+    "slug": "south-fremantle",
+    "name": "South Fremantle",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-south-fremantle"
+    ]
+  },
+  {
+    "slug": "south-guildford",
+    "name": "South Guildford",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-south-guildford"
+    ]
+  },
+  {
+    "slug": "south-lake",
+    "name": "South Lake",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-south-lake"
+    ]
+  },
+  {
+    "slug": "southern-river",
+    "name": "Southern River",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-southern-river"
+    ]
+  },
+  {
+    "slug": "spearwood",
+    "name": "Spearwood",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-spearwood"
+    ]
+  },
+  {
+    "slug": "st-james",
+    "name": "St James",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-st-james"
+    ]
+  },
+  {
+    "slug": "stirling",
+    "region": "northern-suburbs",
+    "name": "Stirling",
+    "legacyPaths": []
+  },
+  {
+    "slug": "stratton",
+    "name": "Stratton",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-stratton"
+    ]
+  },
+  {
+    "slug": "subiaco",
+    "name": "Subiaco",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-subiaco"
+    ]
+  },
+  {
+    "slug": "success",
+    "name": "Success",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-success"
+    ]
+  },
+  {
+    "slug": "swan-view",
+    "name": "Swan View",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-swan-view"
+    ]
+  },
+  {
+    "slug": "swanbourne",
+    "name": "Swanbourne",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-swanbourne"
+    ]
+  },
+  {
+    "slug": "tamala-park",
+    "name": "Tamala Park",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-tamala-park"
+    ]
+  },
+  {
+    "slug": "tapping",
+    "name": "Tapping",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-tapping"
+    ]
+  },
+  {
+    "slug": "thornlie",
+    "name": "Thornlie",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-thornlie"
+    ]
+  },
+  {
+    "slug": "two-rocks",
+    "name": "Two Rocks",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-two-rocks"
+    ]
+  },
+  {
+    "slug": "victoria-park",
+    "name": "Victoria Park",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-victoria-park"
+    ]
+  },
+  {
+    "slug": "viveash",
+    "name": "Viveash",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-viveash"
+    ]
+  },
+  {
+    "slug": "wandi",
+    "name": "Wandi",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-wandi"
+    ]
+  },
+  {
+    "slug": "wangara",
+    "name": "Wangara",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-wangara"
+    ]
+  },
+  {
+    "slug": "wanneroo",
+    "name": "Wanneroo",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-wanneroo"
+    ]
+  },
+  {
+    "slug": "warnbro",
+    "region": "southern-suburbs",
+    "name": "Warnbro",
+    "legacyPaths": []
+  },
+  {
+    "slug": "warwick",
+    "name": "Warwick",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-warwick"
+    ]
+  },
+  {
+    "slug": "waterford",
+    "name": "Waterford",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-waterford"
+    ]
+  },
+  {
+    "slug": "wattle-grove",
+    "name": "Wattle Grove",
+    "region": "eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-eastern-suburbs-perth/towing-wattle-grove"
+    ]
+  },
+  {
+    "slug": "wattleup",
+    "name": "Wattleup",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-wattleup"
+    ]
+  },
+  {
+    "slug": "wellard",
+    "region": "southern-suburbs",
+    "name": "Wellard",
+    "legacyPaths": []
+  },
+  {
+    "slug": "welshpool",
+    "name": "Welshpool",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-welshpool"
+    ]
+  },
+  {
+    "slug": "wembley",
+    "name": "Wembley",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-wembley"
+    ]
+  },
+  {
+    "slug": "wembley-downs",
+    "name": "Wembley Downs",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/owing-wembley-downs"
+    ]
+  },
+  {
+    "slug": "west-leederville",
+    "name": "West Leederville",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-west-leederville"
+    ]
+  },
+  {
+    "slug": "west-perth",
+    "region": "western-suburbs",
+    "name": "West Perth",
+    "legacyPaths": []
+  },
+  {
+    "slug": "white-gum-valley",
+    "name": "White Gum Valley",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-white-gum-valley"
+    ]
+  },
+  {
+    "slug": "willagee",
+    "name": "Willagee",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-willagee"
+    ]
+  },
+  {
+    "slug": "wilson",
+    "name": "Wilson",
+    "region": "south-eastern-suburbs",
+    "legacyPaths": [
+      "/home/towing-south-eastern-suburbs-perth/towing-wilson"
+    ]
+  },
+  {
+    "slug": "winthrop",
+    "name": "Winthrop",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-winthrop"
+    ]
+  },
+  {
+    "slug": "woodlands",
+    "name": "Woodlands",
+    "region": "western-suburbs",
+    "legacyPaths": [
+      "/home/towing-western-suburbs-perth/towing-woodlands"
+    ]
+  },
+  {
+    "slug": "woodvale",
+    "name": "Woodvale",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-woodvale"
+    ]
+  },
+  {
+    "slug": "yanchep",
+    "name": "Yanchep",
+    "region": "northern-suburbs",
+    "legacyPaths": [
+      "/home/towing-northern-suburbs-perth/towing-yanchep"
+    ]
+  },
+  {
+    "slug": "yangebup",
+    "name": "Yangebup",
+    "region": "southern-suburbs",
+    "legacyPaths": [
+      "/home/towing-southern-suburbs-perth/towing-yangebup"
+    ]
+  }
+]

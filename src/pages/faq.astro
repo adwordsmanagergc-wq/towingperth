@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTASection from '~/components/CTASection.astro';
+import { GENERAL_FAQS, HOME_FAQS } from '~/data/faqs';
+import { faqPage } from '~/lib/schema';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const path = '/faq';
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'FAQ', href: path },
+];
+// The homepage already marks up HOME_FAQS, so this page's schema covers the
+// general set only, to avoid marking up the same questions twice.
+---
+
+<BaseLayout
+  title="Towing FAQ Perth | Costs, Insurance & Timing | Quik Tow"
+  description="Answers to common towing questions in Perth: cost, arrival times, insurance billing, where we tow, 4WD recovery and container transport."
+  path={path}
+  og="general"
+  crumbs={crumbs}
+  schema={[faqPage(GENERAL_FAQS)]}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="FAQ"
+    h1="Towing Questions, Answered"
+    lead="Quick answers about towing in Perth. If your question isn't here, call us. We're happy to help even if you don't need a truck yet."
+    chips={false}
+  />
+  <section class="py-14 sm:py-20">
+    <div class="wrap max-w-4xl space-y-14">
+      <div>
+        <h2 class="text-3xl sm:text-4xl">Using our service</h2>
+        <div class="mt-6"><FAQ faqs={GENERAL_FAQS} /></div>
+      </div>
+      <div>
+        <h2 class="text-3xl sm:text-4xl">Towing in Perth</h2>
+        <div class="mt-6"><FAQ faqs={HOME_FAQS} /></div>
+      </div>
+      <div>
+        <h2 class="text-3xl sm:text-4xl">Questions about a specific service</h2>
+        <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+          {
+            services.map((s) => (
+              <li>
+                <a href={`/services/${s.id}#faq-heading`} class="flex min-h-14 items-center rounded-md border border-steel bg-coal px-4 font-semibold hover:border-hivis hover:text-hivis">
+                  {s.data.name} FAQ
+                </a>
+              </li>
+            ))
+          }
+          <li>
+            <a href="/insurance-towing#faq-heading" class="flex min-h-14 items-center rounded-md border border-steel bg-coal px-4 font-semibold hover:border-hivis hover:text-hivis">
+              Insurance towing FAQ
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <CTASection position="faq-cta-band" />
+</BaseLayout>

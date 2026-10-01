@@ -1,0 +1,1087 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth",
+      "destination": "/roads",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-albany-highway",
+      "destination": "/roads/albany-highway",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-baldivis-road",
+      "destination": "/roads/baldivis-road",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-canning-highway",
+      "destination": "/roads/canning-highway",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-garden-city",
+      "destination": "/roads/garden-city",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+      "destination": "/roads/great-eastern-highway",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-hislop-road",
+      "destination": "/roads/hislop-road",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+      "destination": "/roads/joondalup-drive",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-kulija-road",
+      "destination": "/roads/kulija-road",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-mitchell-freeway",
+      "destination": "/roads/mitchell-freeway",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-nicholson-road",
+      "destination": "/roads/nicholson-road",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-ranford-road",
+      "destination": "/roads/ranford-road",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-rome-road",
+      "destination": "/roads/rome-road",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/dangerous-roads-in-perth/towing-wanneroo-road",
+      "destination": "/roads/wanneroo-road",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth",
+      "destination": "/areas/eastern-suburbs",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-ascot",
+      "destination": "/areas/ascot",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-bassendean",
+      "destination": "/areas/bassendean",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-bayswater",
+      "destination": "/areas/bayswater",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-beechboro",
+      "destination": "/areas/beechboro",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-bellevue",
+      "destination": "/areas/bellevue",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-belmont",
+      "destination": "/areas/belmont",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-bickley",
+      "destination": "/areas/bickley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-boya",
+      "destination": "/areas/boya",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-chidlow",
+      "destination": "/areas/chidlow",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-darlington",
+      "destination": "/areas/darlington",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-dianella",
+      "destination": "/areas/dianella",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-eden-hill",
+      "destination": "/areas/eden-hill",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-forrestfield",
+      "destination": "/areas/forrestfield",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-glen-forrest",
+      "destination": "/areas/glen-forrest",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-gooseberry-hill",
+      "destination": "/areas/gooseberry-hill",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-greenmount",
+      "destination": "/areas/greenmount",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-guildford",
+      "destination": "/areas/guildford",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-helena-valley",
+      "destination": "/areas/helena-valley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-herne-hill",
+      "destination": "/areas/herne-hill",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-high-wycombe",
+      "destination": "/areas/high-wycombe",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-jane-brook",
+      "destination": "/areas/jane-brook",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-kalamunda",
+      "destination": "/areas/kalamunda",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-kiara",
+      "destination": "/areas/kiara",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-koongamia",
+      "destination": "/areas/koongamia",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-lesmurdie",
+      "destination": "/areas/lesmurdie",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-lockridge",
+      "destination": "/areas/lockridge",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-mahogany-creek",
+      "destination": "/areas/mahogany-creek",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-maida-vale",
+      "destination": "/areas/maida-vale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-midland",
+      "destination": "/areas/midland",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-midvale",
+      "destination": "/areas/midvale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-mount-helena",
+      "destination": "/areas/mount-helena",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-mundaring",
+      "destination": "/areas/mundaring",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-parkerville",
+      "destination": "/areas/parkerville",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-redcliffe",
+      "destination": "/areas/redcliffe",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-rivervale",
+      "destination": "/areas/rivervale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-south-guildford",
+      "destination": "/areas/south-guildford",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-stratton",
+      "destination": "/areas/stratton",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-swan-view",
+      "destination": "/areas/swan-view",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-viveash",
+      "destination": "/areas/viveash",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-eastern-suburbs-perth/towing-wattle-grove",
+      "destination": "/areas/wattle-grove",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth",
+      "destination": "/areas/northern-suburbs",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-alexander-heights",
+      "destination": "/areas/alexander-heights",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-alkimos",
+      "destination": "/areas/alkimos",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-ashby",
+      "destination": "/areas/ashby",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-balcatta",
+      "destination": "/areas/balcatta",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-ballajura",
+      "destination": "/areas/ballajura",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-banksia-grove",
+      "destination": "/areas/banksia-grove",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-butler",
+      "destination": "/areas/butler",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-carine",
+      "destination": "/areas/carine",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-clarkson",
+      "destination": "/areas/clarkson",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-craigie",
+      "destination": "/areas/craigie",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-currambine",
+      "destination": "/areas/currambine",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-darch",
+      "destination": "/areas/darch",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-duncraig",
+      "destination": "/areas/duncraig",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-edgewater",
+      "destination": "/areas/edgewater",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-eglinton",
+      "destination": "/areas/eglinton",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-girrawheen",
+      "destination": "/areas/girrawheen",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-greenwood",
+      "destination": "/areas/greenwood",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-heathridge",
+      "destination": "/areas/heathridge",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-hillarys",
+      "destination": "/areas/hillarys",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-hocking",
+      "destination": "/areas/hocking",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-iluka",
+      "destination": "/areas/iluka",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-jindalee",
+      "destination": "/areas/jindalee",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-joondalup",
+      "destination": "/areas/joondalup",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-joondalup_1",
+      "destination": "/areas/joondalup",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-kallaroo",
+      "destination": "/areas/kallaroo",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-kingsley",
+      "destination": "/areas/kingsley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-kinross",
+      "destination": "/areas/kinross",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-landsdale",
+      "destination": "/areas/landsdale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-madeley",
+      "destination": "/areas/madeley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-marangaroo",
+      "destination": "/areas/marangaroo",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-marmion",
+      "destination": "/areas/marmion",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-mindarie",
+      "destination": "/areas/mindarie",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-mullaloo",
+      "destination": "/areas/mullaloo",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-ocean-reef",
+      "destination": "/areas/ocean-reef",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-padbury",
+      "destination": "/areas/padbury",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-pearsall",
+      "destination": "/areas/pearsall",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-quinns-rocks",
+      "destination": "/areas/quinns-rocks",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-ridgewood",
+      "destination": "/areas/ridgewood",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-sorrento",
+      "destination": "/areas/sorrento",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-tamala-park",
+      "destination": "/areas/tamala-park",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-tapping",
+      "destination": "/areas/tapping",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-two-rocks",
+      "destination": "/areas/two-rocks",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-wangara",
+      "destination": "/areas/wangara",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-wanneroo",
+      "destination": "/areas/wanneroo",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-warwick",
+      "destination": "/areas/warwick",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-woodvale",
+      "destination": "/areas/woodvale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-northern-suburbs-perth/towing-yanchep",
+      "destination": "/areas/yanchep",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth",
+      "destination": "/areas/south-eastern-suburbs",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-armadale",
+      "destination": "/areas/armadale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-ashendon",
+      "destination": "/areas/ashendon",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-beckenham",
+      "destination": "/areas/beckenham",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-bedfordale",
+      "destination": "/areas/bedfordale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-belmont",
+      "destination": "/areas/belmont",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-bentley",
+      "destination": "/areas/bentley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-brookdale",
+      "destination": "/areas/brookdale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-camillo",
+      "destination": "/areas/camillo",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-cannington",
+      "destination": "/areas/cannington",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-champion-lakes",
+      "destination": "/areas/champion-lakes",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-cloverdale",
+      "destination": "/areas/cloverdale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-east-cannington",
+      "destination": "/areas/east-cannington",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-ferndale",
+      "destination": "/areas/ferndale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-forrestfield",
+      "destination": "/areas/forrestfield",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-gosnells",
+      "destination": "/areas/gosnells",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-huntingdale",
+      "destination": "/areas/huntingdale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-karawara",
+      "destination": "/areas/karawara",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-kenwick",
+      "destination": "/areas/kenwick",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-kewdale",
+      "destination": "/areas/kewdale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-langford",
+      "destination": "/areas/langford",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-lathlain",
+      "destination": "/areas/lathlain",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-lynwood",
+      "destination": "/areas/lynwood",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-maddington",
+      "destination": "/areas/maddington",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-martin",
+      "destination": "/areas/martin",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-orange-grove",
+      "destination": "/areas/orange-grove",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-parkwood",
+      "destination": "/areas/parkwood",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-piara-waters",
+      "destination": "/areas/piara-waters",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-queens-park",
+      "destination": "/areas/queens-park",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-riverton",
+      "destination": "/areas/riverton",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-rossmoyne",
+      "destination": "/areas/rossmoyne",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-salter-point",
+      "destination": "/areas/salter-point",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-shelley",
+      "destination": "/areas/shelley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-southern-river",
+      "destination": "/areas/southern-river",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-st-james",
+      "destination": "/areas/st-james",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-thornlie",
+      "destination": "/areas/thornlie",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-victoria-park",
+      "destination": "/areas/victoria-park",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-waterford",
+      "destination": "/areas/waterford",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-welshpool",
+      "destination": "/areas/welshpool",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-south-eastern-suburbs-perth/towing-wilson",
+      "destination": "/areas/wilson",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth",
+      "destination": "/areas/southern-suburbs",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-alfred-cove",
+      "destination": "/areas/alfred-cove",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-applecross",
+      "destination": "/areas/applecross",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-ardross",
+      "destination": "/areas/ardross",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-atwell",
+      "destination": "/areas/atwell",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-aubin-grove",
+      "destination": "/areas/aubin-grove",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-bateman",
+      "destination": "/areas/bateman",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-beaconsfield",
+      "destination": "/areas/beaconsfield",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-beeliar",
+      "destination": "/areas/beeliar",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-bibra-lake",
+      "destination": "/areas/bibra-lake",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-bicton",
+      "destination": "/areas/bicton",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-booragoon",
+      "destination": "/areas/booragoon",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-brentwood",
+      "destination": "/areas/brentwood",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-bull-creek",
+      "destination": "/areas/bull-creek",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-canning-vale",
+      "destination": "/areas/canning-vale",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-cardup",
+      "destination": "/areas/cardup",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-cockburn-central",
+      "destination": "/areas/cockburn-central",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-coogee",
+      "destination": "/areas/coogee",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-coolbellup",
+      "destination": "/areas/coolbellup",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-hamilton-hil",
+      "destination": "/areas/hamilton-hill",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-hammond-park",
+      "destination": "/areas/hammond-park",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-henderson",
+      "destination": "/areas/henderson",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-hilton",
+      "destination": "/areas/hilton",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-jandakot",
+      "destination": "/areas/jandakot",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-kardinya",
+      "destination": "/areas/kardinya",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-kwinana",
+      "destination": "/areas/kwinana",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-leeming",
+      "destination": "/areas/leeming",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-melville",
+      "destination": "/areas/melville",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-munster",
+      "destination": "/areas/munster",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-murdoch",
+      "destination": "/areas/murdoch",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-myaree",
+      "destination": "/areas/myaree",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-naval-base",
+      "destination": "/areas/naval-base",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-north-coogee",
+      "destination": "/areas/north-coogee",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-north-lake",
+      "destination": "/areas/north-lake",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-palmyra",
+      "destination": "/areas/palmyra",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-samson",
+      "destination": "/areas/samson",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-south-fremantle",
+      "destination": "/areas/south-fremantle",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-south-lake",
+      "destination": "/areas/south-lake",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-spearwood",
+      "destination": "/areas/spearwood",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-success",
+      "destination": "/areas/success",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-wandi",
+      "destination": "/areas/wandi",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-wattleup",
+      "destination": "/areas/wattleup",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-white-gum-valley",
+      "destination": "/areas/white-gum-valley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-willagee",
+      "destination": "/areas/willagee",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-winthrop",
+      "destination": "/areas/winthrop",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-southern-suburbs-perth/towing-yangebup",
+      "destination": "/areas/yangebup",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth",
+      "destination": "/areas/western-suburbs",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/owing-wembley-downs",
+      "destination": "/areas/wembley-downs",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-city-beach",
+      "destination": "/areas/city-beach",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-claremont",
+      "destination": "/areas/claremont",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-cottesloe",
+      "destination": "/areas/cottesloe",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-crawley",
+      "destination": "/areas/crawley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-dalkeith",
+      "destination": "/areas/dalkeith",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-floreat",
+      "destination": "/areas/floreat",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-glendalough",
+      "destination": "/areas/glendalough",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-innaloo",
+      "destination": "/areas/innaloo",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-jolimont",
+      "destination": "/areas/jolimont",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-karrakatta",
+      "destination": "/areas/karrakatta",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-karrinyup",
+      "destination": "/areas/karrinyup",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-mosman-park",
+      "destination": "/areas/mosman-park",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-mount-claremont",
+      "destination": "/areas/mount-claremont",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-nedlands",
+      "destination": "/areas/nedlands",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-north-fremantle",
+      "destination": "/areas/north-fremantle",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-osborne-park",
+      "destination": "/areas/osborne-park",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-peppermint-grove",
+      "destination": "/areas/peppermint-grove",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-scarborough",
+      "destination": "/areas/scarborough",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-shenton-park",
+      "destination": "/areas/shenton-park",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-subiaco",
+      "destination": "/areas/subiaco",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-swanbourne",
+      "destination": "/areas/swanbourne",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-wembley",
+      "destination": "/areas/wembley",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-west-leederville",
+      "destination": "/areas/west-leederville",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/towing-western-suburbs-perth/towing-woodlands",
+      "destination": "/areas/woodlands",
+      "statusCode": 301
+    }
+  ]
+}

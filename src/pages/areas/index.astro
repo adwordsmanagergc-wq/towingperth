@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import SuburbGrid from '~/components/SuburbGrid.astro';
+import PerthMap from '~/components/PerthMap.astro';
+import AreaSearch from '~/components/AreaSearch.astro';
+import CTASection from '~/components/CTASection.astro';
+
+const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
+const suburbs = await getCollection('suburbs');
+const path = '/areas';
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Areas', href: path },
+];
+---
+
+<BaseLayout
+  title="Towing Areas Perth | Every Suburb 24/7 | Quik Tow & Transport"
+  description={`We tow 24/7 across all ${suburbs.length} Perth suburbs listed here, from Two Rocks to Byford. Find your suburb or call 0419 857 070.`}
+  path={path}
+  og="area"
+  crumbs={crumbs}
+  allSuburbsInSchema
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Service areas"
+    h1="Towing Across Every Perth Suburb"
+    lead="North, south, east, west, the south east, the Hills and the CBD. If it's in the Perth metro area, we cover it 24/7."
+    chips={false}
+  >
+    <div class="mt-8">
+      <AreaSearch />
+    </div>
+  </PageHero>
+
+  <section class="py-14 sm:py-20" aria-labelledby="regions-heading">
+    <div class="wrap grid items-center gap-10 lg:grid-cols-[1fr_1.2fr]">
+      <div class="mx-auto w-full max-w-md">
+        <PerthMap />
+      </div>
+      <div>
+        <h2 id="regions-heading" class="text-4xl sm:text-5xl">Choose your region</h2>
+        <ul class="mt-6 space-y-4">
+          {
+            regions.map((r) => (
+              <li class="rounded-lg border border-steel bg-coal p-5">
+                <a href={`/areas/${r.id}`} class="font-display text-2xl font-bold uppercase text-white hover:text-hivis">
+                  {r.data.name}
+                </a>
+                <p class="mt-1 text-mute">{r.data.lead}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="all-suburbs" class="on-light bg-paper py-14 text-ink sm:py-20" aria-labelledby="all-heading">
+    <div class="wrap">
+      <h2 id="all-heading" class="text-4xl sm:text-5xl">All suburbs, by region</h2>
+      {
+        regions.map((r) => (
+          <div class="mt-12">
+            <h3 class="mb-6 border-b-2 border-ink pb-2 text-3xl">
+              <a href={`/areas/${r.id}`} class="hover:underline">{r.data.name}</a>
+            </h3>
+            <SuburbGrid
+              light
+              suburbs={suburbs.filter((s) => s.data.region.id === r.id).map((s) => ({ name: s.data.name, href: `/areas/${s.id}` }))}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <CTASection position="areas-cta-band" />
+</BaseLayout>

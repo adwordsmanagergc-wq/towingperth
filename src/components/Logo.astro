@@ -1,0 +1,17 @@
+---
+// TODO: replace with the supplied Quik Tow & Transport logo. This is a type-only placeholder.
+interface Props {
+  class?: string;
+}
+const { class: cls = '' } = Astro.props;
+---
+
+<span class:list={['inline-flex items-center gap-2.5 leading-none', cls]}>
+  <span class="hazard grid size-10 shrink-0 place-items-center rounded-md p-[3px]" aria-hidden="true">
+    <span class="grid size-full place-items-center rounded-[4px] bg-ink font-display text-xl font-extrabold text-hivis">Q</span>
+  </span>
+  <span class="flex flex-col">
+    <span class="font-display text-[1.45rem] font-extrabold uppercase tracking-wide text-white">Quik Tow</span>
+    <span class="font-display text-[0.7rem] font-bold uppercase tracking-[0.24em] text-hivis">&amp; Transport</span>
+  </span>
+</span>

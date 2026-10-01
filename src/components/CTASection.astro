@@ -1,0 +1,29 @@
+---
+import { SITE } from '~/config/site';
+import CallButton from './CallButton.astro';
+import Button from './Button.astro';
+interface Props {
+  heading?: string;
+  text?: string;
+  position?: string;
+}
+const {
+  heading = 'Stuck right now? Call us.',
+  text = `A real person answers 24/7. Tell us where you are and we'll send the nearest truck. Insurance job? We'll deal with your insurer directly.`,
+  position = 'cta-band',
+} = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-hivis text-ink on-light" aria-labelledby="cta-heading">
+  <div class="wrap grid items-center gap-8 py-14 sm:py-16 lg:grid-cols-[1fr_auto]">
+    <div>
+      <h2 id="cta-heading" class="text-4xl sm:text-5xl lg:text-6xl">{heading}</h2>
+      <p class="mt-4 max-w-2xl text-lg font-medium">{text}</p>
+    </div>
+    <div class="flex flex-col gap-3 sm:flex-row lg:flex-col">
+      <CallButton position={position} variant="dark" size="xl" label="Call" />
+      <Button href="/contact#quote" variant="dark" class="border-2 border-ink bg-transparent! text-ink! hover:bg-ink! hover:text-hivis!">Get a quote</Button>
+    </div>
+  </div>
+  <p class="sr-only">{SITE.name} is available {SITE.hours} on {SITE.phoneDisplay}.</p>
+</section>
