@@ -27,8 +27,6 @@ faqs:
     a: Usually, yes. Tell us how steep the drive is, whether it's sealed or loose gravel, and if there are tight bends or overhanging branches. With that detail we can send a tilt tray that suits the access, or winch the car down to the road first if a truck can't safely get up.
   - q: Can you recover a car that slid off a track near the Railway Reserve Heritage Trail?
     a: Yes, as long as the vehicle can be reached legally and safely. Give us the nearest road crossing or car park so the driver knows where to start. If the ground is wet clay, a winch recovery is often gentler on the car than dragging it out.
-  - q: I've broken down on Great Eastern Highway near Hardey Road. Where do I wait?
-    a: Get as far onto the verge as you can and switch your hazards on. The highway carries heavy trucks through here, so wait well away from the traffic side of the car. Tell us whether you were heading up towards Mundaring or down towards Midland.
 ---
 
 ## Why people in Glen Forrest call a tow truck

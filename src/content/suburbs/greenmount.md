@@ -29,7 +29,7 @@ faqs:
   - q: Do you tow from the streets off Old York Road and Innamincka Road?
     a: Yes. These residential streets on the slopes of the hill are part of our everyday area. Some are narrow with steep driveways, so tell us about access when you call and we'll send a truck that fits.
   - q: Can you move a heavy vehicle that broke down on the Greenmount climb?
-    a: We move cars through to larger vehicles, including utes, vans and light trucks. Tell us the make, model and roughly what it weighs, plus which carriageway you're on, so we can match the truck to the job.
+    a: Our trucks handle everything from small cars up to utes, vans and light trucks. Tell us the make, model and roughly what it weighs, plus which carriageway you're on, so we can match the truck to the job.
 ---
 
 ## Common jobs around Greenmount

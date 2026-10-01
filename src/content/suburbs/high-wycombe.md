@@ -29,7 +29,7 @@ faqs:
   - q: I've broken down on Roe Highway beside High Wycombe. What's the safest thing to do?
     a: Pull as far left as you can, hazards on, and get everyone out on the side away from traffic if it's safe. Roe Highway carries a lot of freight around here, so don't stand behind the car. Tell us your direction and the nearest interchange, such as Kalamunda Road or Maida Vale Road.
   - q: Can you take my car from High Wycombe to a workshop in Hazelmere or Forrestfield?
-    a: Yes. There are plenty of mechanics in the nearby industrial and commercial areas, and we can drop the car at whichever one you choose. If it's out of hours, ask us about the options for leaving the keys.
+    a: Yes. There are plenty of mechanics in the nearby industrial and commercial areas, and we can drop the car at whichever one you choose.
 ---
 
 ## Common callouts in High Wycombe

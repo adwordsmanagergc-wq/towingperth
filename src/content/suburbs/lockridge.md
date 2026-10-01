@@ -19,7 +19,7 @@ landmarks:
   - Alice Davoren Community Centre
 callouts:
   - arterial
-intro: Lockridge is a compact residential pocket ringed by busy roads like Benara Road, Altone Road and Lord Street, a short drive north of Bassendean. Whether your car has died in the driveway or stalled at a busy intersection, we'll tow it 24/7 to your home, your mechanic or your insurer's repairer.
+intro: Ringed by busy roads like Benara Road, Altone Road and Lord Street, Lockridge is a compact residential pocket a short drive north of Bassendean. Whether your car has died in the driveway or stalled at a busy intersection, we'll tow it 24/7 to your home, your mechanic or your insurer's repairer.
 faqs:
   - q: My car broke down on Benara Road near Lockridge. What should I do?
     a: If the car can still roll, get it clear of the traffic lane and into a side street or onto the verge. If it can't, leave your hazards on and get out on the kerb side. Tell us the nearest cross street and which way the car is facing so the driver can approach safely.
@@ -46,4 +46,4 @@ To the west is [Kiara](/areas/kiara), to the south [Eden Hill](/areas/eden-hill)
 3. If the car is unregistered or the wheels are locked, say so, because it may need winching onto the tray.
 4. Have the address where it's going ready, whether that's a workshop or another house.
 
-Call 0419 857 070 and we'll take it from there.
+Ring 0419 857 070 whenever you need us, day or night.
