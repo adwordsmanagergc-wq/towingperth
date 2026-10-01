@@ -41,6 +41,17 @@
   ],
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "towingperth.vercel.app"
+        }
+      ],
+      "destination": "https://www.towingperth.com/",
+      "statusCode": 301
+    },
+    {
       "source": "/:path*",
       "has": [
         {

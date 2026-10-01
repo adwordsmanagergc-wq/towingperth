@@ -75,7 +75,7 @@ const jsonLd = graph([
     <meta name="twitter:image" content={ogImage} />
 
     <Font cssVariable="--font-barlow" preload={[{ weight: 800 }]} />
-    <Font cssVariable="--font-inter" />
+    <Font cssVariable="--font-inter" preload={[{ weight: 400 }]} />
     {
       preloadImage && (
         <link rel="preload" as="image" imagesrcset={preloadImage.srcset} imagesizes={preloadImage.sizes} type={preloadImage.type} fetchpriority="high" />

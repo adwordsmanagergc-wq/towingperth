@@ -15,7 +15,13 @@ const PATHS = args.length
 
 const chrome = await chromeLauncher.launch({
   chromePath: process.env.CHROME_PATH ?? '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
-  chromeFlags: ['--headless=new', '--no-sandbox', '--disable-gpu'],
+  chromeFlags: [
+    '--headless=new',
+    '--no-sandbox',
+    '--disable-gpu',
+    // Route through an outbound proxy when one is configured (remote URLs only).
+    ...(process.env.HTTPS_PROXY && !BASE.includes('localhost') ? [`--proxy-server=${process.env.HTTPS_PROXY}`] : []),
+  ],
 });
 await mkdir('lighthouse-reports', { recursive: true });
 const rows = [];
@@ -23,6 +29,7 @@ let worst = 100;
 try {
   for (const p of PATHS) {
     const { lhr, report } = await lighthouse(BASE + p, { port: chrome.port, output: 'html', logLevel: 'error' }, undefined);
+    if (lhr.runtimeError) throw new Error(`${p}: ${lhr.runtimeError.code} ${lhr.runtimeError.message}`);
     const s = Object.fromEntries(Object.entries(lhr.categories).map(([k, c]) => [k, Math.round(c.score * 100)]));
     const lcp = lhr.audits['largest-contentful-paint'].numericValue / 1000;
     const cls = lhr.audits['cumulative-layout-shift'].numericValue;

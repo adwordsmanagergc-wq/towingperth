@@ -50,7 +50,14 @@ if (isMain) {
   const config = JSON.parse(await readFile(file, 'utf8'));
   // Send the old *.vercel.app production host to the custom domain so Google
   // only ever sees one copy of the site. Listed first so it wins over path rules.
+  // `/:path*` doesn't match the bare root on Vercel, so the homepage gets its own rule.
   const hostRedirects = [
+    {
+      source: '/',
+      has: [{ type: 'host', value: 'towingperth.vercel.app' }],
+      destination: 'https://www.towingperth.com/',
+      statusCode: 301,
+    },
     {
       source: '/:path*',
       has: [{ type: 'host', value: 'towingperth.vercel.app' }],
