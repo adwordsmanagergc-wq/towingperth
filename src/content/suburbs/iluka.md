@@ -48,4 +48,4 @@ We cover Beaumaris Beach, the foreshore park with its paths and barbecues, and t
 3. At the sports complex, name the oval or club you're closest to.
 4. On Marmion Avenue, get off the road if you can and stay well clear of passing traffic.
 
-Call 0419 857 070 whenever you need us.
+For a tow anywhere in Iluka, call 0419 857 070.

@@ -47,4 +47,4 @@ Hammond Road is the main north to south spine, linking Russell Road with Rowley 
 3. With a flat tyre and no spare, tell us the tyre size if you know it so we can plan the drop-off.
 4. On Rowley Road or Russell Road, stay off the road shoulder while you wait.
 
-Call 0419 857 070 and we'll take it from there.
+Once you've got those details, ring 0419 857 070.

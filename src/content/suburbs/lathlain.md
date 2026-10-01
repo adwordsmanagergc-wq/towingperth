@@ -35,7 +35,7 @@ faqs:
 
 Most Lathlain jobs start on a residential street. Cars parked on the verge for days end up with flat batteries, and older sedans parked under big street trees cop the odd fallen branch. These are simple [breakdown tows](/services/breakdown-towing-perth), but the tight streets mean we plan the angle before the truck backs in.
 
-The roads around the edge are a different story. Great Eastern Highway along the north-west and Orrong Road along the north-east both carry heavy traffic heading to and from the airport, and rear-end crashes at the lights are common. The Graham Farmer Freeway ramps sit right at the corner of the suburb too. For any crash we handle the [accident towing](/services/accident-towing-perth) side and can bill your insurer directly.
+Lathlain's boundary roads are another matter. Great Eastern Highway along the north-west and Orrong Road along the north-east both carry heavy traffic heading to and from the airport, and rear-end crashes at the lights are common. The Graham Farmer Freeway ramps sit right at the corner of the suburb too. For any crash we handle the [accident towing](/services/accident-towing-perth) side and can bill your insurer directly.
 
 ## Getting around Lathlain
 

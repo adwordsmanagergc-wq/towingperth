@@ -28,7 +28,7 @@ faqs:
   - q: Can you move a shipping container to or from a business in Malaga?
     a: Yes. Container moves are a regular job here. Give us the container size, the pickup and delivery addresses, and any access limits like a narrow gate, low awning or tight turning area. We'll organise a truck that suits the site.
   - q: A company vehicle has broken down at our Malaga yard. Can you take it to the dealer?
-    a: Yes. We move cars through to larger vehicles, including utes, vans and light trucks. Tell us the make, model and approximate weight, plus the gate we should use, and we'll arrange the drop-off with the dealer or workshop.
+    a: Yes. Utes, vans, light trucks and cars are all within what we move. Tell us the make, model and approximate weight, plus the gate we should use, and we'll arrange the drop-off with the dealer or workshop.
   - q: My car broke down on Reid Highway near Malaga. Where should I wait?
     a: Get as far left as you can, switch on your hazards and, if it's safe to get out, stand well away from passing traffic behind any barrier. Tell us your direction of travel and the nearest interchange, such as Alexander Drive, Malaga Drive or Tonkin Highway.
 ---

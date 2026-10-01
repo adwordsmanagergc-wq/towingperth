@@ -3,11 +3,24 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "audit:crawl": "NODE_USE_ENV_PROXY=1 node scripts/crawl-old-site.mjs"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "node scripts/serve-vercel-like.mjs 4322",
+    "check:content": "node scripts/check-content.mjs",
+    "check:site": "node scripts/validate-site.mjs",
+    "redirects:generate": "node scripts/generate-redirects.mjs",
+    "test:redirects": "node scripts/test-redirects.mjs",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "images:generate": "node scripts/make-images.mjs",
+    "audit:crawl": "NODE_USE_ENV_PROXY=1 node scripts/crawl-old-site.mjs",
+    "audit:suburb-index": "node scripts/build-suburb-index.mjs",
+    "prebuild": "node scripts/generate-redirects.mjs && node scripts/check-content.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "cheerio": "^1.2.0",
+    "chrome-launcher": "^1.2.2",
+    "lighthouse": "^13.5.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
@@ -17,5 +30,8 @@
     "astro": "^7.3.5",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

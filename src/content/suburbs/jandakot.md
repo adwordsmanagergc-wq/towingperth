@@ -52,4 +52,4 @@ Roe Highway runs along the northern edge, with [Leeming](/areas/leeming) on the 
 3. On a rural block, tell us about gates, livestock and soft sand before the driver arrives.
 4. For a work vehicle, let us know if it's loaded or towing a trailer.
 
-Call 0419 857 070 and we'll send a truck.
+Then call 0419 857 070 for help in Jandakot.

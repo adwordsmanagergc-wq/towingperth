@@ -49,4 +49,4 @@ South Western Highway runs north through Wungong to [Armadale](/areas/armadale) 
 3. On South Western Highway, use the wide verge if there is one, and stand well away from passing trucks.
 4. Tell us where the vehicle should go, whether that's home, a mechanic or a farm shed.
 
-Call 0419 857 070 any time of day or night.
+Call 0419 857 070 and tell us which part of Byford you're in.

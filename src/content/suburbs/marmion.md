@@ -43,7 +43,7 @@ Sheppard Way leads to the Marmion Village shops and Braden Park. The streets wes
 
 1. On West Coast Drive, use a beach car park or a wide verge rather than stopping on the road.
 2. At the angling club or Marmion Village, note the nearest entrance.
-3. If sand or salt water has got into the engine bay after a beach visit, mention it so we know what we're dealing with.
+3. In a beachfront bay, tell us if there is a kerb or barrier in front of the car, since that affects how it is winched on.
 4. Let us know where the car is going once it's loaded.
 
 Ring 0419 857 070 any time of day or night.

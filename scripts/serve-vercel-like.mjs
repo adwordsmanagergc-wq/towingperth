@@ -3,6 +3,7 @@
 // before deploy: applies vercel.json redirects, cleanUrls, trailingSlash:false
 // and serves dist/404.html for unknown paths.  Usage: node scripts/serve-vercel-like.mjs [port]
 import http from 'node:http';
+import { gzipSync } from 'node:zlib';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join } from 'node:path';
 
@@ -39,8 +40,17 @@ http
     }
     const found = (await file(join(DIST, path))) ?? (await file(join(DIST, path + '.html'))) ?? (await file(join(DIST, path, 'index.html')));
     if (found) {
-      res.writeHead(200, { 'Content-Type': TYPES[extname(found)] ?? 'application/octet-stream' });
-      return res.end(await readFile(found));
+      const type = TYPES[extname(found)] ?? 'application/octet-stream';
+      const headers = { 'Content-Type': type };
+      // Mirror vercel.json headers for hashed assets, and Vercel's compression.
+      if (path.startsWith('/_astro/')) headers['Cache-Control'] = 'public, max-age=31536000, immutable';
+      let body = await readFile(found);
+      if (/text|javascript|json|xml|svg/.test(type) && /gzip/.test(req.headers['accept-encoding'] ?? '')) {
+        body = gzipSync(body);
+        headers['Content-Encoding'] = 'gzip';
+      }
+      res.writeHead(200, headers);
+      return res.end(body);
     }
     res.writeHead(404, { 'Content-Type': TYPES['.html'] });
     res.end(await readFile(join(DIST, '404.html')).catch(() => 'Not found'));

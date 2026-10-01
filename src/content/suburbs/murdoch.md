@@ -40,9 +40,9 @@ faqs:
 
 Murdoch is a health and education hub before it's a suburb. Fiona Stanley Hospital and St John of God Murdoch Hospital sit next to each other south of South Street, and together they bring thousands of staff, patients and visitors every day. Their car parks are among our most frequent pickup spots. Cars left parked through a long shift or a hospital stay often come back with a flat battery, and some just need to go home while the owner can't drive.
 
-Murdoch University, across South Street, adds a steady stream of student cars, which tend to be older and less loved. Overheating, failed clutches and the occasional car that simply won't go another kilometre are common [breakdown](/services/breakdown-towing-perth) jobs here.
+Murdoch University, right next to the hospital precinct, adds a steady stream of student cars, which tend to be older and less loved. Overheating, failed clutches and the occasional car that simply won't go another kilometre are common [breakdown](/services/breakdown-towing-perth) jobs here.
 
-The freeway is the third piece. Murdoch Station and the South Street interchange sit on the Kwinana Freeway, and peak-hour traffic here leads to rear-end crashes on the ramps and nearby lanes. We handle those as [accident towing](/services/accident-towing-perth) and can bill your insurer.
+The freeway is the third piece. Murdoch Station and the South Street interchange sit on the Kwinana Freeway, and peak-hour traffic here leads to rear-end crashes on the ramps and nearby lanes. Those crashes become [accident towing](/services/accident-towing-perth) jobs, and your insurer can be billed directly.
 
 ## Roads and places around Murdoch
 

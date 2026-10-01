@@ -36,7 +36,7 @@ faqs:
 
 The highway is the story here. Great Eastern Highway rises steeply over Greenmount Hill on its way from Midland towards Mundaring, and it carries everything from commuter cars to heavy trucks heading for the Wheatbelt and the Goldfields. On a hot afternoon, that climb finds out weak cooling systems, slipping clutches and tired automatic gearboxes. Coming back down, hard braking and heavy traffic lead to rear-end crashes, which we clear as [accident towing](/services/accident-towing-perth) jobs with direct billing to your insurer where possible.
 
-Away from the highway, Greenmount is a hillside suburb with sloping blocks, bush reserves and some properties that are hard to reach with a big truck. Flat batteries at home, cars stuck on wet gravel verges and 4WDs that have slid on soft ground in the national park fringes make up the rest of our callouts.
+Away from the highway, Greenmount is a hillside suburb with sloping blocks, bush reserves and some properties that are hard to reach with a big truck. Flat batteries at home, cars stuck on wet gravel verges and utes that have slid off a soft firebreak on a rural block make up the rest of our callouts.
 
 ## Roads and places we cover around Greenmount
 

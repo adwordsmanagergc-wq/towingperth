@@ -50,4 +50,4 @@ Inside the suburb, Caridean Street leads to the local shopping centre, and Heath
 3. At the shops or the leisure centre, tell us which car park entrance is closest to you.
 4. Let us know if the car has a flat tyre, won't go into gear, or has crash damage, since each needs a slightly different approach.
 
-Phone 0419 857 070 and a driver will be on the way.
+Then phone 0419 857 070 and tell us you're in Heathridge.

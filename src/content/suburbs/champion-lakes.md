@@ -47,4 +47,4 @@ Tonkin Highway is the main fast road, with intersections at Champion Drive, Alba
 - If you're towing a boat trailer, tell us its length and whether the boat is on it.
 - In the residential streets, a house number and cross street is all we need.
 
-Call 0419 857 070 and we'll send a truck.
+Call 0419 857 070 and we'll head out to Champion Lakes.

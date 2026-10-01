@@ -25,7 +25,7 @@ faqs:
   - q: Since the boundary changes, is Lake Coogee still part of Munster?
     a: Not any more. In 2020 the north-western part of Munster became the new suburb of Lake Coogee, and part of the south-west went to Henderson. We cover all three, so just give us the street address and we'll find you either way.
   - q: Can you tow a truck or heavy work vehicle from Munster?
-    a: We move cars through to larger vehicles, including utes, vans and light trucks. Tell us the make, model, weight and whether it's loaded, and we'll send a truck that suits the job.
+    a: Yes, up to light trucks, along with utes, vans and trailers. Tell us the make, model, weight and whether it's loaded, and we'll send a truck that suits the job.
 ---
 
 ## What brings us to Munster

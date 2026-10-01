@@ -37,7 +37,7 @@ faqs:
 
 ## What gets us called to Armadale
 
-Armadale is the commercial centre of the far south east, and that shows in the jobs we get. Flat batteries and cars that won't restart are a weekly thing in the Armadale Shopping City car parks and around the train station, where commuters leave cars all day in summer heat. A failed fuel pump in the Jull Street area looks much the same to us as one in a supermarket bay, and both get a careful tow to the workshop of your choice.
+Armadale is the commercial centre of the far south east, and that shows in the jobs we get. Flat batteries and cars that won't restart are a weekly thing in the Armadale Shopping City car parks and around the train station, where commuters leave cars all day in summer heat.
 
 The two highways bring the bigger jobs. Albany Highway and South Western Highway meet in the middle of Armadale, and traffic coming off the country stretches is often moving faster than town traffic expects. Rear-end crashes and side-swipes at the junction and along Armadale Road are typical [accident towing](/services/accident-towing-perth) work, and we can bill your insurer directly.
 

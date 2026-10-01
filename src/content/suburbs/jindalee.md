@@ -43,4 +43,4 @@ Inside the suburb, Jindalee Boulevard and Santa Barbara Parade carry most of the
 3. If a work vehicle is bogged on a building site, tell us the lot number and how soft the ground is.
 4. Let us know the destination, especially if it's a long run south.
 
-Call 0419 857 070 and we'll take it from there.
+Whatever the hour, 0419 857 070 gets you a tow out of Jindalee.

@@ -19,7 +19,7 @@ const current = Astro.url.pathname;
 const isActive = (href: string) => current === href || current.startsWith(href + '/');
 ---
 
-<header class="sticky top-0 z-50 border-b border-steel bg-ink/95 backdrop-blur supports-[backdrop-filter]:bg-ink/85">
+<header class="sticky top-0 z-50 border-b border-steel bg-ink/[0.97]">
   <div class="hazard h-1" aria-hidden="true"></div>
   <div class="wrap flex h-16 items-center justify-between gap-4 lg:h-20">
     <a href="/" class="shrink-0" aria-label={`${SITE.name} home`}><Logo /></a>

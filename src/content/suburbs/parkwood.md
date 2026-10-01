@@ -23,7 +23,7 @@ callouts:
   - freeway
   - shopping
   - arterial
-intro: Parkwood has Roe Highway along its southern edge and the Riverton Forum shopping centre on High Road, so we're called here for both highway breakdowns and car park no-starts. We tow 24/7 anywhere in Parkwood, day or night.
+intro: Parkwood has Roe Highway along its southern edge and the Riverton Forum shopping centre on High Road, so we're called here for both highway breakdowns and car park no-starts. We tow 24/7 anywhere in Parkwood, from the highway shoulder to the quiet streets around Whaleback Golf Course.
 faqs:
   - q: Can you tow my car from the Riverton Forum car park?
     a: Yes. Although it carries the Riverton name, the centre sits on the Parkwood side of High Road. Let us know which side of the centre you parked on and the nearest store so the driver can find you without circling.

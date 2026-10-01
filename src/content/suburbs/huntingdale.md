@@ -23,7 +23,7 @@ faqs:
   - q: Can you tow from the Huntingdale Shopping Centre on Warton Road?
     a: Yes. Tell us where in the car park you are and which shop you're nearest. If it's a busy time, we'll pick the easiest spot to load the car without blocking other drivers.
   - q: I've broken down on Southern River Road. Where should I pull over?
-    a: Southern River Road has plenty of side streets, so turn into one if you can. If the car has stopped in the traffic lane, keep your hazards on and stay buckled in. Tell us the nearest cross street when you call.
+    a: Southern River Road has plenty of side streets, so turn into one if you can. If the car has stopped in the traffic lane, keep your hazards on and stay buckled in. Give us the closest cross street so the driver lines up on the correct side.
 ---
 
 ## Why Huntingdale drivers call us

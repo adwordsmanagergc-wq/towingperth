@@ -46,4 +46,4 @@ Welshpool Road runs along the north, separating East Cannington from the factori
 - For a work vehicle in an industrial yard, have the business name and gate number ready.
 - Let us know where you want the car taken.
 
-Call 0419 857 070 and we'll get a truck moving.
+Phone 0419 857 070 and a truck can be on its way to East Cannington.

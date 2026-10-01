@@ -35,7 +35,7 @@ faqs:
 
 ## Typical towing jobs in Butler
 
-Butler is a young, busy suburb with a lot of commuters. Many people drive to Butler station or join the Mitchell Freeway at Butler Boulevard every morning, and that's where plenty of our work starts. Cars left all day at the station sometimes won't start in the evening, and freeway breakdowns on the long run south are a steady source of [breakdown towing](/services/breakdown-towing-perth) jobs.
+Commuters make up a big share of Butler's traffic. Many people drive to Butler station or join the Mitchell Freeway at Butler Boulevard every morning, and that's where plenty of our work starts. Cars left all day at the station sometimes won't start in the evening, and freeway breakdowns on the long run south are a steady source of [breakdown towing](/services/breakdown-towing-perth) jobs.
 
 Kingsbridge Boulevard is the local main street, with shops, a big supermarket and a tavern, and the Brighton Village Shopping Centre sits on Marmion Avenue. Car park callouts at both are common, from flat batteries to keys locked inside. We also move cars for families relocating into the estates around Butler.
 
@@ -47,7 +47,7 @@ The [Mitchell Freeway](/roads/mitchell-freeway) forms Butler's eastern edge, and
 
 1. At the station, note the car park section and a nearby light pole number if there is one.
 2. On Marmion Avenue, use a side street or the verge rather than stopping in the right lane.
-3. If you call it Brighton, add the Butler street name too, since our map searches use the suburb name.
+3. If you call it Brighton, add the Butler street name too, since street maps list it under Butler.
 4. After a crash, keep your insurer's details handy so we can bill them directly.
 
 Then call 0419 857 070, any time.

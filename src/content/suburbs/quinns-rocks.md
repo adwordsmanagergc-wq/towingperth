@@ -50,4 +50,4 @@ We know the difference between the older streets near the beach, with their over
 3. On Marmion Avenue, pull into a side street or the shopping centre if the car will still move.
 4. Let us know about overhead lines or a tight driveway so the right truck is sent.
 
-Call 0419 857 070 and we'll take it from there.
+Pick up the phone and dial 0419 857 070, and a Quinns Rocks tow will be on its way.

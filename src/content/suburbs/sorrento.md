@@ -50,4 +50,4 @@ Seacrest Park and the local shops sit in the middle of the suburb, and the stree
 3. If you're towing a boat, tell us whether the trailer needs moving as well as the car.
 4. Keep your phone charged and stay near the car so the driver can find you.
 
-Call 0419 857 070, any time of day or night.
+From Seacrest to the boat harbour, one call to 0419 857 070 gets a Sorrento tow organised at any hour.

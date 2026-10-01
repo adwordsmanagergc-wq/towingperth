@@ -34,8 +34,7 @@ const variants = {
     variants[variant],
     cls,
   ]}
-  aria-label={`Call ${SITE.name} on ${SITE.phoneDisplay}`}
 >
   <Phone class="size-[1.1em] shrink-0" stroke-width={2.5} aria-hidden="true" />
-  <span>{label}{label && showNumber && " "}{showNumber && <span class="whitespace-nowrap">{SITE.phoneDisplay}</span>}</span>
+  <span>{label ? label : <span class="sr-only">Call</span>}{showNumber && " "}{showNumber && <span class="whitespace-nowrap">{SITE.phoneDisplay}</span>}</span>
 </a>

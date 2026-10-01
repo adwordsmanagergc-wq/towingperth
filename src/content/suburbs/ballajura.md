@@ -32,7 +32,7 @@ faqs:
 
 ## Towing in Ballajura: typical jobs
 
-Ballajura is a large, settled family suburb in the City of Swan, built around lakes, parks and a couple of busy local shopping centres. A lot of our calls come from those shops and from driveways: batteries flat after a few days of sitting, cars that overheat on a hot afternoon, and second cars that need [vehicle transport](/services/vehicle-transport-perth) to a new home or buyer.
+Lakes, parks and a couple of busy local shopping centres sit at the heart of Ballajura, a large, settled family suburb in the City of Swan. A lot of our calls come from those shops and from driveways: batteries flat after a few days of sitting, cars that overheat on a hot afternoon, and second cars that need [vehicle transport](/services/vehicle-transport-perth) to a new home or buyer.
 
 Alexander Drive along the western side is the busiest road around, carrying commuters between the outer north and the city. Rear-end crashes at its traffic lights are a regular job for our [accident towing](/services/accident-towing-perth) crews, and we can organise for your insurer to be billed directly.
 
