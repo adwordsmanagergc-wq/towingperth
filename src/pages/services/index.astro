@@ -4,6 +4,7 @@ import BaseLayout from '~/layouts/BaseLayout.astro';
 import PageHero from '~/components/PageHero.astro';
 import ServiceCard from '~/components/ServiceCard.astro';
 import CTASection from '~/components/CTASection.astro';
+import { SERVICE_PHOTOS } from '~/data/photos';
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 const path = '/services';
@@ -28,12 +29,13 @@ const crumbs = [
   />
   <section class="py-14 sm:py-20">
     <div class="wrap grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {services.map((s) => <ServiceCard href={`/services/${s.id}`} title={s.data.name} blurb={s.data.cardBlurb} icon={s.data.icon} headingLevel="h2" />)}
+      {services.map((s) => <ServiceCard href={`/services/${s.id}`} title={s.data.name} blurb={s.data.cardBlurb} icon={s.data.icon} photo={SERVICE_PHOTOS[s.id]} headingLevel="h2" />)}
       <ServiceCard
         href="/insurance-towing"
         title="Insurance Towing"
         blurb="Crashed? We bill your insurer directly and deliver your car to the repairer, so you can focus on getting home."
         icon="insurance"
+        photo={SERVICE_PHOTOS['insurance-towing']}
         headingLevel="h2"
       />
     </div>

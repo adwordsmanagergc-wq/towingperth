@@ -2,7 +2,6 @@
 // Generates placeholder imagery: hero background, OG cards per page type, favicons
 // and a logo PNG for schema. Re-run after changing brand colours or copy:
 //   node scripts/make-images.mjs
-// TODO: swap the hero for real truck photos when supplied (keep the same file names).
 import { mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import sharp from 'sharp';
@@ -92,7 +91,7 @@ const mark = (size) => `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" 
 await mkdir('src/assets/images', { recursive: true });
 await mkdir('public/og', { recursive: true });
 
-await sharp(Buffer.from(heroSvg(2400, 1350))).jpeg({ quality: 82, mozjpeg: true }).toFile('src/assets/images/hero-placeholder.jpg');
+// The hero now uses a real photo (src/data/photos.ts), so heroSvg is no longer written out.
 
 const og = {
   home: ['24/7 TOWING ACROSS PERTH', 'TOW TRUCK PERTH', 'WE BILL YOUR INSURER'],

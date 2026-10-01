@@ -1,0 +1,38 @@
+// Real Quik Tow job photos (from the old site, upscaled 4x). Astro optimises
+// them at build time, so keep the originals here at full size.
+import type { ImageMetadata } from 'astro';
+import hero from '~/assets/images/tow-truck-perth-hero.jpg';
+import accident from '~/assets/images/accident-towing-perth.jpg';
+import breakdown from '~/assets/images/breakdown-tow-truck-perth.jpg';
+import fourWd from '~/assets/images/4wd-tilt-tray-perth.jpg';
+import container from '~/assets/images/container-transport-perth.jpg';
+import machinery from '~/assets/images/machinery-transport-perth.jpg';
+import boat from '~/assets/images/boat-car-towing-perth.jpg';
+
+export interface Photo {
+  src: ImageMetadata;
+  alt: string;
+}
+
+export const PHOTOS = {
+  hero: { src: hero, alt: 'Quik Tow tilt tray truck loading a silver Mercedes sedan in a Perth street' },
+  accident: { src: accident, alt: 'Blue sedan with front end damage after a crash with another car' },
+  breakdown: { src: breakdown, alt: 'Broken down silver sedan being winched onto a Quik Tow tilt tray' },
+  fourWd: { src: fourWd, alt: 'White 4WD loaded on a Quik Tow tilt tray truck' },
+  container: { src: container, alt: 'Truck carrying a shipping container at a container yard' },
+  machinery: { src: machinery, alt: 'Quik Tow tilt tray carrying an orange boom lift' },
+  boat: { src: boat, alt: 'Boat ready for transport next to a Quik Tow tilt tray truck' },
+} satisfies Record<string, Photo>;
+
+// Photo shown on each service page and its card, keyed by service id.
+export const SERVICE_PHOTOS: Record<string, Photo> = {
+  'accident-towing-perth': PHOTOS.accident,
+  'breakdown-towing-perth': PHOTOS.breakdown,
+  '4wd-recovery-perth': PHOTOS.fourWd,
+  'container-transport-perth': PHOTOS.container,
+  'vehicle-transport-perth': PHOTOS.machinery,
+  'insurance-towing': PHOTOS.hero,
+};
+
+// Fleet gallery on the About page.
+export const FLEET_PHOTOS: Photo[] = [PHOTOS.machinery, PHOTOS.boat, PHOTOS.fourWd];

@@ -17,7 +17,7 @@ import ServiceCard from '~/components/ServiceCard.astro';
 import FAQ from '~/components/FAQ.astro';
 import CTASection from '~/components/CTASection.astro';
 import PerthMap from '~/components/PerthMap.astro';
-import heroImg from '~/assets/images/hero-placeholder.jpg';
+import { PHOTOS, SERVICE_PHOTOS } from '~/data/photos';
 import { SITE, SELLING_POINTS } from '~/config/site';
 import { HOME_FAQS } from '~/data/faqs';
 import { faqPage } from '~/lib/schema';
@@ -31,6 +31,7 @@ const countByRegion = (id: string) => suburbs.filter((s) => s.data.region.id ===
 
 const HERO_WIDTHS = [640, 960, 1280, 1920, 2400];
 const HERO_SIZES = '100vw';
+const heroImg = PHOTOS.hero.src;
 const preload = await getImage({ src: heroImg, format: 'avif', widths: HERO_WIDTHS, sizes: HERO_SIZES });
 
 const title = 'Towing Perth 24/7 | Tow Truck Perth | Quik Tow & Transport';
@@ -60,13 +61,12 @@ const steps = [
       formats={['avif', 'webp']}
       widths={HERO_WIDTHS}
       sizes={HERO_SIZES}
-      alt=""
+      alt={PHOTOS.hero.alt}
       loading="eager"
       fetchpriority="high"
       class="absolute inset-0 -z-20 h-full w-full object-cover"
       pictureAttributes={{ class: 'absolute inset-0 -z-20' }}
     />
-    <!-- TODO: replace placeholder with a real photo of a Quik Tow truck; give it descriptive alt text. -->
     <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/40" aria-hidden="true"></div>
     <div class="wrap py-14 sm:py-20 lg:py-28">
       <p class="eyebrow">Tow truck Perth &middot; Open 24/7</p>
@@ -118,12 +118,13 @@ const steps = [
         One call covers it, whether you've crashed, broken down, bogged a 4WD or need a container moved.
       </p>
       <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((s) => <ServiceCard href={`/services/${s.id}`} title={s.data.name} blurb={s.data.cardBlurb} icon={s.data.icon} />)}
+        {services.map((s) => <ServiceCard href={`/services/${s.id}`} title={s.data.name} blurb={s.data.cardBlurb} icon={s.data.icon} photo={SERVICE_PHOTOS[s.id]} />)}
         <ServiceCard
           href="/insurance-towing"
           title="Insurance Towing"
           blurb="Crashed? We bill your insurer directly and deliver your car to the repairer, so you can focus on getting home."
           icon="insurance"
+          photo={SERVICE_PHOTOS['insurance-towing']}
         />
       </div>
     </div>

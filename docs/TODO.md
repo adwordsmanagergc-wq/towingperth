@@ -19,7 +19,7 @@ Nothing below was invented. Each item is a blank or placeholder until you provid
 ## Brand and photos
 
 - [ ] **Logo** (SVG preferred). It replaces `src/components/Logo.astro`, `public/logo.png` and the favicons.
-- [ ] **Real truck photos**: the hero (`src/assets/images/hero-placeholder.jpg`, at least 2400px wide) plus any trucks or jobs you want shown. Add descriptive alt text.
+- [x] **Real truck photos**: hero and service photos are in `src/assets/images`, wired up through `src/data/photos.ts`. Swap in newer shots there (hero at least 2400px wide) and update the alt text.
 
 ## Facts to confirm
 

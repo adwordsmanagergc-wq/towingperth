@@ -4,7 +4,9 @@ import Check from '@lucide/astro/icons/check';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PageHero from '~/components/PageHero.astro';
 import CTASection from '~/components/CTASection.astro';
+import { Picture } from 'astro:assets';
 import { SITE } from '~/config/site';
+import { FLEET_PHOTOS } from '~/data/photos';
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 const path = '/about';
@@ -73,6 +75,32 @@ const promises = [
           ))
         }
       </aside>
+    </div>
+  </section>
+  <section class="border-t border-steel bg-coal py-14 sm:py-20" aria-labelledby="fleet-heading">
+    <div class="wrap">
+      <p class="eyebrow">On the job</p>
+      <h2 id="fleet-heading" class="mt-3 text-4xl sm:text-5xl">Our trucks at work</h2>
+      <p class="mt-4 max-w-2xl text-lg text-mute">Cars, 4WDs, boats and machinery: if it needs moving across Perth, our tilt trays carry it.</p>
+      <ul class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          FLEET_PHOTOS.map((p) => (
+            <li>
+              <figure>
+                <Picture
+                  src={p.src}
+                  alt={p.alt}
+                  formats={['avif', 'webp']}
+                  widths={[400, 640, 800]}
+                  sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+                  class="aspect-[3/2] w-full rounded-lg border border-steel object-cover"
+                />
+                <figcaption class="mt-3 text-sm text-mute">{p.alt}</figcaption>
+              </figure>
+            </li>
+          ))
+        }
+      </ul>
     </div>
   </section>
   <CTASection position="about-cta-band" />
