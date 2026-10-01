@@ -31,7 +31,7 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     '@type': ['AutomotiveBusiness', 'EmergencyService'],
     '@id': BUSINESS_ID,
     name: SITE.name,
-    url: SITE.url,
+    url: absoluteUrl('/'),
     telephone: SITE.phoneE164,
     logo: absoluteUrl('/logo.png'),
     image: absoluteUrl('/og/home.jpg'),
@@ -63,7 +63,7 @@ export function website(): Json {
   return {
     '@type': 'WebSite',
     '@id': WEBSITE_ID,
-    url: SITE.url,
+    url: absoluteUrl('/'),
     name: SITE.name,
     publisher: { '@id': BUSINESS_ID },
     inLanguage: 'en-AU',

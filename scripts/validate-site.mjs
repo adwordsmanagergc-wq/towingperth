@@ -127,7 +127,7 @@ for (const file of files) {
   const h1 = $('h1');
   if (h1.length !== 1) errors.push(`${where}: ${h1.length} <h1> elements`);
   const canonical = $('link[rel="canonical"]').attr('href');
-  if (!utility && canonical !== SITE + (route === '/' ? '' : route)) errors.push(`${where}: canonical "${canonical}"`);
+  if (!utility && canonical !== SITE + route) errors.push(`${where}: canonical "${canonical}"`);
   for (const p of ['og:title', 'og:description', 'og:image', 'og:url']) if (!$(`meta[property="${p}"]`).attr('content')) errors.push(`${where}: missing ${p}`);
   if (!$('meta[name="twitter:card"]').length) errors.push(`${where}: missing twitter:card`);
   const robots = $('meta[name="robots"]').attr('content') ?? '';

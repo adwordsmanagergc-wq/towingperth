@@ -51,7 +51,7 @@ const jsonLd = graph([
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    {!noindex && <link rel="canonical" href={canonical} />}
     {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="theme-color" content="#0f1113" />
     <meta name="format-detection" content="telephone=no" />

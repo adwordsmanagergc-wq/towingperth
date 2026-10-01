@@ -48,7 +48,17 @@ if (isMain) {
   }
   const file = new URL('../vercel.json', import.meta.url);
   const config = JSON.parse(await readFile(file, 'utf8'));
-  config.redirects = redirects.sort((a, b) => a.source.localeCompare(b.source));
+  // Send the old *.vercel.app production host to the custom domain so Google
+  // only ever sees one copy of the site. Listed first so it wins over path rules.
+  const hostRedirects = [
+    {
+      source: '/:path*',
+      has: [{ type: 'host', value: 'towingperth.vercel.app' }],
+      destination: 'https://www.towingperth.com/:path*',
+      statusCode: 301,
+    },
+  ];
+  config.redirects = [...hostRedirects, ...redirects.sort((a, b) => a.source.localeCompare(b.source))];
   await writeFile(file, JSON.stringify(config, null, 2) + '\n');
   console.log(`Wrote ${redirects.length} redirects to vercel.json`);
 }

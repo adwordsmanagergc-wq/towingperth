@@ -38,7 +38,9 @@ export function suburbDescription(name: string, region: string): string {
 
 export function absoluteUrl(path: string): string {
   if (/^https?:/.test(path)) return path;
-  const clean = path === '/' ? '' : path.replace(/\/+$/, '');
+  // The homepage canonical keeps its trailing slash so it matches the sitemap
+  // and the URL browsers and Google resolve the root to.
+  const clean = path === '/' ? '/' : path.replace(/\/+$/, '');
   return `${SITE.url}${clean}`;
 }
 
