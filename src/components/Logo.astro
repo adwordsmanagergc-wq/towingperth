@@ -1,17 +1,19 @@
 ---
-// TODO: replace with the supplied Quik Tow & Transport logo. This is a type-only placeholder.
+// Quik Tow & Transport logo (from the original towingperth.com site).
+// The artwork is black and green on white, so it sits on a white badge
+// to stay legible against the site's dark background.
+import { Image } from 'astro:assets';
+import logo from '~/assets/images/quik-tow-logo.png';
 interface Props {
   class?: string;
+  /** Rendered logo height in px (the badge adds padding around it). */
+  height?: number;
+  alt?: string;
 }
-const { class: cls = '' } = Astro.props;
+const { class: cls = '', height = 40, alt = 'Quik Tow & Transport' } = Astro.props;
+const width = Math.round((logo.width / logo.height) * height);
 ---
 
-<span class:list={['inline-flex items-center gap-2.5 leading-none', cls]}>
-  <span class="hazard grid size-10 shrink-0 place-items-center rounded-md p-[3px]" aria-hidden="true">
-    <span class="grid size-full place-items-center rounded-[4px] bg-ink font-display text-xl font-extrabold text-hivis">Q</span>
-  </span>
-  <span class="flex flex-col">
-    <span class="font-display text-[1.45rem] font-extrabold uppercase tracking-wide text-white">Quik Tow</span>
-    <span class="font-display text-[0.7rem] font-bold uppercase tracking-[0.24em] text-hivis">&amp; Transport</span>
-  </span>
+<span class:list={['inline-flex rounded-md bg-white px-2 py-1 shadow-sm', cls]}>
+  <Image src={logo} alt={alt} width={width} height={height} densities={[1, 2, 3]} format="webp" loading="eager" class="block" />
 </span>

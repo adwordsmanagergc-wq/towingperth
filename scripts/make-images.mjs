@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Generates placeholder imagery: hero background, OG cards per page type, favicons
-// and a logo PNG for schema. Re-run after changing brand colours or copy:
+// Generates OG cards per page type, favicons and the schema logo PNG from the
+// real logo (src/assets/images/quik-tow-logo.png). Re-run after changing brand colours or copy:
 //   node scripts/make-images.mjs
-import { mkdir, writeFile, copyFile } from 'node:fs/promises';
+import { mkdir, copyFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import sharp from 'sharp';
 
@@ -76,17 +76,9 @@ function ogSvg(kicker, line1, line2) {
   <text x="80" y="385" font-family="Barlow Condensed ExtraBold" font-size="118" fill="${HIVIS}">${line2}</text>
   <rect x="80" y="440" width="560" height="96" rx="10" fill="${HIVIS}"/>
   <text x="112" y="507" font-family="Barlow Condensed ExtraBold" font-size="60" fill="${INK}">CALL 0419 857 070</text>
-  <text x="1120" y="507" text-anchor="end" font-family="Barlow Condensed SemiBold" font-size="36" letter-spacing="3" fill="#a7aeb6">QUIK TOW &amp; TRANSPORT</text>
+  <rect x="836" y="414" width="284" height="148" rx="12" fill="#ffffff"/>
 </svg>`;
 }
-
-const mark = (size) => `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 64 64">
-  <defs><pattern id="hz" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="10" fill="${HIVIS}"/></pattern></defs>
-  <rect width="64" height="64" rx="12" fill="${INK}"/>
-  <rect x="3" y="3" width="58" height="58" rx="10" fill="url(#hz)"/>
-  <rect x="9" y="9" width="46" height="46" rx="7" fill="${INK}"/>
-  <text x="32" y="47" text-anchor="middle" font-family="Barlow Condensed ExtraBold" font-size="42" fill="${HIVIS}">Q</text>
-</svg>`;
 
 await mkdir('src/assets/images', { recursive: true });
 await mkdir('public/og', { recursive: true });
@@ -100,13 +92,29 @@ const og = {
   road: ['PERTH ROAD SAFETY', 'CRASHED OR BROKEN DOWN?', 'WE TOW 24/7'],
   general: ['QUIK TOW &amp; TRANSPORT', '24/7 TOWING PERTH', '10+ TRUCKS ON THE ROAD'],
 };
+// Real logo (from the original towingperth.com) on a white badge, bottom right.
+const LOGO = 'src/assets/images/quik-tow-logo.png';
+const badgeLogo = await sharp(LOGO).resize(260, 128, { fit: 'contain', background: '#ffffff' }).toBuffer();
 for (const [name, lines] of Object.entries(og)) {
-  await sharp(Buffer.from(ogSvg(...lines))).jpeg({ quality: 85, mozjpeg: true }).toFile(`public/og/${name}.jpg`);
+  await sharp(Buffer.from(ogSvg(...lines)))
+    .composite([{ input: badgeLogo, left: 848, top: 424 }])
+    .jpeg({ quality: 85, mozjpeg: true })
+    .toFile(`public/og/${name}.jpg`);
 }
 
-// TODO: replace with the real logo once supplied.
-await writeFile('public/favicon.svg', mark(64));
-await sharp(Buffer.from(mark(512))).png().toFile('public/logo.png');
-await sharp(Buffer.from(mark(180))).png().toFile('public/apple-touch-icon.png');
-await sharp(Buffer.from(mark(32))).png().toFile('public/favicon-32.png');
+// Favicons and the schema logo come from the real logo too.
+for (const [file, size] of [['favicon-48.png', 48], ['favicon-192.png', 192], ['apple-touch-icon.png', 180]]) {
+  const pad = Math.round(size * 0.06);
+  const inner = await sharp(LOGO).resize(size - pad * 2, size - pad * 2, { fit: 'contain', background: '#ffffff' }).toBuffer();
+  await sharp({ create: { width: size, height: size, channels: 4, background: '#ffffff' } })
+    .composite([{ input: inner, left: pad, top: pad }])
+    .png()
+    .toFile(`public/${file}`);
+}
+const schemaLogo = await sharp(LOGO).resize(480, null, { kernel: 'lanczos3' }).toBuffer({ resolveWithObject: true });
+await sharp({ create: { width: 512, height: schemaLogo.info.height + 32, channels: 3, background: '#ffffff' } })
+  .composite([{ input: schemaLogo.data, left: 16, top: 16 }])
+  .png({ palette: true, quality: 90, compressionLevel: 9 })
+  .toFile('public/logo.png');
+
 console.log('Images written.');
