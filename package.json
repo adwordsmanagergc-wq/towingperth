@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "audit:crawl": "node scripts/crawl-old-site.mjs"
+    "audit:crawl": "NODE_USE_ENV_PROXY=1 node scripts/crawl-old-site.mjs"
   },
   "devDependencies": {
     "cheerio": "^1.2.0"

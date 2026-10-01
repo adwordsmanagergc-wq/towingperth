@@ -1,0 +1,1013 @@
+{
+  "groups": [
+    {
+      "reason": "numeric suffix",
+      "paths": [
+        "/home/towing-northern-suburbs-perth/towing-joondalup",
+        "/home/towing-northern-suburbs-perth/towing-joondalup_1"
+      ],
+      "winner": "/home/towing-northern-suburbs-perth/towing-joondalup",
+      "losers": [
+        "/home/towing-northern-suburbs-perth/towing-joondalup_1"
+      ]
+    },
+    {
+      "reason": "same slug, different parent; identical <title>",
+      "paths": [
+        "/home/towing-eastern-suburbs-perth/towing-belmont",
+        "/home/towing-south-eastern-suburbs-perth/towing-belmont"
+      ],
+      "winner": "/home/towing-eastern-suburbs-perth/towing-belmont",
+      "losers": [
+        "/home/towing-south-eastern-suburbs-perth/towing-belmont"
+      ]
+    },
+    {
+      "reason": "same slug, different parent; identical <title>",
+      "paths": [
+        "/home/towing-eastern-suburbs-perth/towing-forrestfield",
+        "/home/towing-south-eastern-suburbs-perth/towing-forrestfield"
+      ],
+      "winner": "/home/towing-eastern-suburbs-perth/towing-forrestfield",
+      "losers": [
+        "/home/towing-south-eastern-suburbs-perth/towing-forrestfield"
+      ]
+    },
+    {
+      "reason": "identical <title>",
+      "paths": [
+        "/",
+        "/home"
+      ],
+      "winner": "/home",
+      "losers": [
+        "/"
+      ]
+    }
+  ],
+  "junk": [],
+  "copyDupes": [
+    {
+      "similarity": 1,
+      "paths": [
+        "/",
+        "/home"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-albany-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-baldivis-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-canning-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-garden-city"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-hislop-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-albany-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-baldivis-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-canning-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-garden-city"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-hislop-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-baldivis-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-canning-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-garden-city"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-hislop-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-albany-highway",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-canning-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-garden-city"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-hislop-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-baldivis-road",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-garden-city"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-hislop-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-canning-highway",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-hislop-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-garden-city",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-hislop-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-great-eastern-highway",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-hislop-road",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+        "/home/dangerous-roads-in-perth/towing-kulija-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-joondalup-drive",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-kulija-road",
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-kulija-road",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-kulija-road",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-kulija-road",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-kulija-road",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-kulija-road",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway",
+        "/home/dangerous-roads-in-perth/towing-nicholson-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-mitchell-freeway",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-nicholson-road",
+        "/home/dangerous-roads-in-perth/towing-ranford-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-nicholson-road",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-nicholson-road",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-nicholson-road",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-ranford-road",
+        "/home/dangerous-roads-in-perth/towing-rome-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-ranford-road",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-ranford-road",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-rome-road",
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-rome-road",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.99,
+      "paths": [
+        "/home/dangerous-roads-in-perth/towing-wanneroo-road",
+        "/home/towing-southern-suburbs-perth/towing-alfred-cove"
+      ]
+    },
+    {
+      "similarity": 0.96,
+      "paths": [
+        "/home/towing-eastern-suburbs-perth/towing-belmont",
+        "/home/towing-eastern-suburbs-perth/towing-bickley"
+      ]
+    },
+    {
+      "similarity": 0.98,
+      "paths": [
+        "/home/towing-eastern-suburbs-perth/towing-belmont",
+        "/home/towing-south-eastern-suburbs-perth/towing-belmont"
+      ]
+    },
+    {
+      "similarity": 0.94,
+      "paths": [
+        "/home/towing-eastern-suburbs-perth/towing-bickley",
+        "/home/towing-south-eastern-suburbs-perth/towing-belmont"
+      ]
+    },
+    {
+      "similarity": 0.98,
+      "paths": [
+        "/home/towing-eastern-suburbs-perth/towing-forrestfield",
+        "/home/towing-south-eastern-suburbs-perth/towing-forrestfield"
+      ]
+    },
+    {
+      "similarity": 0.9,
+      "paths": [
+        "/home/towing-northern-suburbs-perth/towing-joondalup",
+        "/home/towing-northern-suburbs-perth/towing-joondalup_1"
+      ]
+    },
+    {
+      "similarity": 0.9,
+      "paths": [
+        "/home/towing-south-eastern-suburbs-perth/towing-cannington",
+        "/home/towing-south-eastern-suburbs-perth/towing-east-cannington"
+      ]
+    },
+    {
+      "similarity": 1,
+      "paths": [
+        "/home/towing-south-eastern-suburbs-perth/towing-kenwick",
+        "/home/towing-south-eastern-suburbs-perth/towing-riverton"
+      ]
+    },
+    {
+      "similarity": 1,
+      "paths": [
+        "/home/towing-south-eastern-suburbs-perth/towing-maddington",
+        "/home/towing-south-eastern-suburbs-perth/towing-martin"
+      ]
+    },
+    {
+      "similarity": 0.9,
+      "paths": [
+        "/home/towing-southern-suburbs-perth/towing-coogee",
+        "/home/towing-southern-suburbs-perth/towing-north-coogee"
+      ]
+    },
+    {
+      "similarity": 0.9,
+      "paths": [
+        "/home/towing-western-suburbs-perth/towing-claremont",
+        "/home/towing-western-suburbs-perth/towing-mount-claremont"
+      ]
+    }
+  ],
+  "mismatches": [
+    {
+      "path": "/home/towing-eastern-suburbs-perth/towing-eden-hill",
+      "title": "QUIK TOW & TRANSPORT - TOWING EDEN HILL",
+      "h1": "TOWING EDIN HILL"
+    },
+    {
+      "path": "/home/towing-eastern-suburbs-perth/towing-greenmount",
+      "title": "QUIK TOW & TRANSPORT - TOWING GREENMOUNT",
+      "h1": "TOWING GREENMOUNTH"
+    },
+    {
+      "path": "/home/towing-eastern-suburbs-perth/towing-stratton",
+      "title": "QUIK TOW & TRANSPORT - TOWING STRATTON",
+      "h1": "TOWING SOUTH STRATTON"
+    },
+    {
+      "path": "/home/towing-northern-suburbs-perth/towing-quinns-rocks",
+      "title": "QUIK TOW & TRANSPORT - TOWING QUINNS ROCKS",
+      "h1": "TOWING QUINS ROCKS"
+    },
+    {
+      "path": "/home/towing-south-eastern-suburbs-perth/towing-kenwick",
+      "title": "QUIK TOW & TRANSPORT - TOWING KENWICK",
+      "h1": "TOWING RIVERTON"
+    },
+    {
+      "path": "/home/towing-south-eastern-suburbs-perth/towing-maddington",
+      "title": "QUIK TOW & TRANSPORT - TOWING MADDINGTON",
+      "h1": "TOWING MARTIN"
+    },
+    {
+      "path": "/home/towing-southern-suburbs-perth/towing-coolbellup",
+      "title": "QUIK TOW & TRANSPORT - TOWING COOLBELLUP",
+      "h1": "TOWING EAST FREMANTLE"
+    },
+    {
+      "path": "/home/towing-southern-suburbs-perth/towing-hamilton-hil",
+      "title": "QUIK TOW & TRANSPORT - TOWING HAMILTON HIL",
+      "h1": "TOWING HAMILTON HILL"
+    },
+    {
+      "path": "/home/towing-southern-suburbs-perth/towing-north-lake",
+      "title": "QUIK TOW & TRANSPORT - TOWING NORTH LAKE",
+      "h1": "TOWING O'CONNOR"
+    },
+    {
+      "path": "/home/towing-western-suburbs-perth/towing-dalkeith",
+      "title": "QUIK TOW & TRANSPORT - TOWING DALKEITH",
+      "h1": "TOWING DOUBLEVIEW"
+    }
+  ]
+}

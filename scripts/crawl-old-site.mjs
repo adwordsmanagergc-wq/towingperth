@@ -68,9 +68,10 @@ function extract(html, path) {
     .get()
     .filter((i) => i.src && !i.src.startsWith('data:'));
 
-  // Google Sites puts page content in role=main; fall back to <body> minus chrome.
-  const $main = $('[role="main"]').first().length ? $('[role="main"]').first() : $('body');
-  $main.find('script, style, noscript, nav, header, footer, [role="navigation"]').remove();
+  // Google Sites splits page content across top-level <section> blocks (role=main
+  // only wraps the banner), so collect every section; fall back to <body>.
+  $('script, style, noscript, nav, [role="navigation"]').remove();
+  const $main = $('section').length ? $('<div></div>').append($('section').clone()) : $('body');
   // Keep paragraph breaks so the copy stays readable in pages.json.
   $main.find('p, h1, h2, h3, h4, li, br, div').each((_, el) => {
     $(el).append('\n');
@@ -87,7 +88,8 @@ function extract(html, path) {
     metaDescription,
     canonical,
     robots,
-    h1: h1s[0] ?? '',
+    // Google Sites renders page headings as h2, so fall back to the first h2.
+    h1: h1s[0] ?? h2s[0] ?? '',
     h1All: h1s,
     h2: h2s,
     bodyText,
@@ -103,7 +105,7 @@ async function fetchPage(path) {
     try {
       const res = await fetch(url, {
         redirect: 'manual',
-        headers: { 'user-agent': 'QuikTow-site-migration-audit/1.0' },
+        headers: { 'user-agent': 'Mozilla/5.0 (compatible; QuikTow-site-migration-audit/1.0)' },
       });
       if (res.status >= 300 && res.status < 400) {
         return { url, status: res.status, location: res.headers.get('location') ?? '', html: '' };
@@ -207,13 +209,23 @@ function findDuplicates(pages) {
   const byTitle = new Map();
   for (const p of ok) if (p.title) byTitle.set(p.title, [...(byTitle.get(p.title) ?? []), p.path]);
   for (const [, paths] of byTitle) if (paths.length > 1) groups.push({ reason: 'identical <title>', paths });
-  // 4. Near-identical body copy (>= 90% shingle overlap).
+  // 4. Near-identical body copy (>= 90% shingle overlap). Different suburbs with
+  // copied text are a rewrite problem, not a URL merge, so they're reported
+  // separately unless one of the URL rules above already grouped them.
   const sh = ok.map((p) => [p.path, shingles(p.bodyText ?? '')]);
+  const copyDupes = [];
   for (let i = 0; i < sh.length; i++)
     for (let j = i + 1; j < sh.length; j++) {
       const sim = jaccard(sh[i][1], sh[j][1]);
-      if (sim >= 0.9) groups.push({ reason: `body copy ${(sim * 100).toFixed(0)}% identical`, paths: [sh[i][0], sh[j][0]] });
+      if (sim >= 0.9) copyDupes.push({ similarity: Number(sim.toFixed(2)), paths: [sh[i][0], sh[j][0]] });
     }
+
+  // 5. Slug and heading disagree (wrong suburb's copy, or a typo in one of them).
+  const slugOf = (path) => path.split('/').pop().replace(/^t?owing-/, '').replace(/_\d+$/, '');
+  const headingSlug = (h) => h.toLowerCase().replace(/^towing /, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const mismatches = ok
+    .filter((p) => p.path.split('/').length > 3 && p.h1 && slugOf(p.path) !== headingSlug(p.h1))
+    .map((p) => ({ path: p.path, title: p.title, h1: p.h1 }));
 
   // Merge groups covering the same set of paths so each pair is reported once.
   const merged = new Map();
@@ -249,7 +261,7 @@ function findDuplicates(pages) {
       reason: p.status !== 200 ? `HTTP ${p.status}${p.redirectTo ? ' -> ' + p.redirectTo : ''}` : p.wordCount < 80 ? 'thin (<80 words)' : 'noindex',
     }));
 
-  return { groups, junk };
+  return { groups, junk, copyDupes, mismatches };
 }
 
 const csvCell = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
@@ -258,7 +270,7 @@ async function main() {
   console.log(`Crawling ${BASE.href} (max ${MAX_PAGES} pages)`);
   const pages = await crawl();
   for (const p of pages) p.section = section(p.path);
-  const { groups, junk } = findDuplicates(pages);
+  const { groups, junk, copyDupes, mismatches } = findDuplicates(pages);
   const dupOf = new Map();
   for (const g of groups) for (const l of g.losers) if (!dupOf.has(l)) dupOf.set(l, g.winner);
 
@@ -271,7 +283,7 @@ async function main() {
   );
   await writeFile(new URL('urls.csv', OUT_DIR), [header.join(','), ...rows].join('\n') + '\n');
   await writeFile(new URL('pages.json', OUT_DIR), JSON.stringify(pages, null, 2));
-  await writeFile(new URL('duplicates.json', OUT_DIR), JSON.stringify({ groups, junk }, null, 2));
+  await writeFile(new URL('duplicates.json', OUT_DIR), JSON.stringify({ groups, junk, copyDupes, mismatches }, null, 2));
 
   const count = (fn) => pages.filter(fn).length;
   const sections = [...new Set(pages.map((p) => p.section))].sort();
@@ -292,6 +304,14 @@ async function main() {
     `## Duplicate groups (${groups.length})`,
     '',
     ...groups.map((g) => `- ${g.reason}: keep \`${g.winner}\`, redirect ${g.losers.map((l) => `\`${l}\``).join(', ')}`),
+    '',
+    `## Slug / heading mismatches (${mismatches.length})`,
+    '',
+    ...mismatches.map((m) => `- \`${m.path}\`: title "${m.title}", heading "${m.h1}"`),
+    '',
+    `## Near-identical copy (${copyDupes.length} page pairs share >= 90% of their text)`,
+    '',
+    `Pages involved: ${new Set(copyDupes.flatMap((d) => d.paths)).size}. Full list in duplicates.json.`,
     '',
     `## Junk / thin (${junk.length})`,
     '',
