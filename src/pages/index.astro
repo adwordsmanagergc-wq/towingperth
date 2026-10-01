@@ -12,6 +12,7 @@ import MapPin from '@lucide/astro/icons/map-pin';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import CallButton from '~/components/CallButton.astro';
 import Button from '~/components/Button.astro';
+import QuoteButton from '~/components/QuoteButton.astro';
 import TrustChip from '~/components/TrustChip.astro';
 import ServiceCard from '~/components/ServiceCard.astro';
 import FAQ from '~/components/FAQ.astro';
@@ -78,7 +79,7 @@ const steps = [
       </p>
       <div class="mt-8 flex flex-col gap-3 sm:flex-row">
         <CallButton position="home-hero" size="xl" label="Call now" />
-        <Button href="/contact#quote" class="sm:min-h-16 sm:text-2xl">Get a quote</Button>
+        <QuoteButton position="home-hero" class="sm:min-h-16 sm:text-2xl" />
       </div>
       <ul class="mt-10 flex flex-wrap gap-2.5" aria-label="Why choose Quik Tow">
         {SELLING_POINTS.map((p) => <TrustChip label={p.label} />)}

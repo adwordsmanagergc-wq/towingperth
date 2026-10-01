@@ -48,7 +48,7 @@ The page, its title and description, schema, sitemap entry, region hub listing, 
 
 ## Quote form
 
-The form posts to `api/quote.js` (a Vercel function), which works without JavaScript and emails the request through [Resend](https://resend.com). Set `RESEND_API_KEY`, `QUOTE_TO_EMAIL` and `QUOTE_FROM_EMAIL` in the Vercel project. A honeypot field filters bots.
+Switched off for now (`quoteFormEnabled` in `src/config/site.ts`): quote buttons open an SMS instead. When on, the form posts to `api/quote.js` (a Vercel function), which works without JavaScript and emails the request through [Resend](https://resend.com). Set `RESEND_API_KEY`, `QUOTE_TO_EMAIL` and `QUOTE_FROM_EMAIL` in the Vercel project. A honeypot field filters bots.
 
 ## Analytics
 

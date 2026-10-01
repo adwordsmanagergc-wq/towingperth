@@ -4,7 +4,7 @@ import { SELLING_POINTS } from '~/config/site';
 import type { Crumb } from '~/lib/schema';
 import Breadcrumbs from './Breadcrumbs.astro';
 import CallButton from './CallButton.astro';
-import Button from './Button.astro';
+import QuoteButton from './QuoteButton.astro';
 import TrustChip from './TrustChip.astro';
 
 interface Props {
@@ -26,7 +26,7 @@ const { crumbs, eyebrow, h1, lead, chips = true } = Astro.props;
     <p class="mt-5 max-w-3xl text-lg text-mute sm:text-xl">{lead}</p>
     <div class="mt-8 flex flex-col gap-3 sm:flex-row">
       <CallButton position="page-hero" size="lg" label="Call now" />
-      <Button href="/contact#quote">Get a quote</Button>
+      <QuoteButton position="page-hero" />
     </div>
     {
       chips && (

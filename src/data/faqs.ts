@@ -13,7 +13,7 @@ If you're somewhere unsafe, like a freeway shoulder or a blind corner, tell us s
     q: 'How much does towing in Perth cost?',
     a: `The cost depends on the distance, the type of vehicle, the time of day and how easy the car is to reach and load. We give you a clear quote upfront before we dispatch, with no hidden fees, and we back it with our best rates guarantee. If it's an insurance job, we bill your insurer directly so you usually don't pay us on the day.
 
-A short tow of a car that rolls freely is the simplest job. Costs go up when we need to winch a car out of a ditch, recover a bogged 4WD or handle a large vehicle, or when the run is long. Tell us those details when you call and the quote will reflect them, so there are no surprises later. [Get a quote](/contact#quote).`,
+A short tow of a car that rolls freely is the simplest job. Costs go up when we need to winch a car out of a ditch, recover a bogged 4WD or handle a large vehicle, or when the run is long. Tell us those details when you call and the quote will reflect them, so there are no surprises later. For a quote, call or text 0419 857 070.`,
   },
   {
     q: 'Do you offer shipping container transport in Perth?',

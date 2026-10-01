@@ -1,0 +1,28 @@
+---
+// Secondary "quote" call to action. While the quote form is switched off it
+// opens an SMS to the business mobile (tracked as sms_click); otherwise it
+// links to the form on /contact.
+import MessageSquare from '@lucide/astro/icons/message-square';
+import { SITE } from '~/config/site';
+import Button from './Button.astro';
+
+interface Props {
+  position: string;
+  variant?: 'primary' | 'secondary' | 'ghost' | 'dark';
+  class?: string;
+}
+const { position, variant = 'secondary', class: cls = '' } = Astro.props;
+const sms = `${SITE.smsHref}?body=${encodeURIComponent('Hi Quik Tow, can I get a quote? Pickup: ')}`;
+---
+
+{
+  SITE.quoteFormEnabled ? (
+    <Button href="/contact#quote" variant={variant} class={cls}>
+      Get a quote
+    </Button>
+  ) : (
+    <Button href={sms} variant={variant} class={cls} data-position={position}>
+      <MessageSquare class="size-[1em]" aria-hidden="true" /> Text for a quote
+    </Button>
+  )
+}

@@ -7,14 +7,15 @@ Nothing below was invented. Each item is a blank or placeholder until you provid
 - [ ] **Email address** to publish. The old site footer showed info@quiktow.com.au; confirm it's still right.
 - [ ] **ABN** for the footer. The old site showed one; confirm it before publishing.
 - [ ] **Street address**, only if you want one shown. You can leave it blank as a service-area business.
-- [ ] **Google Business Profile URL** and **Facebook URL** (schema `sameAs`).
+- [ ] **Google Business Profile URL** and **Facebook URL** (schema `sameAs`). The profile's website link is already updated to the new site.
 - [ ] **Google Tag Manager ID** (or GA4 measurement ID).
 
-## Quote form (Vercel environment variables)
+## Quote form (optional, switched off)
 
-- [ ] `QUOTE_TO_EMAIL`: where quote requests go
-- [ ] `QUOTE_FROM_EMAIL`: a verified sender address
-- [ ] `RESEND_API_KEY`: a Resend account key. Until this is set, the form shows "please call us" instead of sending.
+Quotes currently go by phone or text: every "Text for a quote" button opens an SMS to 0419 857 070. To bring back the web form:
+
+- [ ] Set `RESEND_API_KEY`, `QUOTE_TO_EMAIL` and `QUOTE_FROM_EMAIL` in Vercel
+- [ ] Set `quoteFormEnabled: true` in `src/config/site.ts`
 
 ## Brand and photos
 

@@ -27,6 +27,10 @@ export const SITE = {
   // TODO: Google Business Profile and Facebook URLs for schema sameAs and the footer.
   sameAs: [] as string[],
 
+  // Quote form on /contact. Off for now: quotes go by phone or text instead.
+  // To turn it back on, set the three Resend variables in Vercel (see README) and flip this.
+  quoteFormEnabled: false,
+
   analytics: {
     // TODO: Google Tag Manager container ID, e.g. GTM-XXXXXXX
     gtmId: '',

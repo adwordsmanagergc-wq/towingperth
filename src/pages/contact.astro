@@ -6,6 +6,9 @@ import BaseLayout from '~/layouts/BaseLayout.astro';
 import PageHero from '~/components/PageHero.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
 import { SITE } from '~/config/site';
+import CallButton from '~/components/CallButton.astro';
+
+const formOn = SITE.quoteFormEnabled;
 
 const path = '/contact';
 const crumbs = [
@@ -16,7 +19,9 @@ const crumbs = [
 
 <BaseLayout
   title="Contact & Free Towing Quote Perth | Quik Tow & Transport"
-  description="Call 0419 857 070 for a tow truck anywhere in Perth, 24/7, or send a quick quote request for towing, 4WD recovery or container transport."
+  description={formOn
+    ? 'Call 0419 857 070 for a tow truck anywhere in Perth, 24/7, or send a quick quote request for towing, 4WD recovery or container transport.'
+    : 'Call or text 0419 857 070 for a tow truck or a free quote anywhere in Perth, 24/7: towing, 4WD recovery, container and vehicle transport.'}
   path={path}
   og="general"
   crumbs={crumbs}
@@ -25,7 +30,9 @@ const crumbs = [
     crumbs={crumbs}
     eyebrow="Contact"
     h1="Contact Quik Tow & Transport"
-    lead="For anything urgent, call. A real person answers 24/7. For planned jobs like container moves or vehicle transport, send a quote request and we'll call you back."
+    lead={formOn
+      ? "For anything urgent, call. A real person answers 24/7. For planned jobs like container moves or vehicle transport, send a quote request and we'll call you back."
+      : 'Call or text us on 0419 857 070 any time. A real person answers 24/7, and you get a clear quote on the spot.'}
     chips={false}
   />
 
@@ -56,16 +63,43 @@ const crumbs = [
         }
       </div>
 
-      <div id="quote" class="scroll-mt-28 rounded-lg bg-paper p-6 text-ink sm:p-8">
-        <h2 class="text-4xl">Get a quote</h2>
-        <p class="mt-2 text-slate">Fill this in and we'll call you back with a price. No obligation.</p>
-        <div id="quote-error" class="mt-4 hidden rounded-md border-2 border-red-700 bg-red-50 p-4 font-semibold text-red-800 target:block" role="alert">
-          Sorry, your request didn't send. Please call us on {SITE.phoneDisplay} instead.
-        </div>
-        <div class="mt-6">
-          <QuoteForm />
-        </div>
-      </div>
+      {
+        formOn ? (
+          <div id="quote" class="scroll-mt-28 rounded-lg bg-paper p-6 text-ink sm:p-8">
+            <h2 class="text-4xl">Get a quote</h2>
+            <p class="mt-2 text-slate">Fill this in and we'll call you back with a price. No obligation.</p>
+            <div id="quote-error" class="mt-4 hidden rounded-md border-2 border-red-700 bg-red-50 p-4 font-semibold text-red-800 target:block" role="alert">
+              Sorry, your request didn't send. Please call us on {SITE.phoneDisplay} instead.
+            </div>
+            <div class="mt-6">
+              <QuoteForm />
+            </div>
+          </div>
+        ) : (
+          <div id="quote" class="on-light scroll-mt-28 rounded-lg bg-paper p-6 text-ink sm:p-10">
+            <h2 class="text-4xl sm:text-5xl">Get a quote: just call</h2>
+            <p class="mt-4 max-w-xl text-lg text-slate">
+              The fastest way to a price is a quick call. Tell us where the vehicle or container is, where it's going and what it is, and we'll
+              quote you on the spot, with no hidden fees and our best rates guarantee.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <CallButton position="contact-quote" variant="dark" size="xl" label="Call" />
+              <a
+                href={`${SITE.smsHref}?body=${encodeURIComponent('Hi Quik Tow, can I get a quote? Pickup: ')}`}
+                data-position="contact-quote"
+                class="inline-flex min-h-16 items-center justify-center gap-2 rounded-md border-2 border-ink px-6 font-display text-xl font-bold uppercase tracking-wide text-ink hover:bg-ink hover:text-hivis"
+              >
+                <MessageSquare class="size-6" aria-hidden="true" /> Text for a quote
+              </a>
+            </div>
+            <ul class="mt-8 space-y-2 text-slate">
+              <li><strong class="text-ink">Towing or recovery:</strong> where you are, the make and model, and where it needs to go.</li>
+              <li><strong class="text-ink">Containers:</strong> the size, both addresses and any access limits at the delivery site.</li>
+              <li><strong class="text-ink">Insurance job:</strong> your insurer and claim number, and we'll bill them directly.</li>
+            </ul>
+          </div>
+        )
+      }
     </div>
   </section>
 </BaseLayout>

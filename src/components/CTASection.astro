@@ -1,7 +1,7 @@
 ---
 import { SITE } from '~/config/site';
 import CallButton from './CallButton.astro';
-import Button from './Button.astro';
+import QuoteButton from './QuoteButton.astro';
 interface Props {
   heading?: string;
   text?: string;
@@ -22,7 +22,7 @@ const {
     </div>
     <div class="flex flex-col gap-3 sm:flex-row lg:flex-col">
       <CallButton position={position} variant="dark" size="xl" label="Call" />
-      <Button href="/contact#quote" variant="dark" class="border-2 border-ink bg-transparent! text-ink! hover:bg-ink! hover:text-hivis!">Get a quote</Button>
+      <QuoteButton position={`${position}-quote`} variant="dark" class="border-2 border-ink bg-transparent! text-ink! hover:bg-ink! hover:text-hivis!" />
     </div>
   </div>
   <p class="sr-only">{SITE.name} is available {SITE.hours} on {SITE.phoneDisplay}.</p>
