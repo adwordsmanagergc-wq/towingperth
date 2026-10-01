@@ -43,7 +43,7 @@ In the city centre, a drivable car can usually be moved into a side street or ca
 
 WA law requires everyone involved in a crash to exchange names and addresses. Note the other driver's phone number, registration and insurer, and photograph the damage, the plates and the intersection or roundabout where it happened.
 
-A crash must be reported to police in WA if anyone is injured, if total damage exceeds 3,000 dollars, or if the owner of damaged property isn't around. You can do this through the online crash reporting facility on the WA Government website.
+A crash must be reported to police in WA if anyone is injured, if total damage exceeds $3,000, or if the owner of damaged property isn't around. You can do this through the online crash reporting facility on the WA Government website.
 
 If your car isn't safe to drive, our [accident towing](/services/accident-towing-perth) crew will collect it. With [insurance towing](/insurance-towing), we bill your insurer directly.
 

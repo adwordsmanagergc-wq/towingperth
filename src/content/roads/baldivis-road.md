@@ -38,7 +38,7 @@ The City of Rockingham says the intersection was built in 2014 and that the area
 2. **Get out of the intersection if you can.** If the cars can be driven, move them into a side street or onto the verge clear of the turning lanes. A car sitting in the Kulija Road junction is very likely to be hit again.
 3. **Exchange names and addresses.** In WA every driver involved in a crash must do this. Take down the other driver's phone number, rego and insurance company as well.
 4. **Photograph the scene,** including both cars, the plates, the road markings and the position of the cars in the intersection.
-5. **Report it if the rules say so.** WA requires a crash to be reported to police when someone is injured, when total damage is more than 3,000 dollars, or when the owner of damaged property isn't there. You can usually lodge it through the online crash reporting facility on the WA Government website.
+5. **Report it if the rules say so.** WA requires a crash to be reported to police when someone is injured, when total damage is more than $3,000, or when the owner of damaged property isn't there. You can usually lodge it through the online crash reporting facility on the WA Government website.
 
 Our [accident towing](/services/accident-towing-perth) service handles the recovery, and with [insurance towing](/insurance-towing) we bill your insurer rather than you.
 

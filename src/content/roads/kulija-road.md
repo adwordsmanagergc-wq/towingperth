@@ -39,7 +39,7 @@ If the vehicles still drive, move them off Kulija Road onto the verge or into a 
 
 You and the other driver must swap names and addresses under WA law. It's sensible to also note their phone number, rego and insurer, and to take photos of both vehicles, their plates and where they finished up.
 
-Last, check the reporting rule. In WA you have to report a crash to police if someone was injured, if total damage is more than 3,000 dollars, or if the owner of damaged property isn't present. Most drivers lodge the report through the online crash reporting facility on the WA Government website.
+Last, check the reporting rule. In WA you have to report a crash to police if someone was injured, if total damage is more than $3,000, or if the owner of damaged property isn't present. Most drivers lodge the report through the online crash reporting facility on the WA Government website.
 
 When a car can't be driven, our [accident towing](/services/accident-towing-perth) crew will take it away, and our [insurance towing](/insurance-towing) service lets us bill your insurer directly.
 

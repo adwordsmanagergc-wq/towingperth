@@ -46,7 +46,7 @@ Further north the freeway has three to five lanes each way as far as Hepburn Ave
 2. **Call 000 if anyone is hurt** or if there is danger, such as a car stuck across a live lane or fuel on the road. For police help that isn't an emergency, the WA Police number is 131 444.
 3. **Swap names and addresses** with the other driver. WA law requires this. It's also worth noting their rego, insurer and phone number.
 4. **Photograph everything** before the cars are moved if you can do so safely: damage, plates, lane markings and the nearest exit sign.
-5. **Report it if the rules require it.** In WA you must report a crash to police if anyone is injured, if total damage is more than 3,000 dollars, or if the owner of damaged property isn't there. Most people do this through the online crash reporting facility linked from the WA Government's crash reporting page.
+5. **Report it if the rules require it.** In WA you must report a crash to police if anyone is injured, if total damage is more than $3,000, or if the owner of damaged property isn't there. Most people do this through the online crash reporting facility linked from the WA Government's crash reporting page.
 
 When you're ready to move the car, our [accident towing](/services/accident-towing-perth) team will clear it from the freeway, and our [insurance towing](/insurance-towing) process means we can bill your insurer directly.
 

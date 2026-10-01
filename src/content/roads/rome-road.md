@@ -43,7 +43,7 @@ A crash at this junction often leaves a car partly on the highway. If both vehic
 
 Once you're safe, exchange names and addresses with the other driver, as every driver in a WA crash is required to do. Also note their phone number, registration and insurance company, and take photos of the damage, both plates and the layout of the junction.
 
-Finally, check whether a police report is needed. WA requires crashes to be reported if anyone is injured, if total damage is more than 3,000 dollars, or if the owner of damaged property isn't present. You can lodge it through the online crash reporting facility on the WA Government website.
+Finally, check whether a police report is needed. WA requires crashes to be reported if anyone is injured, if total damage is more than $3,000, or if the owner of damaged property isn't present. You can lodge it through the online crash reporting facility on the WA Government website.
 
 Our [accident towing](/services/accident-towing-perth) service will collect a car that can't be driven, and [insurance towing](/insurance-towing) means we bill your insurer directly.
 

@@ -44,7 +44,7 @@ First, protect the scene. Turn on your hazard lights, and if both cars can be dr
 
 Next, exchange details. In WA the drivers involved in a crash are legally required to give each other their names and addresses. Get the other driver's phone number, rego and insurer too. Take photos of both vehicles, their number plates and where they stopped, along with the roundabout or traffic lights involved.
 
-Then think about reporting. WA requires a crash to be reported to police if someone was injured, if the total damage is more than 3,000 dollars, or if the owner of damaged property isn't there. The online crash reporting facility, linked from the WA Government website, is how most drivers do this.
+Then think about reporting. WA requires a crash to be reported to police if someone was injured, if the total damage is more than $3,000, or if the owner of damaged property isn't there. The online crash reporting facility, linked from the WA Government website, is how most drivers do this.
 
 Our [accident towing](/services/accident-towing-perth) crew can then take your car away, and with [insurance towing](/insurance-towing) we deal with your insurer directly.
 

@@ -40,7 +40,7 @@ Put your hazards on and check whether anyone is hurt. If someone is injured, or 
 
 If the cars can be driven, the safest thing is to get off the highway. Pull into Hislop Road and park clear of driveways rather than staying in the intersection. Under WA law, the drivers involved must exchange names and addresses. Collect the other driver's phone number, registration and insurer while you're at it, and photograph both cars, their plates and the junction.
 
-Then decide whether the crash needs to be reported. In WA, a report to police is required if anyone is injured, if the combined damage is more than 3,000 dollars, or if the owner of damaged property isn't there to swap details. The online crash reporting facility on the WA Government website is how most people lodge it.
+Then decide whether the crash needs to be reported. In WA, a report to police is required if anyone is injured, if the combined damage is more than $3,000, or if the owner of damaged property isn't there to swap details. The online crash reporting facility on the WA Government website is how most people lodge it.
 
 If your car isn't safe to drive, our [accident towing](/services/accident-towing-perth) service will collect it, and through [insurance towing](/insurance-towing) we bill your insurer directly.
 

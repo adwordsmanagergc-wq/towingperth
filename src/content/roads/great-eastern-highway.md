@@ -44,7 +44,7 @@ East of Roe Highway comes Greenmount Hill, a climb of about three kilometres at 
 
 Your first job is to protect yourself from the traffic still moving past. Put your hazard lights on, and if the car can still be driven, move it into a side street or business car park rather than leaving it in a lane. If anyone is injured or a car is blocking the highway, call 000. The WA Police assistance line, 131 444, is for situations that need police but aren't emergencies.
 
-Before anyone leaves, exchange names and addresses with the other driver, as WA law requires. Take photos of both cars, the plates and where they ended up, plus any business signs nearby that pin down the location. Then check whether you need to report it. Under WA rules, a crash must be reported to police when someone is hurt, when the total damage is over 3,000 dollars, or when the owner of damaged property isn't present. The online crash reporting facility on the WA Government website is the usual way to do it.
+Before anyone leaves, exchange names and addresses with the other driver, as WA law requires. Take photos of both cars, the plates and where they ended up, plus any business signs nearby that pin down the location. Then check whether you need to report it. Under WA rules, a crash must be reported to police when someone is hurt, when the total damage is over $3,000, or when the owner of damaged property isn't present. The online crash reporting facility on the WA Government website is the usual way to do it.
 
 If your car can't be driven, our [accident towing](/services/accident-towing-perth) service will get it off the highway, and with [insurance towing](/insurance-towing) we send the bill straight to your insurer.
 

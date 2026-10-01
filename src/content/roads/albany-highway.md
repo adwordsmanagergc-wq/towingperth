@@ -44,7 +44,7 @@ With so many lights and lanes, the biggest risk after a crash on Albany Highway 
 
 Exchange your name and address with the other driver; that's a legal requirement in WA. Grab their phone number, rego and insurer too, and photograph the damage, both plates and where the cars came to rest. A photo of the nearest street sign or shop front makes things easier for your insurer later.
 
-Check whether you need to lodge a report. In WA, a crash has to be reported to police if anyone is injured, if total damage across all vehicles and property exceeds 3,000 dollars, or if the owner of something damaged isn't there. You can usually do this online through the crash reporting facility on the WA Government website.
+Check whether you need to lodge a report. In WA, a crash has to be reported to police if anyone is injured, if total damage across all vehicles and property exceeds $3,000, or if the owner of something damaged isn't there. You can usually do this online through the crash reporting facility on the WA Government website.
 
 Our [accident towing](/services/accident-towing-perth) service gets your car out of the traffic and on to a repairer, and [insurance towing](/insurance-towing) means we bill your insurer instead of you.
 

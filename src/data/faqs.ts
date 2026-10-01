@@ -35,9 +35,9 @@ Browse by region: [northern suburbs](/areas/northern-suburbs), [southern suburbs
   },
   {
     q: 'What are the most dangerous roads for car accidents in Perth?',
-    a: `RAC WA's Risky Roads survey regularly names roads such as Albany Highway, Wanneroo Road, Great Eastern Highway and Canning Highway, and intersections like Baldivis Road and Kulija Road in Baldivis. Freeways like the Mitchell Freeway also see frequent peak-hour crashes simply because of their traffic volume. Busy arterials with lots of intersections, high speeds and heavy freight tend to be the riskiest.
+    a: `In RAC WA's Risky Roads survey, the intersection of Baldivis Road and Kulija Road in Baldivis was voted the riskiest in metro Perth, and the Canning Highway, Rome Road and Hislop Road junction came second. The Mitchell Freeway through West Perth has been named the riskiest metro road. Great Eastern Highway at Scott Street and Nicholson Road at Garden Street also made the list.
 
-Our [dangerous roads guide](/roads) covers each one: why it's risky, what to do if you crash there, and safety tips. If you've had an accident on any Perth road, we can tow your car and bill your insurer directly. See [accident towing](/services/accident-towing-perth).`,
+These are busy roads that mix high speeds, heavy traffic and tricky intersections. Our [dangerous roads guide](/roads) covers each one: why it's risky, what to do if you crash there, and safety tips. If you've had an accident on any Perth road, we can tow your car and bill your insurer directly. See [accident towing](/services/accident-towing-perth).`,
   },
 ];
 

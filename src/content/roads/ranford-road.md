@@ -38,7 +38,7 @@ The western end has changed a lot in recent years. A new bridge over the Kwinana
 1. **Stay safe.** Hazard lights on. If the cars can be driven, move them out of the intersection or roundabout and into a side street or car park. If anyone is injured, or a car is stuck where it could cause another crash, call 000. For non-urgent police help, call 131 444.
 2. **Swap details.** WA law says drivers involved in a crash must exchange names and addresses. Note the other driver's phone number, rego and insurer as well.
 3. **Take photos** of both cars, their plates, the damage, and the lights or roundabout where it happened.
-4. **Check if you need to report it.** In WA you must report a crash to police if someone is injured, if total damage across everything involved is more than 3,000 dollars, or if the owner of damaged property isn't there. The WA Government website links to the online crash reporting facility where most reports are lodged.
+4. **Check if you need to report it.** In WA you must report a crash to police if someone is injured, if total damage across everything involved is more than $3,000, or if the owner of damaged property isn't there. The WA Government website links to the online crash reporting facility where most reports are lodged.
 5. **Decide where the car should go,** whether that's home, your own mechanic or your insurer's repairer.
 
 When the car can't be driven, our [accident towing](/services/accident-towing-perth) service takes care of it, and through [insurance towing](/insurance-towing) we bill your insurer directly.

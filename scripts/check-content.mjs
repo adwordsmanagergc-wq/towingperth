@@ -28,11 +28,12 @@ const ROAD_PAGES = [
 ];
 for (const r of ROAD_PAGES) KNOWN_PATHS.add(`/roads/${r}`);
 
+// Prices are banned, except $3,000 (the WA crash-reporting damage threshold).
 const BANNED = [
   /—|–/, // em and en dashes
   /look no further/i, /second to none/i, /one-stop shop/i, /pride ourselves/i, /rest assured/i, /seamless/i,
   /hassle-free/i, /unparalleled/i, /fast-paced/i, /towing perth services/i, /tow truck perth services/i,
-  /within \d+ minutes/i, /\d+ ?(?:to|-) ?\d+ minutes/i, /\$\d/, /years? (?:of )?experience/i, /\bstars?\b.*review/i,
+  /within \d+ minutes/i, /\d+ ?(?:to|-) ?\d+ minutes/i, /\$(?!3,000\b)\d/, /years? (?:of )?experience/i, /\bstars?\b.*review/i,
   /based in/i, /our (?:depot|yard) (?:in|at)/i,
 ];
 

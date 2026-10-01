@@ -44,7 +44,7 @@ Start by turning your hazard lights on and checking on everyone involved. If som
 
 Because there are so many side streets, it's usually possible to get a drivable car out of the traffic quickly. Move it around the corner rather than leaving it in a lane where buses and trucks are trying to pass. Then exchange names and addresses with the other driver, which WA law requires, and collect their phone number, rego and insurer details. Photos of the damage, the plates and the intersection itself are worth taking before anyone drives away.
 
-WA rules say a crash must be reported to police if anyone is hurt, if the total damage is more than 3,000 dollars, or if the owner of damaged property isn't present, such as a parked car you've hit. The WA Government's online crash reporting facility is the easiest way to lodge it.
+WA rules say a crash must be reported to police if anyone is hurt, if the total damage is more than $3,000, or if the owner of damaged property isn't present, such as a parked car you've hit. The WA Government's online crash reporting facility is the easiest way to lodge it.
 
 If your car can't be driven, our [accident towing](/services/accident-towing-perth) service will collect it, and through [insurance towing](/insurance-towing) we can bill your insurer directly.
 

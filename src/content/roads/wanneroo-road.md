@@ -44,7 +44,7 @@ Beyond Ocean Reef Road, which crosses at a grade-separated interchange, the road
 2. **Make the scene safe.** Switch on your hazard lights. In the suburbs, move a drivable car into a side street or car park. On the rural stretch, pull right onto the verge and stand well away from passing traffic, which may be doing 80 or 90 km/h.
 3. **Exchange details.** WA law requires drivers involved in a crash to give each other their names and addresses. Note the other car's rego and insurer as well.
 4. **Take photos** of the damage, the plates, the road markings and anything that shows exactly where you are, like a street sign or business sign.
-5. **Report it when required.** In WA, crashes involving injury, damage over 3,000 dollars in total, or damaged property whose owner isn't present must be reported to police. The online crash reporting facility on the WA Government website is the simplest way.
+5. **Report it when required.** In WA, crashes involving injury, damage over $3,000 in total, or damaged property whose owner isn't present must be reported to police. The online crash reporting facility on the WA Government website is the simplest way.
 
 Once you're safe, our [accident towing](/services/accident-towing-perth) crew can take the car away, and we'll handle the paperwork with your insurer through our [insurance towing](/insurance-towing) service.
 
