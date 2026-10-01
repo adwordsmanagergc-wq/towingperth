@@ -24,6 +24,10 @@ export default defineConfig({
       styles: ['normal'],
       subsets: ['latin'],
       fallbacks: ['Arial Narrow', 'sans-serif'],
+      // optional, not swap: Android has no Arial, so metric-matched fallbacks
+      // don't apply there and a late swap reflows the hero (live CLS 0.06-0.1).
+      // The fonts are preloaded and cached, so most visits still get them.
+      display: 'optional',
     },
     {
       provider: fontProviders.fontsource(),
@@ -33,6 +37,7 @@ export default defineConfig({
       styles: ['normal'],
       subsets: ['latin'],
       fallbacks: ['system-ui', 'sans-serif'],
+      display: 'optional',
     },
   ],
   vite: { plugins: [tailwindcss()] },
