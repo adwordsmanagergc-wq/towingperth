@@ -101,7 +101,7 @@ const landings = defineCollection({
     url: z.string().regex(/^\/[a-z0-9\-\/]+$/),
     keyword: z.string(),
     title: z.string().max(60),
-    description: z.string().max(160),
+    description: z.string().max(155),
     h1: z.string(),
     intro: z.string(),
     related: z.array(z.string()).default([]),
