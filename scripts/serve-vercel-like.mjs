@@ -10,7 +10,9 @@ import { extname, join } from 'node:path';
 const PORT = Number(process.argv[2] ?? 4322);
 const DIST = new URL('../dist/', import.meta.url).pathname;
 const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
-const redirects = new Map(config.redirects.map((r) => [r.source, r]));
+// Exact-path rules only; rules with a `has` host condition apply to other hosts
+// (e.g. the vercel.app domain), never to localhost.
+const redirects = new Map(config.redirects.filter((r) => !r.has).map((r) => [r.source, r]));
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.avif': 'image/avif', '.webp': 'image/webp', '.woff2': 'font/woff2' };
 
 async function file(p) {
@@ -28,6 +30,11 @@ http
     if (path.length > 1 && path.endsWith('/')) {
       res.writeHead(308, { Location: path.replace(/\/+$/, '') + url.search });
       return res.end();
+    }
+    // Vercel serves its own analytics scripts under /_vercel; stub them locally.
+    if (path.startsWith('/_vercel/')) {
+      res.writeHead(200, { 'Content-Type': TYPES['.js'] });
+      return res.end('');
     }
     const r = redirects.get(path);
     if (r) {
