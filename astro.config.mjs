@@ -13,6 +13,8 @@ export default defineConfig({
     sitemap({
       filter: (page) => !/\/(quote-sent|404)\/?$/.test(page),
       entryLimit: 5000,
+      // Build date as <lastmod> for every URL; each deploy republishes every page.
+      lastmod: new Date(),
     }),
   ],
   fonts: [

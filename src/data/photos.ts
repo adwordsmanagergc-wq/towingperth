@@ -24,14 +24,15 @@ export const PHOTOS = {
   boat: { src: boat, alt: 'Boat ready for transport next to a Quik Tow tilt tray truck' },
 } satisfies Record<string, Photo>;
 
-// Photo shown on each service page and its card, keyed by service id.
+// Photo shown on each service page and its card, keyed by service id. The alt
+// text is keyword-relevant but must still describe what is actually in the photo.
 export const SERVICE_PHOTOS: Record<string, Photo> = {
-  'accident-towing-perth': PHOTOS.accident,
-  'breakdown-towing-perth': PHOTOS.breakdown,
-  '4wd-recovery-perth': PHOTOS.fourWd,
-  'container-transport-perth': PHOTOS.container,
-  'vehicle-transport-perth': PHOTOS.machinery,
-  'insurance-towing': PHOTOS.hero,
+  'accident-towing-perth': { src: accident, alt: 'Car with front-end crash damage waiting for accident towing in Perth' },
+  'breakdown-towing-perth': { src: breakdown, alt: 'Tilt tray tow truck collecting a broken down car in Perth' },
+  '4wd-recovery-perth': { src: fourWd, alt: '4WD loaded onto a Quik Tow tilt tray truck for recovery in Perth' },
+  'container-transport-perth': { src: container, alt: 'Shipping container being transported on a truck in Perth' },
+  'vehicle-transport-perth': { src: machinery, alt: 'Boom lift machinery being transported on a tilt tray truck in Perth' },
+  'insurance-towing': { src: hero, alt: 'Tilt tray tow truck loading a sedan for an insurance tow in Perth' },
 };
 
 // Fleet gallery on the About page.

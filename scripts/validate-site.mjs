@@ -137,7 +137,11 @@ for (const file of files) {
 
   // Alt text and labelled form fields.
   $('img').each((_, el) => {
-    if ($(el).attr('alt') === undefined) errors.push(`${where}: <img> without alt (${$(el).attr('src')})`);
+    const alt = $(el).attr('alt');
+    if (alt === undefined) errors.push(`${where}: <img> without alt (${$(el).attr('src')})`);
+    // Empty alt is only allowed on images explicitly hidden as decorative.
+    else if (!alt.trim() && $(el).attr('aria-hidden') !== 'true' && !$(el).closest('[aria-hidden="true"]').length)
+      errors.push(`${where}: <img> with empty alt that isn't marked decorative (${$(el).attr('src')})`);
   });
   $('input:not([type=hidden]), select, textarea').each((_, el) => {
     const id = $(el).attr('id');

@@ -9,9 +9,12 @@ interface Props {
   blurb: string;
   icon: string;
   headingLevel?: 'h2' | 'h3';
+  /** Optional photo. Its `alt` is required and must not be empty. */
   photo?: Photo;
 }
 const { href, title, blurb, icon, headingLevel: H = 'h3', photo } = Astro.props;
+// Fail the build rather than ship a card image with empty alt text again.
+if (photo && !photo.alt?.trim()) throw new Error(`ServiceCard "${title}": photo.alt is required`);
 ---
 
 <a
@@ -22,7 +25,7 @@ const { href, title, blurb, icon, headingLevel: H = 'h3', photo } = Astro.props;
     photo && (
       <Picture
         src={photo.src}
-        alt=""
+        alt={photo.alt}
         formats={['avif', 'webp']}
         widths={[400, 640, 800]}
         sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
