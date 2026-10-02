@@ -1,0 +1,132 @@
+---
+// Compact keyword landing pages (src/content/landings). One high-intent job per page.
+import { getCollection, render } from 'astro:content';
+import Check from '@lucide/astro/icons/check';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTASection from '~/components/CTASection.astro';
+import CallButton from '~/components/CallButton.astro';
+import { faqPage, service } from '~/lib/schema';
+import { groupOf, label } from '~/lib/landings';
+
+export async function getStaticPaths() {
+  const all = await getCollection('landings');
+  return all.map((entry) => ({ params: { landing: entry.data.url.slice(1) }, props: { entry, all } }));
+}
+
+const { entry, all } = Astro.props;
+const { data } = entry;
+const { Content } = await render(entry);
+const path = data.url;
+const group = groupOf(path);
+
+// Readable names for related links that point at existing pages.
+const services = await getCollection('services');
+const suburbs = await getCollection('suburbs');
+const regions = await getCollection('regions');
+const roads = await getCollection('roads');
+const names = new Map<string, string>([
+  ...services.map((s) => [`/services/${s.id}`, s.data.name] as [string, string]),
+  ...regions.map((r) => [`/areas/${r.id}`, r.data.name] as [string, string]),
+  ...suburbs.map((s) => [`/areas/${s.id}`, `Tow truck ${s.data.name}`] as [string, string]),
+  ...roads.map((r) => [`/roads/${r.id}`, r.data.name] as [string, string]),
+  ...all.map((l) => [l.data.url, label(l)] as [string, string]),
+  ['/insurance-towing', 'Insurance towing'],
+  ['/areas', 'All Perth suburbs'],
+  ['/roads', 'Dangerous roads'],
+  ['/contact', 'Contact us'],
+  ['/towing', 'All towing jobs'],
+]);
+const related = data.related.filter((u) => names.has(u) && u !== path).map((u) => ({ href: u, name: names.get(u)! }));
+const siblings = all.filter((l) => l.id !== entry.id && groupOf(l.data.url).key === group.key).slice(0, 8);
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Towing jobs', href: '/towing' },
+  { name: data.h1, href: path },
+];
+const schema = [
+  service({ name: data.h1, serviceType: data.keyword, description: data.description, path }),
+  faqPage(data.faqs),
+];
+---
+
+<BaseLayout title={data.title} description={data.description} path={path} og="service" crumbs={crumbs} schema={schema}>
+  <PageHero crumbs={crumbs} eyebrow="24/7 across Perth" h1={data.h1} lead={data.intro} />
+
+  <section class="py-14 sm:py-20">
+    <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem]">
+      <article class="prose-copy">
+        <Content />
+      </article>
+      <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
+        <div class="rounded-lg bg-hivis p-6 text-ink">
+          <p class="font-display text-2xl font-extrabold uppercase">Need it now?</p>
+          <p class="mt-2 font-medium">A real person answers 24/7 and quotes upfront.</p>
+          <CallButton position="landing-sidebar" variant="dark" size="md" class="mt-4 w-full" />
+        </div>
+        <div class="rounded-lg border border-steel bg-coal p-6">
+          <h2 class="text-2xl">Why Quik Tow</h2>
+          <ul class="mt-5 space-y-2.5">
+            {
+              ['10+ tilt trays across Perth', 'Nearest truck sent, realistic ETA', 'Upfront quote, no hidden fees', 'Insurer billed direct on covered claims'].map((i) => (
+                <li class="flex gap-2.5 text-mute">
+                  <Check class="mt-0.5 size-5 shrink-0 text-hivis" stroke-width={3} aria-hidden="true" />
+                  {i}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        {
+          related.length > 0 && (
+            <nav aria-label="Related pages" class="rounded-lg border border-steel bg-coal p-6">
+              <h2 class="text-2xl">Related</h2>
+              <ul class="mt-4 space-y-1">
+                {related.map((r) => (
+                  <li>
+                    <a href={r.href} class="inline-flex min-h-10 items-center text-mute hover:text-hivis">{r.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )
+        }
+      </aside>
+    </div>
+  </section>
+
+  <section class="border-t border-steel bg-coal py-14 sm:py-20" aria-labelledby="faq-heading">
+    <div class="wrap grid gap-10 lg:grid-cols-[1fr_2fr]">
+      <div>
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-heading" class="mt-3 text-4xl sm:text-5xl">Your questions</h2>
+      </div>
+      <FAQ faqs={data.faqs} openFirst />
+    </div>
+  </section>
+
+  {
+    siblings.length > 0 && (
+      <section class="py-14 sm:py-20" aria-labelledby="more-heading">
+        <div class="wrap">
+          <p class="eyebrow">{group.name}</p>
+          <h2 id="more-heading" class="mt-3 text-3xl sm:text-4xl">More towing jobs we handle</h2>
+          <ul class="mt-6 flex flex-wrap gap-2">
+            {siblings.map((s) => (
+              <li>
+                <a href={s.data.url} class="inline-flex min-h-11 items-center rounded-full border border-steel px-4 text-white hover:border-hivis hover:text-hivis">
+                  {label(s)}
+                </a>
+              </li>
+            ))}
+            <li><a href="/towing" class="inline-flex min-h-11 items-center px-2 font-semibold text-hivis underline underline-offset-4">All towing jobs</a></li>
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  <CTASection position="landing-cta-band" />
+</BaseLayout>
