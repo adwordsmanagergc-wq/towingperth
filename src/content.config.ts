@@ -93,4 +93,20 @@ const roads = defineCollection({
   }),
 });
 
-export const collections = { services, regions, suburbs, roads };
+// Compact keyword landing pages: one high-intent job per page (vehicle type,
+// situation, price, business buyer, service + suburb). URL lives in front matter.
+const landings = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/landings' }),
+  schema: z.object({
+    url: z.string().regex(/^\/[a-z0-9\-\/]+$/),
+    keyword: z.string(),
+    title: z.string().max(60),
+    description: z.string().max(160),
+    h1: z.string(),
+    intro: z.string(),
+    related: z.array(z.string()).default([]),
+    faqs: z.array(faq).min(3),
+  }),
+});
+
+export const collections = { services, regions, suburbs, roads, landings };
