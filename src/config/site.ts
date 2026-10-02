@@ -32,10 +32,10 @@ export const SITE = {
   quoteFormEnabled: false,
 
   analytics: {
-    // TODO: Google Tag Manager container ID, e.g. GTM-XXXXXXX
+    // Optional: Google Tag Manager container ID, e.g. GTM-XXXXXXX. Leave blank to use GA4 directly.
     gtmId: '',
-    // TODO: GA4 measurement ID, e.g. G-XXXXXXXXXX (only needed if not loaded through GTM)
-    ga4Id: '',
+    // GA4 property "towingperth.com". Loaded directly (no GTM needed).
+    ga4Id: 'G-VKW53SJEXL',
   },
 } as const;
 

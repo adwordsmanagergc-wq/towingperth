@@ -8,7 +8,7 @@ Nothing below was invented. Each item is a blank or placeholder until you provid
 - [ ] **ABN** for the footer. The old site showed one; confirm it before publishing.
 - [ ] **Street address**, only if you want one shown. You can leave it blank as a service-area business.
 - [ ] **Google Business Profile URL** and **Facebook URL** (schema `sameAs`). The profile's website link is already updated to the new site.
-- [ ] **Google Tag Manager ID** (or GA4 measurement ID).
+- [x] **GA4 measurement ID**: G-VKW53SJEXL is live. Next: in GA4 mark `click_to_call` and `sms_click` as key events, link Google Ads, and import them as conversions.
 
 ## Quote form (optional, switched off)
 
