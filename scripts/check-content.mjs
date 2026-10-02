@@ -27,6 +27,12 @@ const ROAD_PAGES = [
   'joondalup-drive', 'kulija-road', 'mitchell-freeway', 'nicholson-road', 'ranford-road', 'rome-road', 'wanneroo-road',
 ];
 for (const r of ROAD_PAGES) KNOWN_PATHS.add(`/roads/${r}`);
+// Compact keyword landing pages declare their own URL in front matter.
+KNOWN_PATHS.add('/towing');
+for (const f of (await readdir(new URL('landings/', ROOT)).catch(() => [])).filter((f) => f.endsWith('.md'))) {
+  const url = (await readFile(new URL(`landings/${f}`, ROOT), 'utf8')).match(/^url:\s*(\S+)/m)?.[1];
+  if (url) KNOWN_PATHS.add(url);
+}
 
 // Prices are banned, except $3,000 (the WA crash-reporting damage threshold).
 const BANNED = [
@@ -78,6 +84,11 @@ async function checkDir(dir, kind) {
       const hit = text.match(re);
       if (hit) errors.push(`${where}: banned pattern ${re} -> "${hit[0]}"`);
     }
+    const relatedLinks = kind === 'landing' ? (p.fm.match(/^related:\s*\[(.*)\]/m)?.[1] ?? '').split(',').map((x) => x.trim()).filter(Boolean) : [];
+    for (const href of relatedLinks) {
+      const ok = KNOWN_PATHS.has(href) || (href.startsWith('/areas/') && suburbSlugs.has(href.slice(7)));
+      if (!ok) errors.push(`${where}: unknown related link ${href}`);
+    }
     for (const [, href] of text.matchAll(/\]\((\/[^)\s#]*)/g)) {
       const ok = KNOWN_PATHS.has(href) || (href.startsWith('/areas/') && suburbSlugs.has(href.slice(7)));
       if (!ok) errors.push(`${where}: unknown link ${href}`);
@@ -104,6 +115,7 @@ async function checkDir(dir, kind) {
 
 await checkDir('suburbs', 'suburb');
 await checkDir('roads', 'road');
+await checkDir('landings', 'landing');
 
 for (const [s, owners] of sentenceOwners) {
   const uniq = [...new Set(owners)];

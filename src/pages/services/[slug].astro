@@ -28,6 +28,9 @@ const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b
 const top = await getEntries(TOP_SUBURBS.map((id) => ({ collection: 'suburbs' as const, id })));
 const topSuburbs = top.filter(Boolean);
 
+// Compact keyword pages that point back at this service.
+const jobs = (await getCollection('landings')).filter((l) => l.data.related.includes(path));
+
 const crumbs = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
@@ -144,6 +147,26 @@ const schema = [
       </ul>
     </div>
   </section>
+
+  {
+    jobs.length > 0 && (
+      <section class="pb-14 sm:pb-20" aria-labelledby="jobs-heading">
+        <div class="wrap">
+          <h2 id="jobs-heading" class="text-3xl sm:text-4xl">Specific jobs we handle</h2>
+          <ul class="mt-6 flex flex-wrap gap-2">
+            {jobs.map((j) => (
+              <li>
+                <a href={j.data.url} class="inline-flex min-h-11 items-center rounded-full border border-steel px-4 text-white hover:border-hivis hover:text-hivis">
+                  {j.data.h1}
+                </a>
+              </li>
+            ))}
+            <li><a href="/towing" class="inline-flex min-h-11 items-center px-2 font-semibold text-hivis underline underline-offset-4">All towing jobs</a></li>
+          </ul>
+        </div>
+      </section>
+    )
+  }
 
   <section class="border-t border-steel bg-coal py-14 sm:py-20" aria-labelledby="faq-heading">
     <div class="wrap grid gap-10 lg:grid-cols-[1fr_2fr]">
