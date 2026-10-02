@@ -15,7 +15,7 @@ export function groupOf(url: string) {
   return GROUPS.find((g) => g.test(url))!;
 }
 
-/** Short link label: the H1 without the trailing "Perth". */
+/** Short link label: the H1 without a trailing "Perth" or "in Perth". */
 export function label(l: Landing) {
-  return l.data.h1.replace(/\s+Perth$/i, '');
+  return l.data.h1.replace(/\s+(?:in\s+)?Perth$/i, '');
 }
