@@ -1,4 +1,5 @@
 ---
+import CrashTowNotice from '~/components/CrashTowNotice.astro';
 // Compact keyword landing pages (src/content/landings). One high-intent job per page.
 import { getCollection, render } from 'astro:content';
 import Check from '@lucide/astro/icons/check';
@@ -38,6 +39,8 @@ const names = new Map<string, string>([
   ['/contact', 'Contact us'],
   ['/towing', 'All towing jobs'],
 ]);
+// Crash and cost pages get the full regulated-charges panel; the rest a short note.
+const showFullCrashNotice = /accident|crash|cost|cheap|flat-rate|after-hours/.test(path);
 const related = data.related.filter((u) => names.has(u) && u !== path).map((u) => ({ href: u, name: names.get(u)! }));
 const siblings = all.filter((l) => l.id !== entry.id && groupOf(l.data.url).key === group.key).slice(0, 8);
 
@@ -59,8 +62,10 @@ const schema = [
     <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem]">
       <article class="prose-copy">
         <Content />
+        {showFullCrashNotice && <div class="not-prose mt-10"><CrashTowNotice /></div>}
       </article>
       <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
+        {!showFullCrashNotice && <CrashTowNotice variant="compact" />}
         <div class="rounded-lg bg-hivis p-6 text-ink">
           <p class="font-display text-2xl font-extrabold uppercase">Need it now?</p>
           <p class="mt-2 font-medium">A real person answers 24/7 and quotes upfront.</p>

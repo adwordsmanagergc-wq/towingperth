@@ -1,4 +1,5 @@
 ---
+import CrashTowNotice from '~/components/CrashTowNotice.astro';
 import ShieldCheck from '@lucide/astro/icons/shield-check';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PageHero from '~/components/PageHero.astro';
@@ -41,7 +42,7 @@ const steps = [
 const faqs = [
   {
     q: 'Will I have to pay anything for the tow?',
-    a: "For a claim your policy covers, we bill your insurer directly, so you usually pay us nothing on the day. You may still owe your insurer an excess under your policy, but that's between you and them, not part of our bill. If your policy doesn't cover towing, we'll tell you the price upfront before we tow.",
+    a: "For a claim your policy covers, we bill your insurer directly, so you usually pay us nothing on the day. You may still owe your insurer an excess under your policy, but that's between you and them, not part of our bill. If your policy doesn't cover towing, crash towing charges are capped by the WA Government, and you sign an Authority to Tow showing them before we move the car.",
   },
   {
     q: "What if I don't have a claim number yet?",
@@ -126,6 +127,10 @@ const faqs = [
         </div>
       </aside>
     </div>
+  </section>
+
+  <section class="pb-14 sm:pb-20" aria-label="Authorised crash towing and regulated charges">
+    <div class="wrap"><CrashTowNotice /></div>
   </section>
 
   <section class="on-light bg-paper py-14 text-ink sm:py-20" aria-labelledby="steps-heading">

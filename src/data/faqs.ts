@@ -11,7 +11,9 @@ If you're somewhere unsafe, like a freeway shoulder or a blind corner, tell us s
   },
   {
     q: 'How much does towing in Perth cost?',
-    a: `The cost depends on the distance, the type of vehicle, the time of day and how easy the car is to reach and load. We give you a clear quote upfront before we dispatch, with no hidden fees, and we back it with our best rates guarantee. If it's an insurance job, we bill your insurer directly so you usually don't pay us on the day.
+    a: `Accident (crash) towing in Perth and Peel is regulated by the WA Government: the maximum charge to tow a crashed car is $523 for the first 50 km, plus $4.75 per km after that, a $149 after-hours surcharge, $27 a day storage and a one-off $95 admin fee. We're authorised crash tow business #810, and you sign an Authority to Tow showing the costs before we move your car. If it's an insurance job, we bill your insurer directly so you usually pay nothing on the day.
+
+For breakdowns, 4WD recovery and transport jobs, the price depends on distance, the vehicle, the time of day and how easy it is to reach and load. We quote upfront, with no hidden fees, backed by our best rates guarantee.
 
 A short tow of a car that rolls freely is the simplest job. Costs go up when we need to winch a car out of a ditch, recover a bogged 4WD or handle a large vehicle, or when the run is long. Tell us those details when you call and the quote will reflect them, so there are no surprises later. For a quote, call or text 0419 857 070.`,
   },

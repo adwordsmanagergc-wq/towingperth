@@ -1,4 +1,5 @@
 ---
+import CrashTowNotice from '~/components/CrashTowNotice.astro';
 import { getCollection } from 'astro:content';
 import { Picture, getImage } from 'astro:assets';
 import ShieldCheck from '@lucide/astro/icons/shield-check';
@@ -204,6 +205,13 @@ const steps = [
           }
         </ol>
       </div>
+    </div>
+  </section>
+
+  <!-- Regulated crash towing -->
+  <section class="pb-16 sm:pb-24" aria-label="Authorised crash towing and regulated charges">
+    <div class="wrap">
+      <CrashTowNotice />
     </div>
   </section>
 

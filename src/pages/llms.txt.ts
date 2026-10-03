@@ -18,6 +18,7 @@ export const GET: APIRoute = async () => {
 
 - Phone: ${SITE.phoneDisplay}, answered 24 hours a day, 7 days a week
 - Service area: the whole Perth metro area, including the CBD, northern, southern, eastern (including the Perth Hills), western and south eastern suburbs
+- Authorised crash (accident) towing business #810 under WA's Towing Services Act 2024; crash tow charges in Perth and Peel are capped by the WA Government (maximum $523 for the first 50 km, see the accident towing page)
 - Insurance: we bill the customer's insurer directly for covered claims
 - Fleet: more than 10 tow trucks on the road across Perth
 - Pricing: quoted upfront before dispatch; best rates guarantee; no hidden fees

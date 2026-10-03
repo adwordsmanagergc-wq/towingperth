@@ -15,7 +15,8 @@ included:
   - "Time to collect your belongings from the car before it's loaded"
   - "Delivery to your repairer, your home or your insurer's assessing centre"
   - "Direct billing to your insurer once you have a claim number"
-  - "A clear quote before we hook up if you're paying yourself"
+  - "Regulated crash towing charges, capped by the WA Government (authorised business #810)"
+  - "An Authority to Tow form listing the costs and destination before we hook up"
 vehicles:
   - "Sedans, hatchbacks and wagons"
   - "SUVs and all-wheel drives"
@@ -27,7 +28,7 @@ steps:
   - title: "Call 0419 857 070"
     text: "Tell us where you are, what happened and whether the car can roll. If anyone is hurt, call 000 first."
   - title: "We confirm the details"
-    text: "We ask where the car should go and whether you have a claim number, then give you a quote if you're paying yourself."
+    text: "We confirm where the car should go and your claim number, then you sign an Authority to Tow showing the regulated charges."
   - title: "Your car is recovered"
     text: "The driver loads the car onto the tilt tray once you have taken out anything you need from inside."
   - title: "Delivered and billed"
@@ -42,7 +43,7 @@ faqs:
   - q: "Can my car go to my own repairer rather than the insurer's?"
     a: "We'll take it wherever you ask. Whether your insurer will pay for repairs at your chosen workshop depends on your policy, so check that with them. If you're unsure, we can take it home first and move it again once the insurer has decided."
   - q: "How much does accident towing cost?"
-    a: "It depends on the distance, the time of day, the vehicle and how hard the recovery is. A car with locked wheels down an embankment takes more work than one sitting on a flat road. We quote upfront if you're paying yourself, with no hidden fees, and our best rates guarantee applies."
+    a: "Crash towing charges in Perth and Peel are capped by the WA Government. The maximum is $523 to tow a crashed car the first 50 km, then $4.75 per km, plus up to $149 after hours, $27 a day storage and a one-off $95 admin fee. Extra recovery work, like winching a car out of a ditch, is charged at a reasonable rate. For covered insurance claims we bill your insurer directly."
 ---
 
 ## Accident towing across Perth
@@ -76,7 +77,7 @@ Paying a towing bill on the spot after a crash is the last thing most people wan
 3. **We tow and invoice.** We deliver the car and send our invoice straight to your insurer.
 4. **You deal with the excess.** Any excess is between you and your insurer. For an approved claim, you generally won't pay us anything upfront.
 
-If you're not insured, or the claim isn't accepted, we'll quote before we start so there are no surprises later. Our prices are transparent with no hidden fees, and they're backed by our best rates guarantee. The things that change the price are distance, time of day, the type of vehicle and how difficult the recovery is. For the full detail, read [how direct insurance billing works](/insurance-towing).
+If you're not insured, or the claim isn't accepted, the charges are still capped. Accident towing is regulated in WA: we're authorised crash tow business #810, the most we can charge is set by law, and you sign an Authority to Tow showing the costs before we move your car. The full list of regulated charges is below. For the full detail, read [how direct insurance billing works](/insurance-towing).
 
 ## Where we work
 

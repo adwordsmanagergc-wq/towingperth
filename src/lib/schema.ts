@@ -36,7 +36,7 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     logo: absoluteUrl('/logo.png'),
     image: absoluteUrl('/og/home.jpg'),
     description:
-      '24/7 tow truck service across every Perth suburb: accident towing, breakdown recovery, 4WD recovery, shipping container transport and vehicle transport. We bill your insurer directly.',
+      '24/7 tow truck service across every Perth suburb: accident towing, breakdown recovery, 4WD recovery, shipping container transport and vehicle transport. WA Department of Transport authorised crash towing business #810, with crash tow charges regulated by law. We bill your insurer directly.',
     address: {
       '@type': 'PostalAddress',
       ...(SITE.streetAddress ? { streetAddress: SITE.streetAddress } : {}),

@@ -34,12 +34,13 @@ for (const f of (await readdir(new URL('landings/', ROOT)).catch(() => [])).filt
   if (url) KNOWN_PATHS.add(url);
 }
 
-// Prices are banned, except $3,000 (the WA crash-reporting damage threshold).
+// Prices are banned, except $3,000 (WA crash-reporting threshold) and the WA
+// regulated crash towing maximums ($523, $4.75, $149, $27, $95, $13.50).
 const BANNED = [
   /—|–/, // em and en dashes
   /look no further/i, /second to none/i, /one-stop shop/i, /pride ourselves/i, /rest assured/i, /seamless/i,
   /hassle-free/i, /unparalleled/i, /fast-paced/i, /towing perth services/i, /tow truck perth services/i,
-  /within \d+ minutes/i, /\d+ ?(?:to|-) ?\d+ minutes/i, /\$(?!3,000\b)\d/, /years? (?:of )?experience/i, /\bstars?\b.*review/i,
+  /within \d+ minutes/i, /\d+ ?(?:to|-) ?\d+ minutes/i, /\$(?!3,000\b|523\b|4\.75\b|149\b|27\b|95\b|13\.50\b)\d/, /years? (?:of )?experience/i, /\bstars?\b.*review/i,
   /based in/i, /our (?:depot|yard) (?:in|at)/i,
 ];
 

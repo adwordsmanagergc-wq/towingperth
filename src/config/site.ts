@@ -17,6 +17,10 @@ export const SITE = {
   country: 'AU',
   hours: '24/7',
 
+  // WA Department of Transport crash (accident) towing business authorisation,
+  // required for crash towing since 1 July 2026 under the Towing Services Act 2024.
+  crashTowAuthorisation: '810',
+
   // TODO: confirm email address to publish (the old site footer showed info@quiktow.com.au).
   email: '',
   // TODO: ABN to show in the footer (the old site footer showed one; confirm before publishing).
@@ -40,6 +44,7 @@ export const SITE = {
 } as const;
 
 export const SELLING_POINTS = [
+  { key: 'authorised', label: 'Authorised crash tow business #810' },
   { key: 'insurance', label: 'We bill your insurer directly' },
   { key: 'fleet', label: '10+ trucks on the road' },
   { key: 'rates', label: 'Best rates guarantee' },

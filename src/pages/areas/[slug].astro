@@ -5,6 +5,7 @@ import MapPin from '@lucide/astro/icons/map-pin';
 import Route from '@lucide/astro/icons/route';
 import Building from '@lucide/astro/icons/landmark';
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import CrashTowNotice from '~/components/CrashTowNotice.astro';
 import PageHero from '~/components/PageHero.astro';
 import ServiceCard from '~/components/ServiceCard.astro';
 import SuburbGrid from '~/components/SuburbGrid.astro';
@@ -149,7 +150,9 @@ const { Content } = props.kind === 'region' ? await render(props.region) : await
             <article class="prose-copy">
               <Content />
             </article>
-            <aside class="rounded-lg border border-steel bg-coal p-6 lg:self-start">
+            <div class="space-y-6 lg:self-start">
+            <CrashTowNotice variant="compact" />
+            <aside class="rounded-lg border border-steel bg-coal p-6">
               <h2 class="flex items-center gap-2 text-2xl">
                 <Route class="size-6 text-hivis" aria-hidden="true" /> Main roads we cover
               </h2>
@@ -170,6 +173,7 @@ const { Content } = props.kind === 'region' ? await render(props.region) : await
                 })}
               </ul>
             </aside>
+            </div>
           </div>
         </section>
 
@@ -239,6 +243,7 @@ const { Content } = props.kind === 'region' ? await render(props.region) : await
               <Content />
             </article>
             <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
+              <CrashTowNotice variant="compact" />
               <div class="rounded-lg border border-steel bg-coal p-6">
                 <h2 class="text-2xl">{suburbView.suburb.data.name} at a glance</h2>
                 <dl class="mt-4 space-y-4 text-sm">

@@ -1,4 +1,5 @@
 ---
+import CrashTowNotice from '~/components/CrashTowNotice.astro';
 import { getCollection, render, getEntries } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Check from '@lucide/astro/icons/check';
@@ -23,6 +24,7 @@ const { data } = entry;
 const { Content } = await render(entry);
 const photo = SERVICE_PHOTOS[entry.id];
 const path = `/services/${entry.id}`;
+const isAccident = entry.id === 'accident-towing-perth';
 const others = (await getCollection('services')).filter((s) => s.id !== entry.id).sort((a, b) => a.data.order - b.data.order);
 const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
 const top = await getEntries(TOP_SUBURBS.map((id) => ({ collection: 'suburbs' as const, id })));
@@ -66,8 +68,10 @@ const schema = [
           )
         }
         <Content />
+        {isAccident && <div class="not-prose mt-10"><CrashTowNotice /></div>}
       </article>
       <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
+        {!isAccident && <CrashTowNotice variant="compact" />}
         <div class="rounded-lg border border-steel bg-coal p-6">
           <div class="flex items-center gap-3">
             <span class="grid size-12 place-items-center rounded-md bg-hivis text-ink"><ServiceIcon name={data.icon} class="size-7" /></span>

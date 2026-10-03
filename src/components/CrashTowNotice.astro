@@ -1,0 +1,119 @@
+---
+// Authorised crash towing + WA regulated crash tow charges.
+// variant "full": fee table, what's included, Authority to Tow, source link.
+// variant "compact": a short panel linking to the full explanation.
+import ShieldCheck from '@lucide/astro/icons/shield-check';
+import FileText from '@lucide/astro/icons/file-text';
+import { SITE } from '~/config/site';
+import { CRASH_TOW_RULES as R } from '~/data/crash-towing';
+
+interface Props {
+  variant?: 'full' | 'compact';
+  /** Render on a light (paper) section. */
+  light?: boolean;
+  id?: string;
+}
+const { variant = 'full', light = false, id = 'regulated-crash-towing' } = Astro.props;
+const auth = SITE.crashTowAuthorisation;
+const headingId = `${id}-heading`;
+---
+
+{
+  variant === 'compact' ? (
+    <aside
+      class:list={[
+        'rounded-lg border-2 p-5',
+        light ? 'on-light border-ink bg-white text-ink' : 'border-hivis bg-coal text-white',
+      ]}
+      aria-label="Authorised crash towing"
+    >
+      <p class="flex items-center gap-2 font-display text-xl font-extrabold uppercase">
+        <ShieldCheck class:list={['size-6 shrink-0', light ? 'text-ink' : 'text-hivis']} aria-hidden="true" />
+        Authorised crash tow business #{auth}
+      </p>
+      <p class:list={['mt-2', light ? 'text-slate' : 'text-mute']}>
+        Accident towing in {R.area} is regulated by the WA Government. The most any authorised business can charge to tow a crashed car is
+        capped by law, and you sign an Authority to Tow showing the costs before your car is moved.{' '}
+        <a
+          href={`/services/accident-towing-perth#${id}`}
+          class:list={['font-semibold underline underline-offset-4', light ? 'text-ink' : 'text-hivis']}
+        >
+          See the regulated charges
+        </a>
+      </p>
+    </aside>
+  ) : (
+    <section
+      id={id}
+      class:list={['scroll-mt-28 rounded-lg border-2 p-6 sm:p-8', light ? 'on-light border-ink bg-white text-ink' : 'border-hivis bg-coal text-white']}
+      aria-labelledby={headingId}
+    >
+      <p class:list={['inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-bold', light ? 'bg-ink text-hivis' : 'bg-hivis text-ink']}>
+        <ShieldCheck class="size-4" aria-hidden="true" /> WA authorised crash towing business #{auth}
+      </p>
+      <h2 id={headingId} class="mt-4 text-3xl sm:text-4xl">
+        Accident tow costs are regulated by law
+      </h2>
+      <p class:list={['mt-3 max-w-3xl text-lg', light ? 'text-slate' : 'text-mute']}>
+        Since the <strong class:list={[light ? 'text-ink' : 'text-white']}>Towing Services Act 2024</strong>, only businesses authorised by the WA
+        Department of Transport can tow crashed vehicles, and the charges are capped. {SITE.name} is authorised crash towing business #{auth}.
+        These are the most anyone can charge to tow a crashed car in {R.area} (from {R.effective}):
+      </p>
+
+      <div class="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+        <table class:list={['w-full text-left text-base', light ? 'text-ink' : 'text-white']}>
+          <caption class="sr-only">Maximum crash towing charges for light vehicles in {R.area}</caption>
+          <thead>
+            <tr class:list={['border-b-2', light ? 'border-ink' : 'border-steel']}>
+              <th scope="col" class="py-2 pr-4 font-semibold">Crashed car or light vehicle</th>
+              <th scope="col" class="py-2 text-right font-semibold">Maximum</th>
+            </tr>
+          </thead>
+          <tbody>
+            {R.lightVehicle.map((r) => (
+              <tr class:list={['border-b', light ? 'border-ink/15' : 'border-steel']}>
+                <td class="py-2 pr-4">{r.item}</td>
+                <td class="py-2 text-right font-display text-xl font-extrabold">{r.max}</td>
+              </tr>
+            ))}
+            {R.motorcycle.map((r) => (
+              <tr class:list={['border-b', light ? 'border-ink/15' : 'border-steel']}>
+                <td class="py-2 pr-4">{r.item}</td>
+                <td class="py-2 text-right font-display text-xl font-extrabold">{r.max}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <div class:list={['space-y-4', light ? 'text-slate' : 'text-mute']}>
+          <p>
+            <strong class:list={[light ? 'text-ink' : 'text-white']}>What the tow charge covers:</strong> {R.towIncludes}.
+          </p>
+          <p>
+            <strong class:list={[light ? 'text-ink' : 'text-white']}>What's not capped:</strong> extra recovery work where the car is hard to
+            reach or load, such as winching it out of a ditch, is charged at a reasonable rate. We'll tell you before we start.
+          </p>
+          <p class="flex gap-3">
+            <FileText class:list={['mt-1 size-5 shrink-0', light ? 'text-ink' : 'text-hivis']} aria-hidden="true" />
+            <span>
+              <strong class:list={[light ? 'text-ink' : 'text-white']}>Authority to Tow:</strong> before we move a crashed car, you sign an
+              Authority to Tow form that lists the towing and storage costs and where the car is going. You keep a copy.
+            </span>
+          </p>
+          <p>
+            <strong class:list={[light ? 'text-ink' : 'text-white']}>Insured?</strong> For covered claims we bill your insurer directly, so you
+            usually pay nothing on the day.
+          </p>
+        </div>
+      </div>
+
+      <p class:list={['mt-6 text-sm', light ? 'text-slate' : 'text-mute']}>
+        Source:{' '}
+        <a href={R.sourceUrl} rel="noopener" class:list={['underline underline-offset-4', light ? 'text-ink' : 'text-white']}>
+          WA Department of Transport, capped fees and maximum charges for crash towing
+        </a>
+        . Charges outside {R.area} aren't capped; we quote those upfront.
+      </p>
+    </section>
+  )
+}
