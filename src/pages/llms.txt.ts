@@ -27,6 +27,7 @@ export const GET: APIRoute = async () => {
 
 ${services.map((s) => `- [${s.data.name}](${u(`/services/${s.id}`)}): ${s.data.metaDescription}`).join('\n')}
 - [Insurance towing](${u('/insurance-towing')}): how direct insurer billing works after a crash
+- [Machinery transport](${u(SITE.machineryUrl)}): bobcats, skid steers, mini excavators, forklifts and boom lifts up to ${SITE.machineryMaxTonnes} tonnes
 
 ## Service areas
 

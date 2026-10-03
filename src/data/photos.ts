@@ -32,8 +32,14 @@ export const SERVICE_PHOTOS: Record<string, Photo> = {
   'breakdown-towing-perth': { src: breakdown, alt: 'Tilt tray tow truck collecting a broken down car in Perth' },
   '4wd-recovery-perth': { src: fourWd, alt: '4WD loaded onto a Quik Tow tilt tray truck for recovery in Perth' },
   'container-transport-perth': { src: container, alt: 'Shipping container being transported on a truck in Perth' },
-  'vehicle-transport-perth': { src: machinery, alt: 'Boom lift machinery being transported on a tilt tray truck in Perth' },
+  'vehicle-transport-perth': { src: boat, alt: 'Boat on a trailer ready for vehicle transport next to a Quik Tow tilt tray truck in Perth' },
   'insurance-towing': { src: hero, alt: 'Tilt tray tow truck loading a sedan for an insurance tow in Perth' },
+};
+
+// Machinery transport (homepage feature band).
+export const MACHINERY_PHOTO: Photo = {
+  src: machinery,
+  alt: 'Boom lift machinery being transported on a Quik Tow tilt tray truck in Perth',
 };
 
 // Fleet gallery on the About page.

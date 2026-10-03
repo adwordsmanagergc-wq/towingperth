@@ -20,7 +20,7 @@ import FAQ from '~/components/FAQ.astro';
 import CTASection from '~/components/CTASection.astro';
 import PerthMap from '~/components/PerthMap.astro';
 import HeroIntro from '~/components/HeroIntro.astro';
-import { PHOTOS, SERVICE_PHOTOS } from '~/data/photos';
+import { PHOTOS, SERVICE_PHOTOS, MACHINERY_PHOTO } from '~/data/photos';
 import { SITE, SELLING_POINTS } from '~/config/site';
 import { HOME_FAQS } from '~/data/faqs';
 import { faqPage } from '~/lib/schema';
@@ -77,7 +77,7 @@ const steps = [
         24/7 Towing <span class="text-hivis">Across Perth</span>
       </h1>
       <p class="mt-6 max-w-2xl text-lg text-white/90 sm:text-xl">
-        Accident towing, breakdowns, 4WD recovery, shipping containers and vehicle transport, in every Perth suburb, day and night.
+        Accident towing, breakdowns, 4WD recovery, shipping containers, machinery up to {SITE.machineryMaxTonnes} tonnes and vehicle transport, in every Perth suburb, day and night.
       </p>
       <div class="mt-8 flex flex-col gap-3 sm:flex-row">
         <CallButton position="home-hero" size="xl" label="Call now" />
@@ -131,6 +131,33 @@ const steps = [
           photo={SERVICE_PHOTOS['insurance-towing']}
         />
       </div>
+      <a
+        href={SITE.machineryUrl}
+        class="group reveal mt-5 grid overflow-hidden rounded-lg border border-steel bg-coal hover:border-hivis lg:grid-cols-[1.1fr_1fr]"
+      >
+        <Picture
+          src={MACHINERY_PHOTO.src}
+          alt={MACHINERY_PHOTO.alt}
+          formats={['avif', 'webp']}
+          widths={[480, 800, 1200]}
+          sizes="(min-width: 1024px) 640px, 100vw"
+          class="aspect-[16/9] h-full w-full object-cover lg:aspect-auto lg:min-h-[20rem]"
+          pictureAttributes={{ class: 'block lg:h-full' }}
+        />
+        <span class="flex flex-col justify-center p-6 sm:p-8">
+          <span class="eyebrow">Machinery transport</span>
+          <span class="mt-3 block font-display text-4xl font-extrabold uppercase leading-none text-white sm:text-5xl">
+            Machinery up to <span class="text-hivis">{SITE.machineryMaxTonnes} tonnes</span>
+          </span>
+          <span class="mt-4 block text-mute">
+            Bobcats, skid steers, mini excavators, forklifts, boom lifts and other plant up to {SITE.machineryMaxTonnes} tonnes, moved on our
+            tilt trays to building sites, yards, workshops and hire depots across Perth.
+          </span>
+          <span class="mt-5 inline-flex items-center gap-1 font-display text-lg font-bold uppercase tracking-wide text-hivis">
+            Machinery transport <ChevronRight class="size-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </span>
+        </span>
+      </a>
     </div>
   </section>
 

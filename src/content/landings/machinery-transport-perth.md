@@ -1,14 +1,16 @@
 ---
 url: /transport/machinery-transport-perth
 keyword: machinery transport perth
-title: "Machinery Transport Perth | Quik Tow & Transport"
-description: "Machinery transport Perth for bobcats, skid steers, mini excavators, forklifts and ride-on mowers. Call or text 0419 857 070 for an upfront quote, 24/7."
-h1: "Machinery Transport Perth"
-intro: "Need a bobcat, mini excavator, forklift or ride-on mower moved? Call 0419 857 070 with the make, model and weight and we'll organise transport anywhere in Perth."
+title: "Machinery Transport Perth | Up to 11 Tonnes | Quik Tow"
+description: "Machinery transport in Perth up to 11 tonnes: bobcats, skid steers, mini excavators, forklifts and boom lifts. Call or text 0419 857 070 for a quote."
+h1: "Machinery Transport Perth, Up to 11 Tonnes"
+intro: "Need a bobcat, mini excavator, forklift or boom lift moved? We transport machinery up to 11 tonnes anywhere in Perth. Call 0419 857 070 with the make, model and weight."
 related: [/services/vehicle-transport-perth, /services/container-transport-perth, /areas/welshpool, /areas/kewdale, /areas/wangara, /areas/malaga, /areas, /contact]
 faqs:
   - q: "What machinery can you move?"
-    a: "Common jobs include bobcats and skid steers, mini excavators, forklifts, ride-on mowers, small tractors and similar compact plant. Call with the make, model and weight and we'll confirm whether it suits our trucks."
+    a: "Machines up to 11 tonnes. Common jobs include bobcats and skid steers, mini excavators, forklifts, boom and scissor lifts, ride-on mowers and small tractors. Call with the make, model and operating weight and we'll confirm the right truck."
+  - q: "What's the heaviest machine you can move?"
+    a: "Up to 11 tonnes. Check the operating weight on the machine's plate or in the manual, and include any attachments or buckets travelling with it, since they add to the total."
   - q: "Does the machine need to be running?"
     a: "Not always, but it makes loading much easier. A running machine can usually be driven onto the tray by the operator. If it doesn't run, tell us so we can plan how to winch it on safely."
   - q: "Can you deliver to a building site?"
@@ -19,11 +21,11 @@ faqs:
 
 ## Compact machinery we move
 
-We transport the compact plant that keeps Perth's building sites, landscaping jobs and warehouses running. That includes bobcats and skid steers, mini excavators, forklifts and ride-on mowers. Jobs range from delivering hire gear to a site, moving a machine between jobs, taking it in for service and collecting machinery bought at auctions such as Pickles or Grays.
+We transport machinery up to 11 tonnes, the compact plant that keeps Perth's building sites, landscaping jobs and warehouses running. That includes bobcats and skid steers, mini excavators, forklifts, boom lifts and ride-on mowers. Jobs range from delivering hire gear to a site, moving a machine between jobs, taking it in for service and collecting machinery bought at auctions such as Pickles or Grays.
 
 ## Tell us the make, model and weight
 
-Machinery is heavy for its size, and weight decides which truck we send. When you call, have the following ready:
+Machinery is heavy for its size, and weight decides which truck we send. We move machines up to 11 tonnes, including attachments. When you call, have the following ready:
 
 - Make and model (for example a Kubota mini excavator or a Toyota forklift)
 - Operating weight, found on the plate or in the operator's manual

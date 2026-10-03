@@ -52,7 +52,7 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     },
     openingHours: 'Mo-Su 00:00-23:59',
     areaServed,
-    knowsAbout: ['Accident towing', 'Breakdown towing', '4WD recovery', 'Shipping container transport', 'Vehicle transport'],
+    knowsAbout: ['Accident towing', 'Breakdown towing', '4WD recovery', 'Shipping container transport', 'Vehicle transport', 'Machinery transport up to 11 tonnes'],
   };
   if (SITE.email) node.email = SITE.email;
   if (SITE.sameAs.length) node.sameAs = SITE.sameAs;

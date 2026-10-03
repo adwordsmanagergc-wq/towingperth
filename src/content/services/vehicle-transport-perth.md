@@ -23,6 +23,7 @@ vehicles:
   - "Classic, vintage and project cars"
   - "Hybrid and electric vehicles"
   - "Unregistered or non-running vehicles"
+  - "Machinery and plant up to 11 tonnes"
   - "Larger vehicles: we'll confirm the right truck when you call"
 steps:
   - title: "Call 0419 857 070"
@@ -65,6 +66,8 @@ Typical jobs include collecting a car bought at auction, picking up a private sa
 **Moving house.** When you move, the car you don't drive often gets left until last. Whether it's a second car without rego, a project in the garage or a vehicle you can't drive yourself, we can move it to the new address so you have one less thing to organise.
 
 If the car has been damaged in a collision, see our [accident towing](/services/accident-towing-perth) page. For a car that stopped on the road, see [breakdown towing](/services/breakdown-towing-perth). Need a shipping container moved as part of the same project? We handle [container transport](/services/container-transport-perth) too.
+
+Moving a bobcat, mini excavator, forklift or boom lift instead? We transport [machinery up to 11 tonnes](/transport/machinery-transport-perth) too.
 
 ## Pricing and insurance
 

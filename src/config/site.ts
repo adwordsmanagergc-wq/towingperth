@@ -21,6 +21,10 @@ export const SITE = {
   // required for crash towing since 1 July 2026 under the Towing Services Act 2024.
   crashTowAuthorisation: '810',
 
+  // Heaviest machine we transport, in tonnes (confirmed by the business).
+  machineryMaxTonnes: 11,
+  machineryUrl: '/transport/machinery-transport-perth',
+
   // TODO: confirm email address to publish (the old site footer showed info@quiktow.com.au).
   email: '',
   // TODO: ABN to show in the footer (the old site footer showed one; confirm before publishing).
