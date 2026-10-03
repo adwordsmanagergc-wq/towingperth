@@ -19,6 +19,7 @@ import ServiceCard from '~/components/ServiceCard.astro';
 import FAQ from '~/components/FAQ.astro';
 import CTASection from '~/components/CTASection.astro';
 import PerthMap from '~/components/PerthMap.astro';
+import HeroIntro from '~/components/HeroIntro.astro';
 import { PHOTOS, SERVICE_PHOTOS } from '~/data/photos';
 import { SITE, SELLING_POINTS } from '~/config/site';
 import { HOME_FAQS } from '~/data/faqs';
@@ -86,6 +87,7 @@ const steps = [
         {SELLING_POINTS.map((p) => <TrustChip label={p.label} />)}
       </ul>
     </div>
+    <HeroIntro />
   </section>
 
   <!-- Trust strip -->

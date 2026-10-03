@@ -1,0 +1,137 @@
+---
+// One-off homepage intro: plays /intro/tow-intro.{webm,mp4} over the hero, then
+// fades out to reveal the hero image (the video's last frame matches it).
+// - Created by script only, so no-JS visitors never download it.
+// - Once per session; skipped for prefers-reduced-motion, Save-Data and 2G.
+// - Sits inside the hero (not over the header or the mobile call bar), so the
+//   phone number and Call/Text buttons stay visible and tappable throughout.
+// - The video starts downloading only after the hero image has loaded, so it
+//   never competes with the LCP image.
+// Place it as the last child of the hero <section>.
+---
+
+<script is:inline>
+  (function () {
+    var KEY = 'qt-intro-seen';
+    try {
+      if (sessionStorage.getItem(KEY)) return;
+    } catch (e) {
+      return;
+    }
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var c = navigator.connection;
+    if (c && (c.saveData || /(^|-)2g$/.test(c.effectiveType || ''))) return;
+
+    var hero = document.currentScript && document.currentScript.closest('section');
+    if (!hero) return;
+    try {
+      sessionStorage.setItem(KEY, '1');
+    } catch (e) {}
+
+    var o = document.createElement('div');
+    o.className = 'hero-intro';
+    o.innerHTML =
+      // The poster loads straight away (it's light) and becomes the LCP paint, since
+      // the hero image underneath is covered. Same size as the video frames, so
+      // later frames don't count as a bigger, later LCP.
+      '<video muted playsinline disablepictureinpicture preload="none" poster="/intro/tow-intro-poster.webp" aria-hidden="true" tabindex="-1">' +
+      '<source src="/intro/tow-intro.webm" type="video/webm">' +
+      '<source src="/intro/tow-intro.mp4" type="video/mp4"></video>' +
+      '<button type="button" class="hero-intro-skip">Skip intro</button>';
+    hero.appendChild(o);
+
+    var v = o.querySelector('video');
+    var done = false;
+    var timers = [];
+    function dismiss() {
+      if (done) return;
+      done = true;
+      timers.forEach(clearTimeout);
+      o.classList.add('is-leaving');
+      setTimeout(function () {
+        o.remove();
+      }, 650);
+      removeEventListener('keydown', onKey);
+    }
+    function onKey(e) {
+      if (e.key === 'Escape') dismiss();
+    }
+    addEventListener('keydown', onKey);
+    o.querySelector('button').addEventListener('click', dismiss);
+    o.addEventListener('click', function (e) {
+      if (e.target === v) dismiss();
+    });
+    v.addEventListener('ended', dismiss);
+    v.addEventListener('error', dismiss, true);
+
+    var started = false;
+    function start() {
+      if (started || done) return;
+      started = true;
+      v.preload = 'auto';
+      v.muted = true;
+      v.load();
+      var p = v.play();
+      if (p && p.catch) p.catch(dismiss); // autoplay blocked: go straight to the hero
+      // Never hold the hero hostage: give up if playback hasn't begun in 4s,
+      // and end no matter what after 12s.
+      timers.push(
+        setTimeout(function () {
+          if (v.currentTime === 0) dismiss();
+        }, 4000),
+      );
+      timers.push(setTimeout(dismiss, 12000));
+    }
+
+    var img = hero.querySelector('img');
+    if (!img || img.complete) start();
+    else {
+      img.addEventListener('load', start, { once: true });
+      img.addEventListener('error', start, { once: true });
+      timers.push(setTimeout(start, 2500));
+    }
+  })();
+</script>
+
+<style is:global>
+  .hero-intro {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    background: #142540; /* dusk sky, until the first frame arrives */
+    opacity: 1;
+    transition: opacity 600ms ease;
+  }
+  .hero-intro.is-leaving {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .hero-intro video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Same crop as the hero image so the last frame lines up exactly. */
+    object-position: 88% 50%;
+  }
+  @media (min-width: 64rem) {
+    .hero-intro video {
+      object-position: center;
+    }
+  }
+  .hero-intro-skip {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    min-height: 2.75rem;
+    padding: 0 1rem;
+    border-radius: 9999px;
+    border: 1px solid rgb(255 255 255 / 0.5);
+    background: rgb(15 17 19 / 0.6);
+    color: #fff;
+    font: 600 0.9rem/1 var(--font-inter), system-ui, sans-serif;
+    cursor: pointer;
+  }
+  .hero-intro-skip:hover {
+    background: rgb(15 17 19 / 0.85);
+  }
+</style>
