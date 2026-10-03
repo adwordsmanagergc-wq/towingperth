@@ -2,6 +2,7 @@
 // them at build time, so keep the originals here at full size.
 import type { ImageMetadata } from 'astro';
 import hero from '~/assets/images/tow-truck-perth-hero.jpg';
+import heroQuay from '~/assets/images/tow-truck-perth-hero-elizabeth-quay.jpg';
 import accident from '~/assets/images/accident-towing-perth.jpg';
 import breakdown from '~/assets/images/breakdown-tow-truck-perth.jpg';
 import fourWd from '~/assets/images/4wd-tilt-tray-perth.jpg';
@@ -15,7 +16,7 @@ export interface Photo {
 }
 
 export const PHOTOS = {
-  hero: { src: hero, alt: 'Quik Tow tilt tray truck loading a silver Mercedes sedan in a Perth street' },
+  hero: { src: heroQuay, alt: 'Quik Tow & Transport tilt tray tow truck at Elizabeth Quay with the Perth city skyline at dusk' },
   accident: { src: accident, alt: 'Blue sedan with front end damage after a crash with another car' },
   breakdown: { src: breakdown, alt: 'Broken down silver sedan being winched onto a Quik Tow tilt tray' },
   fourWd: { src: fourWd, alt: 'White 4WD loaded on a Quik Tow tilt tray truck' },
