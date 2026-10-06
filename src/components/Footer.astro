@@ -52,7 +52,7 @@ const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
   </div>
   <div class="border-t border-steel">
     <div class="wrap flex flex-col gap-2 py-6 text-sm text-mute sm:flex-row sm:justify-between">
-      <p>&copy; {year} {SITE.name}. Towing across Perth, WA.{SITE.abn && ` ABN ${SITE.abn}.`}</p>
+      <p>&copy; {year} {SITE.legalName} (operating as: {SITE.name}). Towing across Perth, WA.{SITE.abn && ` ABN ${SITE.abn}.`}</p>
       <p>Open 24 hours, 7 days. <a href={SITE.phoneHref} data-position="footer-legal" class="font-semibold text-white">{SITE.phoneDisplay}</a></p>
       <p>Website by <a href="https://metatapdigital.com" class="underline underline-offset-4 hover:text-white">metatapdigital.com</a></p>
     </div>

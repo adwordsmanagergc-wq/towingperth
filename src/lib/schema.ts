@@ -32,6 +32,7 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     '@type': ['AutomotiveBusiness', 'EmergencyService'],
     '@id': BUSINESS_ID,
     name: SITE.name,
+    legalName: SITE.legalName,
     // Common misspellings people search for, so the brand still matches.
     alternateName: ['Quick Tow', 'Quik Tow', 'Quick Tow and Transport', 'Towing Perth'],
     url: absoluteUrl('/'),

@@ -5,6 +5,8 @@
 export const SITE = {
   name: 'Quik Tow & Transport',
   shortName: 'Quik Tow',
+  // Registered company, as shown on the WA Government authorised towing businesses list.
+  legalName: 'Tollis Holdings Pty Ltd',
   url: 'https://www.towingperth.com',
   phoneDisplay: '0419 857 070',
   phoneHref: 'tel:+61419857070',
