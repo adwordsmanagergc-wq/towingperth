@@ -114,6 +114,13 @@ const headingId = `${id}-heading`;
         </a>
         . Charges outside {R.area} aren't capped; we quote those upfront.
       </p>
+      <p class:list={['mt-2 text-sm', light ? 'text-slate' : 'text-mute']}>
+        Check our authorisation (#{SITE.crashTowAuthorisation}) on the{' '}
+        <a href={R.authorisedListUrl} rel="noopener" class:list={['underline underline-offset-4', light ? 'text-ink' : 'text-white']}>
+          WA Government list of authorised towing businesses
+        </a>
+        .
+      </p>
     </section>
   )
 }

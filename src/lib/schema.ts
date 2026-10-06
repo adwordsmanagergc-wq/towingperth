@@ -2,6 +2,7 @@
 // so Google sees a single provider rather than a new business on every page.
 import { SITE } from '~/config/site';
 import { absoluteUrl } from '~/lib/seo';
+import { CRASH_TOW_RULES } from '~/data/crash-towing';
 
 export type Crumb = { name: string; href: string };
 export type Faq = { q: string; a: string };
@@ -54,6 +55,13 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     },
     openingHours: 'Mo-Su 00:00-23:59',
     areaServed,
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      name: `Authorised crash towing business #${SITE.crashTowAuthorisation}`,
+      credentialCategory: 'Towing business authorisation (Towing Services Act 2024, WA)',
+      url: CRASH_TOW_RULES.authorisedListUrl,
+      recognizedBy: { '@type': 'GovernmentOrganization', name: 'Department of Transport and Major Infrastructure, Western Australia' },
+    },
     knowsAbout: ['Accident towing', 'Breakdown towing', '4WD recovery', 'Shipping container transport', 'Vehicle transport', 'Machinery transport up to 11 tonnes'],
   };
   if (SITE.email) node.email = SITE.email;

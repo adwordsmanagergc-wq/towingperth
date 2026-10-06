@@ -9,6 +9,8 @@ export const CRASH_TOW_RULES = {
   effective: '1 July 2026',
   area: 'Perth and Peel',
   sourceUrl: 'https://www.transport.wa.gov.au/licensing/towing-industry-reforms/capped-fees-and-maximum-charges',
+  // Government list of authorised towing businesses; we are #810 on it.
+  authorisedListUrl: 'https://transport.wa.gov.au/getmedia/54a4a590-baeb-446e-a916-50a7c1cb1632/DTMI_P_AuthorisedTowingBusinessesList.pdf',
   conductUrl: 'https://www.transport.wa.gov.au/licensing/towing-industry-reforms/conduct-and-obligation',
   /** What the capped tow charge covers, in the Department's words (paraphrased). */
   towIncludes:

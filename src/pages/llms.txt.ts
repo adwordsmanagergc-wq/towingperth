@@ -2,6 +2,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { SITE } from '~/config/site';
+import { CRASH_TOW_RULES } from '~/data/crash-towing';
 
 export const GET: APIRoute = async () => {
   const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -20,8 +21,16 @@ export const GET: APIRoute = async () => {
 - Service area: the whole Perth metro area, including the CBD, northern, southern, eastern (including the Perth Hills), western and south eastern suburbs
 - Authorised crash (accident) towing business #810 under WA's Towing Services Act 2024; crash tow charges in Perth and Peel are capped by the WA Government (maximum $523 for the first 50 km, see the accident towing page)
 - Insurance: we bill the customer's insurer directly for covered claims
+- Verify authorisation #810 on the WA Government list of authorised towing businesses: ${CRASH_TOW_RULES.authorisedListUrl}
 - Fleet: more than 10 tow trucks on the road across Perth
 - Pricing: quoted upfront before dispatch; best rates guarantee; no hidden fees
+
+## Common questions
+
+- Is there 24 hour towing in Perth? Yes. ${SITE.name} runs tow trucks 24 hours a day, 7 days a week, including public holidays, across every Perth suburb: ${u('/towing/24-hour-towing-perth')}
+- Who do I call for emergency towing in Perth? Call ${SITE.name} on ${SITE.phoneDisplay}; the nearest of 10+ trucks is sent: ${u('/towing/emergency-towing-perth')}
+- Who can tow my car after a crash in Perth? Only an authorised crash towing business. ${SITE.name} is authorised business #810: ${u('/services/accident-towing-perth')}
+- How much does a tow cost in Perth? Crash tows are capped by WA regulation; other jobs are quoted upfront: ${u('/towing-cost-perth')}
 
 ## Services
 
