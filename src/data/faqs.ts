@@ -36,6 +36,14 @@ If you're on a beach and the tide is coming in, call immediately and say so. Avo
 Browse by region: [northern suburbs](/areas/northern-suburbs), [southern suburbs](/areas/southern-suburbs), [eastern suburbs and hills](/areas/eastern-suburbs), [western suburbs and CBD](/areas/western-suburbs) and [south eastern suburbs](/areas/south-eastern-suburbs), or see [every suburb we cover](/areas).`,
   },
   {
+    q: 'Who decides who tows my car after a crash in Perth?',
+    a: `You do. The first tow truck at the scene has no automatic right to tow your car. Only an authorised crash towing business can do it, and you sign an Authority to Tow showing the costs and where the car is going before it moves. We're authorised business #810, so call us on 0419 857 070 and we'll come to you.`,
+  },
+  {
+    q: 'My car was towed in the Perth CBD. Where is it?',
+    a: `Cars stopped illegally in CBD clearways, bus lanes and no stopping zones are towed by Main Roads WA to its compound in Northbridge. Call Main Roads on 138 138 to check. If you need the car taken somewhere else after it's released, we can collect it. See [car towed in Perth](/towing/car-towed-perth).`,
+  },
+  {
     q: 'What are the most dangerous roads for car accidents in Perth?',
     a: `In RAC WA's Risky Roads survey, the intersection of Baldivis Road and Kulija Road in Baldivis was voted the riskiest in metro Perth, and the Canning Highway, Rome Road and Hislop Road junction came second. The Mitchell Freeway through West Perth has been named the riskiest metro road. Great Eastern Highway at Scott Street and Nicholson Road at Garden Street also made the list.
 
