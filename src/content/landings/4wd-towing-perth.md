@@ -1,8 +1,8 @@
 ---
 url: /towing/4wd-towing-perth
 keyword: dual cab 4wd towing perth
-title: "Dual Cab 4WD Towing Perth | 24/7 | Quik Tow & Transport"
-description: "Dual cab 4WD towing Perth, 24/7. Heavy utes and 4WDs with canopies, bull bars and lift kits carried on a tilt tray. Call or text 0419 857 070."
+title: "4WD Tow Truck Perth | Dual Cab & 4x4 Towing 24/7 | Quik Tow"
+description: "4WD tow truck in Perth, 24/7. Heavy utes and 4WDs with canopies, bull bars and lift kits carried on a tilt tray. Call or text 0419 857 070."
 h1: "Dual Cab 4WD Towing Perth"
 intro: "Dual cab or 4WD broken down or damaged? Call 0419 857 070 and we'll send a tilt tray that can handle the weight of your fitted out vehicle, anywhere in Perth, 24/7."
 related: [/services/4wd-recovery-perth, /services/breakdown-towing-perth, /services/accident-towing-perth, /insurance-towing, /areas, /roads/wanneroo-road, /contact]

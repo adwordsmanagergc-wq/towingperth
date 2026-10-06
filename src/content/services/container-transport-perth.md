@@ -3,9 +3,9 @@ name: "Shipping Container Transport"
 navLabel: "Container Transport"
 icon: container
 order: 4
-h1: "Shipping Container Transport Perth"
-metaTitle: "Shipping Container Transport Perth | 10 to 40 ft | Quik Tow"
-metaDescription: "Shipping container transport across Perth: 10, 20 and 40 ft containers to homes, farms, building sites and yards. Upfront quotes. Call 0419 857 070."
+h1: "Shipping Container Towing & Transport Perth"
+metaTitle: "Container Towing & Transport Perth | 10 to 40 ft | Quik Tow"
+metaDescription: "Shipping container towing and transport across Perth: 10, 20 and 40 ft containers moved to homes, farms, sites and yards. Call 0419 857 070."
 lead: "Need a shipping container moved to your home, farm, building site or business yard? We pick up and deliver 10, 20 and 40 foot containers across Perth, with a site check before we quote."
 cardBlurb: "10, 20 and 40 foot containers delivered to homes, farms, building sites and yards, with a site check first."
 included:

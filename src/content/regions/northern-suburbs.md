@@ -3,7 +3,7 @@ name: Northern Suburbs
 shortName: North
 order: 1
 h1: Towing Perth's Northern Suburbs
-metaTitle: Towing Northern Suburbs Perth | 24/7 | Quik Tow & Transport
+metaTitle: Northern Suburbs Towing Perth | 24/7 Tow Truck | Quik Tow
 metaDescription: 24/7 tow trucks across Perth's northern suburbs, from Stirling to Two Rocks. Accident, breakdown and beach 4WD recovery. Call 0419 857 070.
 lead: From the inner north out to Yanchep and Two Rocks, we have trucks working the Mitchell Freeway and Wanneroo Road corridors around the clock.
 mainRoads:

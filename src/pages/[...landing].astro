@@ -40,7 +40,7 @@ const names = new Map<string, string>([
   ['/towing', 'All towing jobs'],
 ]);
 // Crash and cost pages get the full regulated-charges panel; the rest a short note.
-const showFullCrashNotice = /accident|crash|cost|cheap|flat-rate|after-hours/.test(path);
+const showFullCrashNotice = /accident|crash|cost|cheap|flat-rate|after-hours|emergency/.test(path);
 const related = data.related.filter((u) => names.has(u) && u !== path).map((u) => ({ href: u, name: names.get(u)! }));
 const siblings = all.filter((l) => l.id !== entry.id && groupOf(l.data.url).key === group.key).slice(0, 8);
 

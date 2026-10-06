@@ -22,7 +22,10 @@ export function fitDescription(...candidates: string[]): string {
 
 export function suburbTitle(name: string): string {
   return fitTitle(
-    `Tow Truck ${name} | 24/7 Towing | ${SITE.name}`,
+    // Searches split between "towing {suburb}" and "tow truck {suburb}", so carry both.
+    `Towing ${name} | 24/7 Tow Truck ${name} | ${SITE.name}`,
+    `Towing ${name} | 24/7 Tow Truck ${name} | ${SITE.shortName}`,
+    `Towing ${name} | Tow Truck ${name} 24/7`,
     `Tow Truck ${name} | 24/7 Towing | ${SITE.shortName}`,
     `Tow Truck ${name} 24/7 | ${SITE.shortName}`,
     `Tow Truck ${name} 24/7`,

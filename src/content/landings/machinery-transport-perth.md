@@ -2,7 +2,7 @@
 url: /transport/machinery-transport-perth
 keyword: machinery transport perth
 title: "Machinery Transport Perth | Up to 11 Tonnes | Quik Tow"
-description: "Machinery transport in Perth up to 11 tonnes: bobcats, skid steers, mini excavators, forklifts and boom lifts. Call or text 0419 857 070 for a quote."
+description: "Machinery transport in Perth up to 11 tonnes, including broken-down machines: bobcats, skid steers, mini excavators, forklifts. Call 0419 857 070."
 h1: "Machinery Transport Perth, Up to 11 Tonnes"
 intro: "Need a bobcat, mini excavator, forklift or boom lift moved? We transport machinery up to 11 tonnes anywhere in Perth. Call 0419 857 070 with the make, model and weight."
 related: [/services/vehicle-transport-perth, /services/container-transport-perth, /areas/welshpool, /areas/kewdale, /areas/wangara, /areas/malaga, /areas, /contact]
@@ -21,7 +21,7 @@ faqs:
 
 ## Compact machinery we move
 
-We transport machinery up to 11 tonnes, the compact plant that keeps Perth's building sites, landscaping jobs and warehouses running. That includes bobcats and skid steers, mini excavators, forklifts, boom lifts and ride-on mowers. Jobs range from delivering hire gear to a site, moving a machine between jobs, taking it in for service and collecting machinery bought at auctions such as Pickles or Grays.
+We transport machinery up to 11 tonnes, the compact plant that keeps Perth's building sites, landscaping jobs and warehouses running. That includes bobcats and skid steers, mini excavators, forklifts, boom lifts and ride-on mowers. Jobs range from delivering hire gear to a site, moving a machine between jobs, taking it in for service and collecting machinery bought at auctions such as Pickles or Grays. Broken-down machines are no problem: tell us when you call if it won't start or drive, so we can plan how it is loaded.
 
 ## Tell us the make, model and weight
 

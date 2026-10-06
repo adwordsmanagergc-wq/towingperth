@@ -31,6 +31,8 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     '@type': ['AutomotiveBusiness', 'EmergencyService'],
     '@id': BUSINESS_ID,
     name: SITE.name,
+    // Common misspellings people search for, so the brand still matches.
+    alternateName: ['Quick Tow', 'Quik Tow', 'Quick Tow and Transport', 'Towing Perth'],
     url: absoluteUrl('/'),
     telephone: SITE.phoneE164,
     logo: absoluteUrl('/logo.png'),
@@ -65,6 +67,7 @@ export function website(): Json {
     '@id': WEBSITE_ID,
     url: absoluteUrl('/'),
     name: SITE.name,
+    alternateName: 'Towing Perth',
     publisher: { '@id': BUSINESS_ID },
     inLanguage: 'en-AU',
   };

@@ -28,6 +28,7 @@ const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
         {services.map((s) => <li><a href={`/services/${s.id}`} class={link}>{s.data.navLabel}</a></li>)}
         <li><a href="/insurance-towing" class={link}>Insurance towing</a></li>
         <li><a href={SITE.machineryUrl} class={link}>Machinery transport (up to {SITE.machineryMaxTonnes}t)</a></li>
+        <li><a href="/towing/emergency-towing-perth" class={link}>Emergency towing</a></li>
         <li><a href="/towing" class={link}>All towing jobs</a></li>
       </ul>
     </nav>
