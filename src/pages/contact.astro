@@ -7,6 +7,7 @@ import PageHero from '~/components/PageHero.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
 import { SITE } from '~/config/site';
 import CallButton from '~/components/CallButton.astro';
+import GoogleMap from '~/components/GoogleMap.astro';
 
 const formOn = SITE.quoteFormEnabled;
 
@@ -100,6 +101,13 @@ const crumbs = [
           </div>
         )
       }
+    </div>
+  </section>
+
+  <section class="pb-14 sm:pb-20" aria-labelledby="map-heading">
+    <div class="wrap">
+      <h2 id="map-heading" class="text-4xl sm:text-5xl">Find us on Google Maps</h2>
+      <GoogleMap class="mt-6" />
     </div>
   </section>
 </BaseLayout>

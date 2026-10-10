@@ -1,0 +1,40 @@
+---
+// Google Business Profile map. Google's embed is heavy, so the iframe only gets
+// its src once the visitor scrolls close to it (native lazy loading starts far too
+// early and slowed the homepage). The fixed aspect ratio stops layout shift.
+import { SITE } from '~/config/site';
+
+interface Props {
+  class?: string;
+}
+const { class: cls } = Astro.props;
+---
+
+<div class:list={['overflow-hidden rounded-2xl border border-steel bg-coal', cls]}>
+  <iframe
+    data-map-src={SITE.mapsEmbedUrl}
+    title={`${SITE.name} on Google Maps`}
+    class="block aspect-[4/3] w-full border-0 sm:aspect-[16/9]"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  <p class="p-4 text-sm text-mute">
+    <a href={SITE.mapsUrl} rel="noopener" class="font-semibold text-white underline underline-offset-4">Open {SITE.name} in Google Maps</a>
+    . Our trucks come to you anywhere in Perth.
+  </p>
+</div>
+
+<script>
+  const frames = document.querySelectorAll<HTMLIFrameElement>('iframe[data-map-src]');
+  const load = (f: HTMLIFrameElement) => {
+    f.src = f.dataset.mapSrc!;
+    f.removeAttribute('data-map-src');
+  };
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => e.isIntersecting && (load(e.target as HTMLIFrameElement), io.unobserve(e.target))),
+      { rootMargin: '300px' },
+    );
+    frames.forEach((f) => io.observe(f));
+  } else frames.forEach(load);
+</script>

@@ -37,6 +37,7 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     alternateName: ['Quick Tow', 'Quik Tow', 'Quick Tow and Transport', 'Towing Perth'],
     url: absoluteUrl('/'),
     telephone: SITE.phoneE164,
+    hasMap: SITE.mapsUrl,
     logo: absoluteUrl('/logo.png'),
     image: absoluteUrl('/og/home.jpg'),
     description:

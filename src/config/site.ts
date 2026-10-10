@@ -34,8 +34,12 @@ export const SITE = {
   // TODO: street address, only if you want one shown. Service-area businesses can leave this blank.
   streetAddress: '',
 
-  // TODO: Google Business Profile and Facebook URLs for schema sameAs and the footer.
-  sameAs: [] as string[],
+  // Google Business Profile listing "Quik Tow & Transport Towing Perth".
+  mapsUrl: 'https://maps.google.com/?cid=10192726777913768748',
+  mapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.9890098300652!2d115.82318771247779!3d-31.90689597393111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32af56eac324e9%3A0x8d73d7004a297b2c!2sQuik%20Tow%20%26%20Transport%20Towing%20Perth!5e0!3m2!1sen!2sau!4v1791646043401!5m2!1sen!2sau',
+
+  // TODO: Facebook and other profile URLs for schema sameAs.
+  sameAs: ['https://maps.google.com/?cid=10192726777913768748'] as string[],
 
   // Quote form on /contact. Off for now: quotes go by phone or text instead.
   // To turn it back on, set the three Resend variables in Vercel (see README) and flip this.

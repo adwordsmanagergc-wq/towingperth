@@ -1,5 +1,6 @@
 ---
 import CrashTowNotice from '~/components/CrashTowNotice.astro';
+import GoogleMap from '~/components/GoogleMap.astro';
 import { getCollection } from 'astro:content';
 import { Picture, getImage } from 'astro:assets';
 import ShieldCheck from '@lucide/astro/icons/shield-check';
@@ -315,6 +316,15 @@ const steps = [
           )
         }
       </div>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section class="pt-16 sm:pt-24" aria-labelledby="map-heading">
+    <div class="wrap">
+      <p class="eyebrow">Find us</p>
+      <h2 id="map-heading" class="mt-3 text-4xl sm:text-6xl">Quik Tow &amp; Transport on Google Maps</h2>
+      <GoogleMap class="mt-8" />
     </div>
   </section>
 
