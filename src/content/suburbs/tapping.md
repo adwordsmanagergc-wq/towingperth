@@ -30,7 +30,7 @@ faqs:
 
 ## Towing in Tapping: everyday problems on busy roads
 
-Tapping was farmland and market gardens until the 1990s, and it's now a fully built family suburb. Many households have two or three cars, often including a learner's first car or an older ute, so batteries, starter motors and tired cooling systems give us steady [breakdown towing](/services/breakdown-towing-perth) work here, especially in the heat of summer.
+Tapping was farmland and market gardens until the 1990s, and it's now a fully built family suburb. Many households have two or three cars, often including a learner's first car or an older ute, so batteries, starter motors and tired cooling systems give us steady [breakdown towing](/services/breakdown-towing-perth) work here, especially in the heat of summer. It's the same [towing Perth](/) service we run across the city, with trucks working the northern suburbs every day.
 
 The roads around the edge carry most of the risk. [Joondalup Drive](/roads/joondalup-drive) runs along the northern side and is one of the busiest routes into the Joondalup city centre. [Wanneroo Road](/roads/wanneroo-road) forms the western edge, and Pinjar Road the eastern one. Fast traffic, plenty of signalised intersections and drivers turning into estates mean side-impact and rear-end crashes, and we're often called to clear damaged cars from those corners.
 

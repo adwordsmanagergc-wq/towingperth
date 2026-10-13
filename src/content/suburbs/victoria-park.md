@@ -34,7 +34,7 @@ faqs:
 
 ## Typical towing jobs in Victoria Park
 
-Victoria Park is inner-city living with a busy high street. The Albany Highway strip is lined with cafes, restaurants and bars, and on a Friday or Saturday night we're often called for cars that won't start after dinner or for drivers who've decided not to drive home. During the day, it's a steady mix of flat batteries, overheating and gearbox problems from cars parked along the side streets.
+Victoria Park is inner-city living with a busy high street. The Albany Highway strip is lined with cafes, restaurants and bars, and on a Friday or Saturday night we're often called for cars that won't start after dinner or for drivers who've decided not to drive home. During the day, it's a steady mix of flat batteries, overheating and gearbox problems from cars parked along the side streets. Being so close to the CBD, Victoria Park is one of the quickest suburbs for our [Perth towing](/) trucks to reach.
 
 The big roads bring the crashes. [Albany Highway](/roads/albany-highway), [Canning Highway](/roads/canning-highway) and [Great Eastern Highway](/roads/great-eastern-highway) all converge near the Causeway, and Shepperton Road carries heavy traffic beside the railway. Lane changes and sudden stops lead to rear-end crashes, and we handle those as [accident towing](/services/accident-towing-perth) jobs with direct insurer billing.
 

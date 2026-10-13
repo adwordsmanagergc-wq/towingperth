@@ -50,7 +50,7 @@ faqs:
 
 Most crashes we're called to are ordinary ones. A rear-ender in peak hour on the freeway. A car turning right that misjudged the gap. A shopping centre car park bump that left a wheel pointing the wrong way. A single car that slid into a kerb or a pole on a wet night. In every case the car either can't be driven or shouldn't be, and someone needs to move it safely.
 
-A car can look fine and still be unsafe to drive. A pushed-back wheel, a cracked radiator, a deployed airbag or a broken headlight are all good reasons to have it carried on a tilt tray rather than limped home. We load damaged cars fully onto the tray, which protects the driveline and any evidence the assessor needs to see.
+A car can look fine and still be unsafe to drive. A pushed-back wheel, a cracked radiator, a deployed airbag or a broken headlight are all good reasons to have it carried on a tilt tray rather than limped home. We load damaged cars fully onto the tray, which protects the driveline and any evidence the assessor needs to see. Crash scenes are a big share of the [towing across Perth](/) we do every week.
 
 With more than 10 trucks working across Perth at any hour, we can usually get a driver moving quickly.
 

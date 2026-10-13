@@ -35,7 +35,7 @@ faqs:
 
 Alkimos has grown from bushland into a string of housing estates in only a few years, and our jobs here reflect that. New residents often still have the car they drove up from an older suburb, and the longer runs to work down the freeway find out weak cooling systems and tired batteries. We also move plenty of cars for people relocating into the area, which falls under our [vehicle transport](/services/vehicle-transport-perth) work.
 
-Since the freeway was extended to Romeo Road, the northern tip of it ends right in the suburb. Traffic coming off the freeway at speed meets roundabouts and traffic lights, and that's where we see rear-end crashes. Construction traffic on the estate roads adds to the mix, along with the odd flat tyre from building debris.
+Since the freeway was extended to Romeo Road, the northern tip of it ends right in the suburb. Traffic coming off the freeway at speed meets roundabouts and traffic lights, and that's where we see rear-end crashes. Construction traffic on the estate roads adds to the mix, along with the odd flat tyre from building debris. Alkimos gets the same 24/7 [towing across Perth](/) that we run in every other suburb, with trucks already working the northern corridor.
 
 ## Alkimos roads and nearby suburbs
 

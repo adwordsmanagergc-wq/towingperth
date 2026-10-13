@@ -29,7 +29,7 @@ faqs:
 
 ## Marmion callouts: what we usually see
 
-Marmion is a small suburb, but its coastline brings in visitors all year. Many of our jobs here start in the car parks along West Coast Drive, where people stop for a swim, a fish or a walk along the coast. Cars left there for hours can come back with flat batteries, and older cars sometimes overheat in summer traffic on the coast road.
+Marmion is a small suburb, but its coastline brings in visitors all year. Many of our jobs here start in the car parks along West Coast Drive, where people stop for a swim, a fish or a walk along the coast. Cars left there for hours can come back with flat batteries, and older cars sometimes overheat in summer traffic on the coast road. Our crews cover the coast as part of our [towing in Perth](/) service and know these car parks well.
 
 Inland, Marmion is quiet and residential. Our jobs there are the everyday ones: cars that won't start in a driveway, a worn clutch or an electrical fault. Marmion Avenue, along the eastern edge, is a different story, with fast traffic and busy intersections that produce the more serious incidents. For crashes we provide [accident towing](/services/accident-towing-perth) and can usually deal with your insurer directly.
 

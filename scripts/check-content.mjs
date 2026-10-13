@@ -9,6 +9,7 @@ const index = JSON.parse(await readFile(new URL('./data/suburb-index.json', impo
 const suburbSlugs = new Set(index.map((s) => s.slug));
 const roadSlugs = new Set((await readdir(new URL('roads/', ROOT)).catch(() => [])).map((f) => f.replace(/\.md$/, '')));
 const KNOWN_PATHS = new Set([
+  '/',
   '/services/accident-towing-perth',
   '/services/breakdown-towing-perth',
   '/services/4wd-recovery-perth',

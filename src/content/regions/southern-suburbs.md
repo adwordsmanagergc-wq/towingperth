@@ -24,7 +24,7 @@ faqs:
     a: Yes. Tell us the workshop name or address when you call and we'll deliver it there. For insurance jobs we'll coordinate with your insurer if they need it taken to an approved repairer.
 ---
 
-The southern suburbs stretch from the riverside streets of Applecross and Bicton through the busy Cockburn corridor to the coastal suburbs around Rockingham. The Kwinana Freeway is the spine of the region, and like the Mitchell Freeway in the north, it sees its share of peak-hour breakdowns and nose-to-tail crashes.
+The southern suburbs stretch from the riverside streets of Applecross and Bicton through the busy Cockburn corridor to the coastal suburbs around Rockingham. The Kwinana Freeway is the spine of the region, and like the Mitchell Freeway in the north, it sees its share of peak-hour breakdowns and nose-to-tail crashes. Our [Perth towing](/) trucks run the freeway and the suburbs either side of it day and night.
 
 The south is also Perth's industrial and freight heartland. Fremantle port, the Kwinana industrial strip, Henderson's marine precinct and the Bibra Lake and Jandakot business parks generate a steady stream of container and heavy vehicle moves. Along the coast, from Coogee down to Secret Harbour, beach 4WD recoveries are a regular part of the job.
 

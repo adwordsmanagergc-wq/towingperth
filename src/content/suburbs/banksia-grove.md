@@ -33,7 +33,7 @@ faqs:
 
 Banksia Grove has grown quickly from bushland into one of the bigger family suburbs in the City of Wanneroo, and plenty of our jobs come from young families and first home owners. School runs to Joseph Banks Secondary College and the primary schools mean early morning flat batteries and cars that won't start just when everyone needs to leave. Cars that need moving to a new owner or a workshop are another regular [vehicle transport](/services/vehicle-transport-perth) job.
 
-The roads out of the suburb are long and fairly quick. [Joondalup Drive](/roads/joondalup-drive) runs west towards Joondalup, Pinjar Road heads south through [Tapping](/areas/tapping), and Neaves Road continues east into semi-rural land. A breakdown on any of these at night can leave you well away from shops and lights, so a tow is often the only sensible option.
+The roads out of the suburb are long and fairly quick. [Joondalup Drive](/roads/joondalup-drive) runs west towards Joondalup, Pinjar Road heads south through [Tapping](/areas/tapping), and Neaves Road continues east into semi-rural land. A breakdown on any of these at night can leave you well away from shops and lights, so a tow is often the only sensible option. With trucks spread across the city for [towing in Perth](/) day and night, one is rarely far from Banksia Grove.
 
 ## Roads and places around Banksia Grove
 

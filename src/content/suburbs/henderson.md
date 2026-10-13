@@ -32,7 +32,7 @@ faqs:
 
 Henderson isn't really a place people live. Its heart is the Australian Marine Complex, one of the country's largest shipbuilding and repair precincts, surrounded by fabrication, engineering and marine service businesses. That makes our work here mostly commercial.
 
-[Container transport](/services/container-transport-perth) is a big part of it. Businesses bring in containers for storage, project cargo and site offices, and we carry them between Henderson, the port and other yards. We also move work utes, vans and light trucks that break down mid-shift, often to a fleet workshop elsewhere in Perth.
+[Container transport](/services/container-transport-perth) is a big part of it. Businesses bring in containers for storage, project cargo and site offices, and we carry them between Henderson, the port and other yards. We also move work utes, vans and light trucks that break down mid-shift, often to a fleet workshop elsewhere in Perth. Henderson is covered by the same [24/7 towing in Perth](/) we run for every other suburb, nights and weekends included.
 
 Then there are the staff cars. Long shifts and hot car parks mean flat batteries and overheating are common, and someone who finishes at 2am still needs help getting their car home. We're available around the clock for exactly that.
 

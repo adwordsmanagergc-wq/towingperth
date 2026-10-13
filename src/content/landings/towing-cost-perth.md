@@ -19,7 +19,7 @@ faqs:
 
 ## What actually decides the cost of a tow
 
-Every tow in Perth is priced on a handful of practical things. None of them are hidden, and we will walk you through them on the phone if you want. Here is what we look at.
+Every tow in Perth is priced on a handful of practical things. None of them are hidden, and we will walk you through them on the phone if you want. They apply to every job our [towing Perth](/) team quotes. Here is what we look at.
 
 **Distance.** This covers how far the truck travels to reach you and how far your vehicle goes after that. A breakdown in [Joondalup](/areas/joondalup) going to a workshop down the road is a very different job to a car in Two Rocks heading to a repairer in [Rockingham](/areas/rockingham).
 

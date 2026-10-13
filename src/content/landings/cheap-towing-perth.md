@@ -19,7 +19,7 @@ faqs:
 
 ## Cheap should still mean done properly
 
-Most people searching for cheap towing in Perth do not want the lowest number on a screen. They want a fair price, a truck that turns up, and no surprises when the job is finished. That is what we focus on.
+Most people searching for cheap towing in Perth do not want the lowest number on a screen. They want a fair price, a truck that turns up, and no surprises when the job is finished. That is what we focus on. It is how we run all of our [towing in Perth](/), not just the cheaper jobs.
 
 Every quote is given upfront, before the truck is dispatched. There are no hidden fees, no "extras" added at the drop off, and our best rates guarantee sits behind the price. If something about the job would change the cost, we tell you before we start, not after.
 

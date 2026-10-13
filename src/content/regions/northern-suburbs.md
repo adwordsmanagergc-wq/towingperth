@@ -26,6 +26,6 @@ faqs:
 
 The northern suburbs are one of the fastest-growing parts of Perth. New estates keep spreading north along the coast, and the Mitchell Freeway carries a huge share of the city's commuter traffic. That mix of long freeway runs, busy arterials and sandy coastline means our northern callouts are varied. One job might be a crash on Wanneroo Road. The next might be a flat battery in a Joondalup car park, then a 4WD buried to the axles behind a northern beach.
 
-Industrial areas like Wangara, Landsdale and Malaga also keep us busy with machinery, vehicle and container moves. Older suburbs closer to the city, such as Balcatta, Stirling and Nollamara, mean plenty of short-notice breakdown tows to local workshops.
+Industrial areas like Wangara, Landsdale and Malaga also keep us busy with machinery, vehicle and container moves. Older suburbs closer to the city, such as Balcatta, Stirling and Nollamara, mean plenty of short-notice breakdown tows to local workshops. Wherever you are in the north, it's the same [24/7 towing across Perth](/), with the same upfront pricing.
 
 Whatever the job, we cover every northern suburb listed below, 24 hours a day.
