@@ -48,7 +48,7 @@ faqs:
 
 Shipping containers have become the go-to answer for storage across Perth. Homeowners use them while they renovate or downsize. Builders use them as lockable site storage. Farmers and hobby farmers use them as sheds for feed, tools and machinery. Businesses keep them in the yard for stock and equipment overflow.
 
-That means containers need moving at all stages of their life. We collect newly bought containers and deliver them to your property, move them between job sites when one build finishes and the next begins, and take them away when you no longer need them. If you're relocating across Perth, we can also move a container you already own from your old place to your new one. Container moves sit alongside the rest of our [Perth towing](/) work, so the same team quotes and books them.
+That means containers need moving at all stages of their life. We collect newly bought containers and deliver them to your property, move them between job sites when one build finishes and the next begins, and take them away when you no longer need them. If you're relocating across Perth, we can also move a container you already own from your old place to your new one. Container moves sit alongside the rest of our [Perth towing](/) work, so the same team quotes and books them. Smaller loads such as a site shed or a bobcat can often go on a [tilt tray](/tilt-tray-perth) instead.
 
 ## Container sizes and site access
 

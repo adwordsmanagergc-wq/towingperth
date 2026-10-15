@@ -49,7 +49,7 @@ faqs:
 
 A breakdown rarely happens somewhere convenient. We get calls from people stopped in the left lane of the freeway, from parents whose car won't start at the school pick-up, from tradies whose ute died on site and from drivers who came back to a car park to find nothing happens when they turn the key. Some cars give warning signs for days. Others stop with no notice at all. If a warning light comes on or the temperature gauge starts to climb, pull over as soon as it's safe. Driving on can turn a modest repair into a much bigger one.
 
-Whatever the situation, the job is the same: get your car off the road or out of the way safely and take it somewhere it can be fixed. With more than 10 trucks on the road across Perth, there's usually one not too far from you. Breakdowns are the most common call for our [towing Perth](/) team, day or night.
+Whatever the situation, the job is the same: get your car off the road or out of the way safely and take it somewhere it can be fixed. With more than 10 trucks on the road across Perth, there's usually one not too far from you. Breakdowns are the most common call for our [towing Perth](/) team, day or night. Most of these jobs are everyday [car towing](/car-towing-perth), and when it is a truck or bus that has stopped, see [truck towing](/truck-towing-perth).
 
 ## Why cars break down, and what we can and can't do roadside
 
