@@ -30,6 +30,9 @@ faqs:
     a: Yes. Tell us which car park or area you're in, such as near Loch McNess or the Yanchep Inn, and let the park rangers know you're waiting for a tow. The main entry is off Wanneroo Road.
   - q: My new street in Yanchep doesn't show up on maps yet. How will you find me?
     a: Give us the estate name, the nearest established street and a pin dropped from your phone. We're used to new estates in the northern corridor, and the driver may ring you on the way for directions.
+featured: true
+metaTitle: "Yanchep Towing | 24/7 Tow Truck & 4WD Recovery | Quik Tow"
+metaDescription: "Yanchep towing 24/7: breakdowns on Marmion Ave, crashes on the freeway and bogged 4WDs at Two Rocks. 25+ years towing Perth. Call now for a fast quote."
 ---
 
 ## Yanchep callouts, from estates to bushland
@@ -43,6 +46,10 @@ The rural side of Yanchep brings different work. [Wanneroo Road](/roads/wanneroo
 Marmion Avenue comes up through [Alkimos](/areas/alkimos) and [Eglinton](/areas/eglinton) and ends at the roundabout with Yanchep Beach Road. From there, Yanchep Beach Road runs inland to Wanneroo Road and the national park, and Two Rocks Road leads north to [Two Rocks](/areas/two-rocks). Wanneroo Road ends at Yanchep Beach Road, where Indian Ocean Drive continues north towards Guilderton and Lancelin.
 
 Yanchep station, at the northern end of the railway line, gives commuters a direct link to Joondalup and the city, and its car park is a likely place to find a flat battery after a long day at work.
+
+## How far Yanchep is from our base
+
+Yanchep is the far north of our patch. From our Osborne Park base it is around 50 km and roughly 40 minutes off peak, up the Mitchell Freeway and then Marmion Avenue or Wanneroo Road, so tell us early if you are on a deadline and we will check which truck is closest. Many Yanchep tows head south to workshops in Wangara, Joondalup or Clarkson. We have been [towing Perth](/) for more than 25 years, and up here the calls we take most are [breakdown towing](/services/breakdown-towing-perth), [4WD recovery](/services/4wd-recovery-perth) and [car towing](/car-towing-perth). We also cover nearby [Alkimos](/areas/alkimos) and [Two Rocks](/areas/two-rocks).
 
 ## Car trouble in Yanchep? What to do
 

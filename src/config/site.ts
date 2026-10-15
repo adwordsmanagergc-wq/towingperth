@@ -33,6 +33,13 @@ export const SITE = {
   abn: '',
   // TODO: street address, only if you want one shown. Service-area businesses can leave this blank.
   streetAddress: '',
+  // Home base, as on the Google Business Profile (confirmed by the business).
+  baseSuburb: 'Osborne Park',
+  postcode: '6017',
+  // Google Business Profile pin.
+  geo: { latitude: -31.906896, longitude: 115.823188 },
+  // Confirmed by the business: in business for more than 25 years.
+  yearsInBusiness: '25+',
 
   // Google Business Profile listing "Quik Tow & Transport Towing Perth".
   mapsUrl: 'https://maps.google.com/?cid=10192726777913768748',

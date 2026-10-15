@@ -2,7 +2,7 @@
 url: /towing/24-hour-towing-perth
 keyword: 24 hour towing perth
 title: "24 Hour Towing Perth | 24/7 Tow Truck Service | Quik Tow"
-description: "24 hour towing in Perth, every day of the year. Tow trucks on call around the clock across all suburbs. Upfront quotes. Call 0419 857 070."
+description: "24 hour towing Perth, every day of the year. Tow trucks on call around the clock in every suburb, 25+ years. Upfront quotes. Call now for a fast quote."
 h1: "24 Hour Towing Perth"
 intro: "Our tow trucks work around the clock, 7 days a week, across every Perth suburb. Call 0419 857 070 at any hour and a real person answers."
 related: [/towing/emergency-towing-perth, /towing/after-hours-towing-perth, /services/breakdown-towing-perth, /services/accident-towing-perth, /towing-cost-perth, /insurance-towing, /areas]

@@ -41,14 +41,16 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
     logo: absoluteUrl('/logo.png'),
     image: absoluteUrl('/og/home.jpg'),
     description:
-      '24/7 tow truck service across every Perth suburb: accident towing, breakdown recovery, 4WD recovery, shipping container transport and vehicle transport. WA Department of Transport authorised crash towing business #810, with crash tow charges regulated by law. We bill your insurer directly.',
+      `24/7 tow truck service across every Perth suburb from our ${SITE.baseSuburb} base, in business for ${SITE.yearsInBusiness} years: accident towing, breakdown recovery, 4WD recovery, shipping container transport and vehicle transport. WA Department of Transport authorised crash towing business #810, with crash tow charges regulated by law. We bill your insurer directly.`,
     address: {
       '@type': 'PostalAddress',
       ...(SITE.streetAddress ? { streetAddress: SITE.streetAddress } : {}),
-      addressLocality: SITE.locality,
+      addressLocality: SITE.baseSuburb,
       addressRegion: SITE.region,
+      postalCode: SITE.postcode,
       addressCountry: SITE.country,
     },
+    geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.latitude, longitude: SITE.geo.longitude },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -64,7 +66,7 @@ export function localBusiness(opts: { regions: string[]; suburbs?: string[] }): 
       url: CRASH_TOW_RULES.authorisedListUrl,
       recognizedBy: { '@type': 'GovernmentOrganization', name: 'Department of Transport and Major Infrastructure, Western Australia' },
     },
-    knowsAbout: ['Accident towing', 'Breakdown towing', '4WD recovery', 'Shipping container transport', 'Vehicle transport', 'Machinery transport up to 11 tonnes'],
+    knowsAbout: ['Accident towing', 'Breakdown towing', 'Car towing', 'Tilt tray towing', 'Truck and bus towing', 'EV towing', 'Caravan and boat towing', '4WD recovery', 'Shipping container transport', 'Vehicle transport', 'Machinery transport up to 11 tonnes'],
   };
   if (SITE.email) node.email = SITE.email;
   if (SITE.sameAs.length) node.sameAs = SITE.sameAs;

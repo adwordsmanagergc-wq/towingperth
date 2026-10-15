@@ -38,9 +38,9 @@ const HERO_SIZES = '100vw';
 const heroImg = PHOTOS.hero.src;
 const preload = await getImage({ src: heroImg, format: 'avif', widths: HERO_WIDTHS, sizes: HERO_SIZES });
 
-const title = 'Towing Perth 24/7 | Emergency Tow Truck Perth | Quik Tow';
+const title = 'Towing Perth | 24/7 Tow Truck, Fast Tilt Trays | Quik Tow';
 const description =
-  'Emergency tow truck in every Perth suburb, 24/7: accident and breakdown towing, 4WD recovery, container towing. We bill your insurer. Call 0419 857 070.';
+  `Towing Perth 24/7 from Osborne Park. ${SITE.yearsInBusiness} years, 10+ tow trucks for accident, breakdown, car and heavy towing in every suburb. Call now for a fast quote.`;
 
 const steps = [
   { icon: Phone, title: 'Call us', text: `Ring ${SITE.phoneDisplay}. Tell us where you are, what you drive and where it needs to go. You'll get a clear quote upfront.` },
@@ -73,12 +73,12 @@ const steps = [
     />
     <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/40" aria-hidden="true"></div>
     <div class="wrap py-14 sm:py-20 lg:py-28">
-      <p class="eyebrow">Tow truck Perth &middot; Open 24/7</p>
+      <p class="eyebrow">Tow truck Perth &middot; {SITE.baseSuburb} &middot; {SITE.yearsInBusiness} years &middot; Open 24/7</p>
       <h1 class="mt-4 max-w-3xl text-[3.25rem] text-white sm:text-7xl lg:text-8xl">
         Towing Perth <span class="text-hivis">24/7</span>
       </h1>
       <p class="mt-6 max-w-2xl text-lg text-white/90 sm:text-xl">
-        Towing Perth wide, day and night: accidents, breakdowns, 4WD recovery, shipping containers, machinery up to {SITE.machineryMaxTonnes} tonnes and vehicle transport, in every suburb.
+        Towing Perth wide, day and night, from our {SITE.baseSuburb} base for {SITE.yearsInBusiness} years: accidents, breakdowns, cars, trucks, 4WDs, containers, machinery up to {SITE.machineryMaxTonnes} tonnes and vehicle transport, in every suburb.
       </p>
       <div class="mt-8 flex flex-col gap-3 sm:flex-row">
         <CallButton position="home-hero" size="xl" label="Call now" />
@@ -159,6 +159,74 @@ const steps = [
           </span>
         </span>
       </a>
+    </div>
+  </section>
+
+  <!-- Towing services Perth: every job, with links to each page -->
+  <section class="border-t border-steel py-16 sm:py-24" aria-labelledby="company-heading">
+    <div class="wrap grid gap-12 lg:grid-cols-[1.2fr_1fr]">
+      <div class="prose-copy">
+        <p class="eyebrow not-prose">Perth towing company</p>
+        <h2 id="company-heading">Towing services Perth drivers have called for {SITE.yearsInBusiness} years</h2>
+        <p>
+          Quik Tow &amp; Transport (some people know us as Quick Tow) is a local Perth towing company based in {SITE.baseSuburb}. We have been
+          towing cars, utes, trucks and machinery around Perth for more than 25 years, and today more than 10 tow trucks work across the city
+          every day. {SITE.baseSuburb} sits right beside the Mitchell Freeway, so the CBD, the inner north and the western suburbs are
+          close by, and the freeway network gets our trucks north, south and east quickly.
+        </p>
+        <h3>A tow truck service Perth can rely on, day or night</h3>
+        <p>
+          A real person answers {SITE.phoneDisplay} around the clock. Tell us where you are and what you drive, and we send the nearest truck with
+          a realistic ETA and a clear quote before anything moves. For a crash we can bill your insurer directly. For everything else you get a
+          fixed price upfront, with no hidden fees.
+        </p>
+        <h3>Tow trucks in Perth for every kind of vehicle</h3>
+        <p>
+          Most of our fleet is tilt tray tow trucks, which carry the whole vehicle on the tray with no wheels on the road. That is the safe way to
+          move automatics, all wheel drives, prestige cars and electric cars. We also move trucks and buses, caravans and boats, motorbikes,
+          shipping containers and plant up to {SITE.machineryMaxTonnes} tonnes, and we do regional runs from Perth when a car needs to go further.
+        </p>
+        <h3>Looking for a tow truck near you?</h3>
+        <p>
+          If you searched for a tow truck near me, you are probably stuck right now. Call or text {SITE.phoneDisplay} with your nearest cross
+          street or a map pin. With trucks spread across the metro area there is usually one not far from you, whether that is a freeway shoulder,
+          a shopping centre car park or your own driveway. You can also find us on
+          <a href={SITE.mapsUrl}>Google Maps as Quik Tow &amp; Transport Towing Perth</a>.
+        </p>
+      </div>
+      <nav aria-label="Towing services in Perth" class="self-start rounded-lg border border-steel bg-coal p-6">
+        <h3 class="text-2xl">Our towing services</h3>
+        <ul class="mt-4 grid gap-1 sm:grid-cols-2 lg:grid-cols-1">
+          {
+            [
+              ['/car-towing-perth', 'Car towing Perth'],
+              ['/services/breakdown-towing-perth', 'Breakdown towing Perth'],
+              ['/services/accident-towing-perth', 'Accident towing Perth'],
+              ['/insurance-towing', 'Insurance towing Perth'],
+              ['/towing/24-hour-towing-perth', '24 hour towing Perth'],
+              ['/towing/emergency-towing-perth', 'Emergency towing Perth'],
+              ['/truck-towing-perth', 'Truck and bus towing Perth'],
+              ['/tilt-tray-perth', 'Tilt tray hire Perth'],
+              ['/services/container-transport-perth', 'Container towing Perth'],
+              ['/services/4wd-recovery-perth', '4WD recovery Perth'],
+              ['/towing/caravan-towing-perth', 'Caravan towing Perth'],
+              ['/towing/boat-transport-perth', 'Boat towing Perth'],
+              ['/towing/ev-towing-perth', 'Electric car towing Perth'],
+              ['/services/vehicle-transport-perth', 'Vehicle transport Perth'],
+              ['/towing-cost-perth', 'Tow truck prices Perth'],
+              ['/cheap-towing-perth', 'Cheap tow truck Perth'],
+              ['/towing-albany', 'Perth to Albany towing'],
+            ].map(([href, name]) => (
+              <li>
+                <a href={href} class="inline-flex min-h-10 items-center gap-1 text-mute hover:text-hivis">
+                  <ChevronRight class="size-4 text-hivis" aria-hidden="true" />
+                  {name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
     </div>
   </section>
 
@@ -278,8 +346,13 @@ const steps = [
         <p class="eyebrow">Where we tow</p>
         <h2 id="coverage-heading" class="mt-3 text-4xl sm:text-6xl">Every suburb across Perth</h2>
         <p class="mt-5 text-lg text-mute">
-          From Two Rocks to Secret Harbour and from Cottesloe to Mundaring, our trucks cover the whole metro area, 24/7. Pick your region to find your
-          suburb.
+          From Two Rocks to Secret Harbour and from Cottesloe to Mundaring, our trucks cover the whole metro area, 24/7, starting from {SITE.baseSuburb}.
+          Pick your region to find your suburb, or see our busiest areas: <a href="/areas/joondalup" class="text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">tow truck Joondalup</a>,
+          <a href="/areas/bayswater" class="text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">Bayswater towing</a>,
+          <a href="/areas/rockingham" class="text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">towing Rockingham</a>,
+          <a href="/areas/yanchep" class="text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">Yanchep towing</a>,
+          <a href="/areas/morley" class="text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">tow truck Morley</a> and
+          <a href="/areas/northern-suburbs" class="text-white underline decoration-steel underline-offset-4 hover:decoration-hivis">northern suburbs towing</a>.
         </p>
         <ul class="mt-8 grid gap-3 sm:grid-cols-2">
           {

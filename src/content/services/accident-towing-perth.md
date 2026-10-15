@@ -4,8 +4,8 @@ navLabel: "Accident Towing"
 icon: accident
 order: 1
 h1: "Accident Towing Perth"
-metaTitle: "Accident Towing Perth | Authorised #810 | We Bill Insurers"
-metaDescription: "Crash in Perth? 24/7 accident towing to your repairer, home or insurer's assessor. We bill your insurer directly. Call Quik Tow on 0419 857 070."
+metaTitle: "Accident Towing Perth 24/7 | Authorised #810 | Quik Tow"
+metaDescription: "Accident towing service in Perth 24/7. Authorised crash tow #810, we bill your insurer and tow to your repairer. 25+ years. Call now for a fast quote."
 lead: "Been in a crash anywhere in Perth? We'll clear your car from the scene day or night, take it where you choose and bill your insurer directly, so you can focus on getting home."
 cardBlurb: "Crash recovery day or night. We take your car where you choose and bill your insurer directly."
 included:

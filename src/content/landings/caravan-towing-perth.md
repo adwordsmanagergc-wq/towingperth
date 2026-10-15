@@ -1,11 +1,11 @@
 ---
 url: /towing/caravan-towing-perth
 keyword: caravan towing perth
-title: "Caravan Towing Perth | 24/7 | Quik Tow & Transport"
-description: "Caravan towing Perth for vans that won't move, broken tow vehicles, storage moves and crash damage. 24/7. Call or text 0419 857 070 for an upfront quote."
+title: "Caravan Towing Perth | 24/7 Caravan & Boat Tows | Quik Tow"
+description: "Caravan towing Perth for vans that won't move, broken tow cars, storage moves and crash damage. Boats too. 24/7, 25+ years. Call now for a fast quote."
 h1: "Caravan Towing Perth"
 intro: "Caravan stuck, tow vehicle broken down or van damaged in a crash? Call 0419 857 070 and we'll organise the right truck to move your caravan anywhere in Perth, 24/7."
-related: [/services/breakdown-towing-perth, /services/accident-towing-perth, /services/vehicle-transport-perth, /insurance-towing, /areas, /roads/great-eastern-highway, /roads/albany-highway, /contact]
+related: [/towing/boat-transport-perth, /services/breakdown-towing-perth, /services/accident-towing-perth, /services/vehicle-transport-perth, /insurance-towing, /areas, /roads/great-eastern-highway, /roads/albany-highway, /contact]
 faqs:
   - q: "What do you need to know about my caravan?"
     a: "The length, the ATM (aggregate trailer mass) and roughly how loaded it is right now. The ATM is on the compliance plate, usually near the A-frame or inside the door. Also tell us if it's single or tandem axle and whether the brakes and wheels turn."
@@ -42,6 +42,10 @@ Not every caravan job is an emergency. We move vans between home and storage yar
 ## Damaged caravans after a crash
 
 Caravans are lightly built compared to cars, and after a rollover or a jackknife the walls, floor and chassis can be badly twisted. Loose fittings, gas bottles and water tanks all need to be checked before moving. Turn off the gas at the bottle if you can do it safely. We take care to secure the van so nothing shifts further during the trip, and can take it to your repairer or the insurer's approved repairer. Our [insurance towing](/insurance-towing) page explains how billing your insurer works.
+
+## Boats on trailers too
+
+The same trucks move boats. If your boat trailer has a broken axle, a seized wheel bearing or no tow car to pull it, we can carry it between your home, the ramp, storage or a marine workshop. See [boat towing](/towing/boat-transport-perth) for what we need to know.
 
 ## Pricing
 

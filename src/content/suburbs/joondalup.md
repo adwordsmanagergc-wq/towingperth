@@ -35,6 +35,8 @@ faqs:
     a: Get the car as far left as you safely can, turn on your hazard lights and, if it's safe to get out, wait behind the barrier away from traffic. When you call, give us the direction you were travelling and the nearest exit, such as Hodges Drive, Shenton Avenue or Burns Beach Road.
   - q: Can you take my car to a mechanic in Joondalup's industrial area?
     a: Yes. We can drop it at any workshop you choose, including the light industrial streets on the eastern side of the city centre. If it's after hours, we can arrange a key drop or hold the car and deliver it in the morning.
+metaTitle: "Tow Truck Joondalup | 24/7 Towing Service | Quik Tow"
+metaDescription: "Tow truck Joondalup 24/7. Towing service for crashes on the Mitchell Fwy and Wanneroo Rd, breakdowns and car parks. 25+ years. Call now for a fast quote."
 ---
 
 ## Towing in Joondalup: what we're usually called out for
@@ -48,6 +50,10 @@ The Mitchell Freeway is the other big source of jobs. Morning and afternoon peak
 The city centre sits between the freeway and Lake Joondalup, with Joondalup Drive, Shenton Avenue and Grand Boulevard carrying most of the local traffic. Joondalup Drive is busy enough that it's on our [list of crash-prone roads](/roads/joondalup-drive). To the west, Ocean Reef Road runs out towards [Ocean Reef](/areas/ocean-reef) and the coast. To the north and east, Moore Drive links through to [Currambine](/areas/currambine) and [Edgewater](/areas/edgewater).
 
 We also cover the quieter residential streets of Joondalup's older pockets and the newer apartment blocks near the city centre, where low-clearance basements sometimes call for a careful tilt tray recovery.
+
+## Towing service Joondalup, from our Osborne Park base
+
+Our base is in Osborne Park, about 25 minutes down the Mitchell Freeway from Joondalup off peak, and with more than 10 trucks working across Perth there is often one already in the northern suburbs. Joondalup jobs regularly end up at workshops in Wangara, Malaga or back towards Osborne Park, and we tow to any address you choose. It is the same 24/7 [tow truck Perth](/) service we have run for more than 25 years, with [accident towing](/services/accident-towing-perth), [breakdown towing](/services/breakdown-towing-perth) and [car towing](/car-towing-perth) all on one number. Neighbouring areas we cover just as often include [Wanneroo](/areas/wanneroo) and [Clarkson](/areas/clarkson).
 
 ## If you're stuck in Joondalup right now
 

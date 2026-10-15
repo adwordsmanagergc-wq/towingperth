@@ -4,8 +4,8 @@ navLabel: "Breakdown Towing"
 icon: breakdown
 order: 2
 h1: "Breakdown Towing Perth"
-metaTitle: "Breakdown Towing Perth 24/7 | Tilt Tray | Quik Tow"
-metaDescription: "Car won't start or died on the road? 24/7 breakdown towing across Perth to your mechanic or home. Upfront quotes. Call Quik Tow on 0419 857 070."
+metaTitle: "Breakdown Towing Perth 24/7 | Fast Tilt Tray Tow | Quik Tow"
+metaDescription: "Breakdown towing Perth 24/7. Car won't start or died on the road? A fast breakdown tow to your mechanic or home. 25+ years. Call now for a fast quote."
 lead: "Car died on the freeway, won't start in the driveway or is stuck in a car park? We'll tow it to your mechanic, your home or anywhere else in Perth, any hour of the day."
 cardBlurb: "Car won't start or gave up mid-drive? We tow it to your mechanic or home, 24/7, with an upfront quote."
 included:
