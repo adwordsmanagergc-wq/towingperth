@@ -49,7 +49,7 @@ faqs:
 
 Perth is surrounded by places that test a four-wheel drive: beaches where vehicles are allowed, sandy tracks through the coastal scrub, sandy firebreaks on rural blocks and gravel and clay roads through the hills. Most people who get stuck aren't reckless. They hit a patch of soft sand with tyres pumped up for the highway, misjudged a wet clay slope after rain or followed a track that turned out to be rougher than it looked.
 
-We also recover plenty of vehicles that were never meant to go off the bitumen. An SUV that rolled onto a soft verge to let a truck past, a car caught in a sandy car park after a storm, or a ute bogged on a rural block after the first winter rain.
+We also recover plenty of vehicles that were never meant to go off the bitumen. An SUV that rolled onto a soft verge to let a truck past, a car caught in a sandy car park after a storm, or a ute bogged on a rural block after the first winter rain. 4WD recovery is one part of our wider [towing Perth](/) service, so if the vehicle can't be driven out afterwards, the same truck can tow it home or to a workshop.
 
 ## Sand, mud and tides: how recoveries really work
 

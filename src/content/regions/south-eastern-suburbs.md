@@ -24,7 +24,7 @@ faqs:
     a: Albany Highway, and intersections along Nicholson Road and Ranford Road, see a lot of crashes. See our [dangerous roads guide](/roads) for the details and what to do if you're involved in one.
 ---
 
-The south eastern suburbs cover a lot of ground, from the inner-city edge of Victoria Park and Bentley through Cannington and Gosnells to Armadale and the semi-rural edge at Byford. Albany Highway runs the length of the region and is one of the busiest, and most crash-prone, roads in Perth.
+The south eastern suburbs cover a lot of ground, from the inner-city edge of Victoria Park and Bentley through Cannington and Gosnells to Armadale and the semi-rural edge at Byford. Albany Highway runs the length of the region and is one of the busiest, and most crash-prone, roads in Perth. That makes it one of the busiest regions for our [towing in Perth](/) crews.
 
 This is also where Perth's freight moves. The Kewdale and Welshpool industrial area sits beside the Kewdale rail terminal, and the surrounding estates see a constant flow of containers, trucks and machinery. Further south, growth suburbs like Piara Waters, Southern River and Byford are still being built, so roadworks and new road layouts are part of daily driving.
 

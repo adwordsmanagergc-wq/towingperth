@@ -26,7 +26,7 @@ A missing car in Perth has usually gone one of four ways, and each has a differe
 - **Towed after a crash.** If you weren't the one who arranged the tow, ask the police officer at the scene or check your Authority to Tow paperwork, which names the towing business and where the car went.
 - **Left for a long time on a road.** Main Roads can remove vehicles left on its roads, store them and dispose of them if no one claims them. Contact Main Roads quickly if you think that has happened.
 
-If none of these fit, the car may have been stolen. Report it to WA Police.
+If none of these fit, the car may have been stolen. Report it to WA Police. Once you've found it, our [towing Perth](/) team can pick it up and take it home or to a workshop.
 
 ## Your rights at a crash scene
 

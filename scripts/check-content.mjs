@@ -9,6 +9,7 @@ const index = JSON.parse(await readFile(new URL('./data/suburb-index.json', impo
 const suburbSlugs = new Set(index.map((s) => s.slug));
 const roadSlugs = new Set((await readdir(new URL('roads/', ROOT)).catch(() => [])).map((f) => f.replace(/\.md$/, '')));
 const KNOWN_PATHS = new Set([
+  '/',
   '/services/accident-towing-perth',
   '/services/breakdown-towing-perth',
   '/services/4wd-recovery-perth',
@@ -41,7 +42,7 @@ const BANNED = [
   /look no further/i, /second to none/i, /one-stop shop/i, /pride ourselves/i, /rest assured/i, /seamless/i,
   /hassle-free/i, /unparalleled/i, /fast-paced/i, /towing perth services/i, /tow truck perth services/i,
   /within \d+ minutes/i, /\d+ ?(?:to|-) ?\d+ minutes/i, /\$(?!3,000\b|523\b|4\.75\b|149\b|27\b|95\b|13\.50\b)\d/, /years? (?:of )?experience/i, /\bstars?\b.*review/i,
-  /based in/i, /our (?:depot|yard) (?:in|at)/i,
+  /based in(?! Osborne Park)/i, /our (?:depot|yard) (?:in|at)/i,
 ];
 
 function parse(md) {

@@ -21,7 +21,7 @@ faqs:
 
 Some tows can be booked for tomorrow. Others can't. A car stopped in a live lane on the Kwinana Freeway, a crash at a busy intersection, a car that has died in a tunnel or a work ute that won't start with a crew waiting on it all need a truck now.
 
-That is what our emergency line is for. Ring 0419 857 070 at any hour and a real person answers. We take your location, check which of our trucks is closest and send it straight to you.
+That is what our emergency line is for. Ring 0419 857 070 at any hour and a real person answers. We take your location, check which of our trucks is closest and send it straight to you. It is the same [towing Perth](/) team and the same trucks, just sent straight away.
 
 ## Our crash towing authorisation
 

@@ -35,6 +35,8 @@ faqs:
     a: Yes. The campus sits on Dixon Road and we can collect from the student and staff car parks. Tell us which car park you're in and whether the car is going home or to a mechanic.
   - q: I've crashed on Ennis Avenue. Who pays for the tow?
     a: If you're insured, we can usually bill your insurance company directly, so you don't have to pay upfront. Have your policy details or claim number handy when you call, and we'll take the car wherever your insurer asks.
+metaTitle: "Towing Rockingham | 24/7 Tow Truck Rockingham | Quik Tow"
+metaDescription: "Towing Rockingham 24/7: tow truck for crashes on the Kwinana Fwy, breakdowns and beach car parks. 25+ years towing Perth. Call now for a fast quote."
 ---
 
 ## What gets us called out in Rockingham
@@ -50,6 +52,10 @@ Down at the waterfront, summer weekends bring their own problems. Cars left with
 Patterson Road and Ennis Avenue form the backbone. Dixon Road runs past the Murdoch University campus and the light industrial estates, then continues east as Kulija Road to reach the Kwinana Freeway, which makes [Kulija Road](/roads/kulija-road) the usual route when we bring a car up from the freeway. Council Avenue and Read Street connect the city centre with the train station and the suburbs to the south.
 
 Safety Bay Road heads from the Rockingham beachfront down towards [Safety Bay](/areas/safety-bay) and then east to the freeway at [Baldivis](/areas/baldivis). Further along the coast, Read Street becomes Warnbro Sound Avenue and runs on to [Warnbro](/areas/warnbro).
+
+## Tow truck Rockingham, wherever the truck is coming from
+
+From our Osborne Park base, Rockingham is about 50 km and around 45 minutes down the Kwinana Freeway off peak. With more than 10 trucks working across Perth we often have one in the southern suburbs already, and we tell you the real ETA when you call. We have been [towing across Perth](/) for more than 25 years. In Rockingham the work is mostly [accident towing](/services/accident-towing-perth), [breakdown towing](/services/breakdown-towing-perth) and [container towing](/services/container-transport-perth) for the industrial area. Neighbouring suburbs we cover include [Baldivis](/areas/baldivis) and [Kwinana](/areas/kwinana).
 
 ## Stuck in Rockingham? Do this first
 

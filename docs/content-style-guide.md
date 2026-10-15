@@ -27,6 +27,8 @@ Who reads this site: someone stressed, often standing at the roadside on a phone
 
 No reviews, ratings, years in business, ABN, street address, depot or yard locations, licence numbers, response time figures ("within 30 minutes"), prices, fleet details beyond "10+ trucks", staff names, partner insurer names, or awards. Do not claim we have a truck "based in" any suburb. Acceptable: "with more than 10 trucks working across Perth, there's often one not far from {suburb}."
 
+Confirmed by the business (October 2026), so these may be used: **25+ years in business** and **based in Osborne Park** (the Google Business Profile location). Read them from `SITE.yearsInBusiness` and `SITE.baseSuburb` in templates. Drive distances from Osborne Park ("about 25 minutes up the Mitchell Freeway") are fine as geography; never present them as a promised arrival time.
+
 ## Local facts
 
 Every local fact (roads, landmarks, council, nearby suburbs, beach access rules, industrial areas) must be true. If you're not sure a fact is right, check it with a web search or leave it out. Never guess a road name. Generic but true beats specific but wrong.

@@ -21,7 +21,7 @@ faqs:
 
 A flat rate tow means you know the price before anything moves. You tell us about the job, we work out a fixed quote, and you agree to it before the truck leaves. No meter running, no add-ons at the drop off.
 
-It works because we ask the right questions first. Our team takes the details, matches the job with the nearest of our 10+ trucks, and gives you the figure along with a realistic ETA.
+It works because we ask the right questions first. Our team takes the details, matches the job with the nearest of our 10+ trucks, and gives you the figure along with a realistic ETA. Every job our [towing Perth](/) team takes on is quoted this way.
 
 ## What's included in the quote
 

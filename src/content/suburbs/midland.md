@@ -41,7 +41,7 @@ faqs:
 
 Midland is the main commercial centre for the City of Swan, and it's a crossroads. Great Eastern Highway runs through the middle of town, Roe Highway sweeps past the eastern side, and Great Northern Highway starts here and heads north into the Swan Valley. Freight, commuters and day-trippers all pass through, so crashes at the busier intersections and breakdowns on the highway approaches are regular [accident towing](/services/accident-towing-perth) and [breakdown](/services/breakdown-towing-perth) jobs for us.
 
-The town centre brings its own calls. Midland Gate draws shoppers from across the eastern suburbs and the hills, and its car parks see dead batteries, faulty starters and keys locked inside. The hospital precinct on the old workshops land is another regular pickup point, often for visitors whose car gave out after a long shift at a bedside.
+The town centre brings its own calls. Midland Gate draws shoppers from across the eastern suburbs and the hills, and its car parks see dead batteries, faulty starters and keys locked inside. The hospital precinct on the old workshops land is another regular pickup point, often for visitors whose car gave out after a long shift at a bedside. Midland is one of the busiest parts of our [Perth towing](/) map, so there's usually a truck working nearby.
 
 ## Main roads and neighbouring suburbs around Midland
 

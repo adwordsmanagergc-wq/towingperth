@@ -21,7 +21,7 @@ faqs:
 
 Breaking down after dark feels different. Fewer people around, less light, and often a flat phone battery to worry about. When you ring 0419 857 070 at night, a real person picks up, takes your location and tells you which truck is coming.
 
-We have 10+ tow trucks on the road across Perth, so we send the nearest one rather than whoever is free across town. You get a realistic ETA, not a guess designed to keep you on the line.
+We have 10+ tow trucks on the road across Perth, so we send the nearest one rather than whoever is free across town. You get a realistic ETA, not a guess designed to keep you on the line. Night jobs are handled by the same [towing Perth](/) crew that works the day shift.
 
 ## Staying safe while you wait
 

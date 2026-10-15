@@ -24,7 +24,7 @@ faqs:
     a: Yes. We cover every coastal suburb from North Fremantle up to Scarborough and beyond, including beach car parks, which get busy in summer.
 ---
 
-Perth's western suburbs and the CBD are a mix of busy inner-city streets, leafy riverside suburbs and coastal strips. Stirling Highway is the main artery, linking the city to Fremantle through Nedlands, Claremont and Cottesloe. Further north, Scarborough Beach Road and West Coast Highway carry beach traffic all summer.
+Perth's western suburbs and the CBD are a mix of busy inner-city streets, leafy riverside suburbs and coastal strips. Stirling Highway is the main artery, linking the city to Fremantle through Nedlands, Claremont and Cottesloe. Further north, Scarborough Beach Road and West Coast Highway carry beach traffic all summer. We cover all of it as part of our 24/7 [towing Perth](/) service.
 
 Towing in the inner city brings its own challenges, including clearways, loading zones, low car park clearances and tight laneways. Our drivers know how to work safely in these spots. Out west, there are plenty of prestige and European vehicles that need a careful tilt tray load, and beach car parks where cars break down after a long day out.
 

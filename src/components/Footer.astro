@@ -7,6 +7,16 @@ import CallButton from './CallButton.astro';
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
 const year = new Date().getFullYear();
+// Busiest suburbs, linked sitewide.
+const AREA_LINKS = [
+  ['/areas/osborne-park', 'Towing Osborne Park'],
+  ['/areas/joondalup', 'Towing Joondalup'],
+  ['/areas/bayswater', 'Towing Bayswater'],
+  ['/areas/morley', 'Towing Morley'],
+  ['/areas/rockingham', 'Towing Rockingham'],
+  ['/areas/yanchep', 'Towing Yanchep'],
+  ['/towing-albany', 'Albany runs from Perth'],
+];
 const heading = 'mb-4 font-display text-lg font-bold uppercase tracking-widest text-hivis';
 const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
 ---
@@ -16,7 +26,7 @@ const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
     <div>
       <Logo height={56} />
       <p class="mt-4 max-w-sm text-mute">
-        24/7 towing and transport across every Perth suburb. Accident towing, breakdowns, 4WD recovery and container moves, with
+        24/7 towing and transport across every Perth suburb from {SITE.baseSuburb}, for {SITE.yearsInBusiness} years. Accident towing, breakdowns, 4WD recovery and container moves, with
         insurance billed direct.
       </p>
       <CallButton position="footer" size="md" class="mt-6" />
@@ -26,6 +36,9 @@ const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
       <p class={heading}>Services</p>
       <ul>
         {services.map((s) => <li><a href={`/services/${s.id}`} class={link}>{s.data.navLabel}</a></li>)}
+        <li><a href="/car-towing-perth" class={link}>Car towing</a></li>
+        <li><a href="/truck-towing-perth" class={link}>Truck and bus towing</a></li>
+        <li><a href="/tilt-tray-perth" class={link}>Tilt tray hire</a></li>
         <li><a href="/insurance-towing" class={link}>Insurance towing</a></li>
         <li><a href={SITE.machineryUrl} class={link}>Machinery transport (up to {SITE.machineryMaxTonnes}t)</a></li>
         <li><a href="/towing/24-hour-towing-perth" class={link}>24 hour towing</a></li>
@@ -34,9 +47,10 @@ const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
       </ul>
     </nav>
     <nav aria-label="Service areas">
-      <p class={heading}>Areas</p>
+      <p class={heading}>Service areas</p>
       <ul>
         {regions.map((r) => <li><a href={`/areas/${r.id}`} class={link}>{r.data.name}</a></li>)}
+        {AREA_LINKS.map(([href, name]) => <li><a href={href} class={link}>{name}</a></li>)}
         <li><a href="/areas" class={link}>All Perth suburbs</a></li>
         <li><a href="/roads" class={link}>Dangerous roads</a></li>
       </ul>
@@ -52,7 +66,7 @@ const link = 'inline-flex min-h-10 items-center text-mute hover:text-white';
   </div>
   <div class="border-t border-steel">
     <div class="wrap flex flex-col gap-2 py-6 text-sm text-mute sm:flex-row sm:justify-between">
-      <p>&copy; {year} {SITE.legalName} (operating as: {SITE.name}). Towing across Perth, WA.{SITE.abn && ` ABN ${SITE.abn}.`}</p>
+      <p>&copy; {year} {SITE.legalName} (operating as: {SITE.name}). {SITE.baseSuburb} WA {SITE.postcode}. Towing across Perth.{SITE.abn && ` ABN ${SITE.abn}.`}</p>
       <p>Open 24 hours, 7 days. <a href={SITE.phoneHref} data-position="footer-legal" class="font-semibold text-white">{SITE.phoneDisplay}</a></p>
       <p>Website by <a href="https://metatapdigital.com" class="underline underline-offset-4 hover:text-white">metatapdigital.com</a></p>
     </div>

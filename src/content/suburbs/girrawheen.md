@@ -34,7 +34,7 @@ faqs:
 
 Girrawheen dates back to the early 1970s, and most of it is family housing with parks scattered through the streets. A large share of our work here is everyday [breakdown towing](/services/breakdown-towing-perth): cars with failed starters, overheating engines in summer and batteries that give out on a cold morning. We also move a lot of cars that have been parked on driveways for months and need to go to a buyer or a wrecker.
 
-The boundary roads bring the rest. Wanneroo Road on the west and Mirrabooka Avenue on the east carry heavy commuter and trade traffic, and crashes at their junctions with Beach Road and Marangaroo Drive lead to [accident towing](/services/accident-towing-perth) jobs. In most cases we can deal with your insurer directly so you're not left out of pocket.
+The boundary roads bring the rest. Wanneroo Road on the west and Mirrabooka Avenue on the east carry heavy commuter and trade traffic, and crashes at their junctions with Beach Road and Marangaroo Drive lead to [accident towing](/services/accident-towing-perth) jobs. In most cases we can deal with your insurer directly so you're not left out of pocket. Girrawheen is covered by our 24/7 [towing Perth](/) service, and it's a short run for our northern trucks.
 
 ## Roads and neighbours around Girrawheen
 

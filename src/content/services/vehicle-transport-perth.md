@@ -49,7 +49,7 @@ faqs:
 
 ## Vehicle transport across Perth
 
-Not every tow starts with a breakdown or a crash. Plenty of the cars on our trucks are perfectly fine, they just need to get from one place to another without being driven. Maybe they're unregistered, maybe they've been sitting for years or maybe the owner would simply rather not put kilometres on them.
+Not every tow starts with a breakdown or a crash. Plenty of the cars on our trucks are perfectly fine, they just need to get from one place to another without being driven. Maybe they're unregistered, maybe they've been sitting for years or maybe the owner would simply rather not put kilometres on them. It's the planned side of our [towing Perth](/) work, booked around your timetable rather than an emergency.
 
 Typical jobs include collecting a car bought at auction, picking up a private sale from the other side of the city, moving a project car to a panel shop or engine builder, delivering a car to its new owner after a sale, and shifting vehicles when someone moves house. We move cars through to larger vehicles, and with more than 10 trucks working across Perth, it's usually easy to fit a booking around your plans.
 

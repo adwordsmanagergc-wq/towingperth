@@ -32,6 +32,8 @@ faqs:
     a: Pull as far left as you can and switch on your hazards. If it's safe to get out, stand behind the barrier. Tell us your direction of travel and the nearest interchange, such as Benara Road or Collier Road, so the driver comes up the right side.
   - q: Can you take my car to a mechanic in Malaga from Morley?
     a: Yes. The Malaga industrial area is just to the north and has plenty of workshops. Give us the business name and address, and if they're closed we can arrange to hold the car or drop it in the morning.
+metaTitle: "Tow Truck Morley | 24/7 Fast Local Towing | Quik Tow"
+metaDescription: "Tow truck Morley 24/7 for breakdowns at Galleria, crashes on Walter Rd and Collier Rd, and workshop runs. 25+ years. Call now for a fast quote."
 ---
 
 ## Our usual Morley callouts
@@ -45,6 +47,10 @@ Tonkin Highway is the other big source of work. Since it was built through Morle
 Tonkin Highway splits Morley in two, with Morley Drive and Walter Road crossing it from east to west. To the west is [Dianella](/areas/dianella), while to the north-east lies [Beechboro](/areas/beechboro), and [Kiara](/areas/kiara) is on the eastern side. Collier Road heads south-east from Morley towards Bassendean, and [Bayswater](/areas/bayswater) is to the south-east past Embleton.
 
 We also cover the residential streets around Morley, as well as the Morley train station precinct.
+
+## A tow truck in Morley, close to home base
+
+Morley is only around 10 km from our Osborne Park base, usually about 15 minutes off peak, so it is one of the quicker suburbs for us to reach. We have been [towing in Perth](/) for more than 25 years, and Morley calls are mostly [breakdown towing](/services/breakdown-towing-perth) from car parks and driveways, [accident towing](/services/accident-towing-perth) on the main roads, and [car towing](/car-towing-perth) to workshops in Malaga. We also cover neighbouring [Bayswater](/areas/bayswater) and [Dianella](/areas/dianella).
 
 ## If you're stuck in Morley right now
 

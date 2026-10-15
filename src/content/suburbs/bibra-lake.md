@@ -37,7 +37,7 @@ faqs:
 
 Bibra Lake has two very different sides. One side holds the lake itself and a cluster of attractions, including Adventure World and the Cockburn Ice Arena. The rest of the suburb is a large light industrial area full of workshops, manufacturers and warehouses, and that's where most of our weekday work happens. Fleet vans that won't start, utes with failed clutches and trade vehicles that need moving to a workshop are all regular jobs, along with [container transport](/services/container-transport-perth) to and from business yards.
 
-On weekends the focus shifts to the leisure side. Families come back to a dead battery after a day at the theme park, and cars parked near the lake for walks and picnics occasionally need a tow too.
+On weekends the focus shifts to the leisure side. Families come back to a dead battery after a day at the theme park, and cars parked near the lake for walks and picnics occasionally need a tow too. Bibra Lake sits in the middle of our southern coverage, so it's one of the quicker areas for our [Perth towing](/) trucks to reach.
 
 ## How we get around Bibra Lake
 

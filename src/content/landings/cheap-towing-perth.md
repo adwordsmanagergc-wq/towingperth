@@ -1,9 +1,9 @@
 ---
 url: /cheap-towing-perth
 keyword: cheap towing perth
-title: "Cheap Towing Perth | Best Rates Guarantee | Quik Tow"
-description: "Cheap towing in Perth without the catches: upfront quotes, no hidden fees and a best rates guarantee. Call or text 0419 857 070, 24/7, for a price."
-h1: "Cheap Towing Perth"
+title: "Cheap Tow Truck Perth | Best Rates Guarantee | Quik Tow"
+description: "Cheap tow truck in Perth without the catches: upfront fixed quotes, no hidden fees and a best rates guarantee, 24/7. Call or text now for a fast quote."
+h1: "Cheap Tow Truck Perth"
 intro: "Good value towing in Perth means a fair price you know before we start, with no extras added at the end. Call or text 0419 857 070 for an upfront quote, day or night."
 related: [/services/breakdown-towing-perth, /services/vehicle-transport-perth, /insurance-towing, /towing-cost-perth, /areas, /contact]
 faqs:
@@ -19,11 +19,15 @@ faqs:
 
 ## Cheap should still mean done properly
 
-Most people searching for cheap towing in Perth do not want the lowest number on a screen. They want a fair price, a truck that turns up, and no surprises when the job is finished. That is what we focus on.
+Most people searching for cheap towing in Perth do not want the lowest number on a screen. They want a fair price, a truck that turns up, and no surprises when the job is finished. That is what we focus on. It is how we run all of our [towing in Perth](/), not just the cheaper jobs.
 
 Every quote is given upfront, before the truck is dispatched. There are no hidden fees, no "extras" added at the drop off, and our best rates guarantee sits behind the price. If something about the job would change the cost, we tell you before we start, not after.
 
 All of our work is done on tilt tray trucks. Your car sits fully on the tray, so there is no wear on the tyres, gearbox or driveline and no kilometres added. That matters for automatics, AWD vehicles and EVs, where towing on the wheels can cause expensive damage.
+
+## The cheapest tow truck in Perth is the one quoted properly
+
+The cheapest tow truck in Perth is rarely the lowest number you are told first. It is the one where the quote matches the bill. We ask about the car, both addresses and access before we give a price, so the figure you agree to is the figure you pay. For what goes into that number, see [tow truck prices in Perth](/towing-cost-perth).
 
 ## Ways to keep your towing cost down
 

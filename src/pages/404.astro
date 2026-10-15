@@ -20,6 +20,21 @@ import Button from '~/components/Button.astro';
         <Button href="/areas" variant="secondary" size="md">All areas</Button>
         <Button href="/contact" variant="secondary" size="md">Contact</Button>
       </div>
+      <h2 class="mt-14 text-3xl">Our main services</h2>
+      <ul class="mt-4 grid gap-1 sm:grid-cols-2">
+        {
+          [
+            ['/car-towing-perth', 'Car towing Perth'],
+            ['/services/breakdown-towing-perth', 'Breakdown towing'],
+            ['/services/accident-towing-perth', 'Accident towing'],
+            ['/towing/24-hour-towing-perth', '24 hour towing'],
+            ['/truck-towing-perth', 'Truck and bus towing'],
+            ['/tilt-tray-perth', 'Tilt tray hire'],
+            ['/services/container-transport-perth', 'Container towing'],
+            ['/towing-cost-perth', 'Tow truck prices'],
+          ].map(([href, name]) => <li><a href={href} class="inline-flex min-h-10 items-center text-hivis underline underline-offset-4">{name}</a></li>)
+        }
+      </ul>
     </div>
   </section>
 </BaseLayout>

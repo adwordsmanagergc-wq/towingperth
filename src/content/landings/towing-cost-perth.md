@@ -1,9 +1,9 @@
 ---
 url: /towing-cost-perth
 keyword: how much is a tow truck in perth
-title: "How Much Is a Tow Truck in Perth? | Quik Tow & Transport"
-description: "How much is a tow truck in Perth? Every cost factor explained, plus how to get an accurate upfront quote fast. Call or text 0419 857 070, 24/7."
-h1: "How Much Is a Tow Truck in Perth?"
+title: "Tow Truck Prices Perth | What a Tow Costs | Quik Tow"
+description: "Tow truck prices in Perth explained: distance, vehicle, time of day and access. No surprises, a fixed quote before we move. Call now for a fast quote."
+h1: "Tow Truck Prices Perth: What a Tow Costs"
 intro: "The honest answer is that it depends on the job, and we will tell you exactly what yours costs before the truck leaves. Call or text 0419 857 070 any time for an upfront quote."
 related: [/services/breakdown-towing-perth, /services/accident-towing-perth, /insurance-towing, /services/vehicle-transport-perth, /services/4wd-recovery-perth, /areas, /contact]
 faqs:
@@ -19,7 +19,7 @@ faqs:
 
 ## What actually decides the cost of a tow
 
-Every tow in Perth is priced on a handful of practical things. None of them are hidden, and we will walk you through them on the phone if you want. Here is what we look at.
+Every tow in Perth is priced on a handful of practical things. None of them are hidden, and we will walk you through them on the phone if you want. They apply to every job our [towing Perth](/) team quotes. Here is what we look at.
 
 **Distance.** This covers how far the truck travels to reach you and how far your vehicle goes after that. A breakdown in [Joondalup](/areas/joondalup) going to a workshop down the road is a very different job to a car in Two Rocks heading to a repairer in [Rockingham](/areas/rockingham).
 
@@ -38,6 +38,10 @@ Every tow in Perth is priced on a handful of practical things. None of them are 
 ## Straight tow vs recovery work
 
 A straight tow is a vehicle on a hard surface that can go straight onto the tray. Recovery is anything that has to be done before that: pulling a car out of a ditch on [Wanneroo Road](/roads/wanneroo-road), winching a 4WD out of soft sand, or righting a vehicle after a crash. Recovery needs more time, gear and care, so it is priced separately. See [4WD recovery](/services/4wd-recovery-perth) for off road jobs.
+
+## Tilt tray vs heavy tow truck prices
+
+Most cars, utes and 4WDs go on a standard tilt tray, and that is the most common price we quote. Trucks, buses and heavy plant need a bigger truck and more time to load, so they cost more. If you are not sure which you need, describe the vehicle and we will tell you. See [tilt tray Perth](/tilt-tray-perth) and [truck towing](/truck-towing-perth).
 
 ## Insurance often means nothing on the day
 
@@ -59,7 +63,7 @@ With that, we can give you a fixed upfront quote and a realistic ETA from the ne
 
 ## Pricing
 
-There is no single price for a tow truck in Perth, and anyone who quotes one without asking questions is guessing. Our quotes are built from distance, vehicle, whether it runs, access at both ends, time and urgency, any waiting, and whether recovery work is needed. You get the figure upfront, with no hidden fees, backed by our best rates guarantee.
+Looking for the cheapest tow truck in Perth? Read [cheap tow truck Perth](/cheap-towing-perth) for ways to keep the cost down. There is no single price for a tow truck in Perth, and anyone who quotes one without asking questions is guessing. Our quotes are built from distance, vehicle, whether it runs, access at both ends, time and urgency, any waiting, and whether recovery work is needed. You get the figure upfront, with no hidden fees, backed by our best rates guarantee.
 
 ## Where we work
 

@@ -24,7 +24,7 @@ faqs:
     a: Yes. Midland, Guildford, Herne Hill, the Swan Valley and newer estates like Ellenbrook are all covered 24/7.
 ---
 
-The eastern suburbs run from the river flats around Belmont and Ascot, through the established suburbs of Bayswater and Bassendean, out to Midland and up into the Perth Hills. Great Eastern Highway, Roe Highway and Tonkin Highway carry heavy freight and commuter traffic through the region, with Perth Airport sitting in the middle of it all.
+The eastern suburbs run from the river flats around Belmont and Ascot, through the established suburbs of Bayswater and Bassendean, out to Midland and up into the Perth Hills. Great Eastern Highway, Roe Highway and Tonkin Highway carry heavy freight and commuter traffic through the region, with Perth Airport sitting in the middle of it all. It's a big part of our [towing Perth](/) coverage, and there's usually a truck working nearby.
 
 Up in the hills, the job changes. Narrow, winding roads, steep driveways and gravel verges mean recoveries that take more care than a flat suburban street. After rain, we also get calls for 4WDs and utes stuck on soft ground and bush tracks.
 

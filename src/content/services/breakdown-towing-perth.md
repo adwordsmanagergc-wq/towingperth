@@ -4,8 +4,8 @@ navLabel: "Breakdown Towing"
 icon: breakdown
 order: 2
 h1: "Breakdown Towing Perth"
-metaTitle: "Breakdown Towing Perth 24/7 | Tilt Tray | Quik Tow"
-metaDescription: "Car won't start or died on the road? 24/7 breakdown towing across Perth to your mechanic or home. Upfront quotes. Call Quik Tow on 0419 857 070."
+metaTitle: "Breakdown Towing Perth 24/7 | Fast Tilt Tray Tow | Quik Tow"
+metaDescription: "Breakdown towing Perth 24/7. Car won't start or died on the road? A fast breakdown tow to your mechanic or home. 25+ years. Call now for a fast quote."
 lead: "Car died on the freeway, won't start in the driveway or is stuck in a car park? We'll tow it to your mechanic, your home or anywhere else in Perth, any hour of the day."
 cardBlurb: "Car won't start or gave up mid-drive? We tow it to your mechanic or home, 24/7, with an upfront quote."
 included:
@@ -49,7 +49,7 @@ faqs:
 
 A breakdown rarely happens somewhere convenient. We get calls from people stopped in the left lane of the freeway, from parents whose car won't start at the school pick-up, from tradies whose ute died on site and from drivers who came back to a car park to find nothing happens when they turn the key. Some cars give warning signs for days. Others stop with no notice at all. If a warning light comes on or the temperature gauge starts to climb, pull over as soon as it's safe. Driving on can turn a modest repair into a much bigger one.
 
-Whatever the situation, the job is the same: get your car off the road or out of the way safely and take it somewhere it can be fixed. With more than 10 trucks on the road across Perth, there's usually one not too far from you.
+Whatever the situation, the job is the same: get your car off the road or out of the way safely and take it somewhere it can be fixed. With more than 10 trucks on the road across Perth, there's usually one not too far from you. Breakdowns are the most common call for our [towing Perth](/) team, day or night.
 
 ## Why cars break down, and what we can and can't do roadside
 

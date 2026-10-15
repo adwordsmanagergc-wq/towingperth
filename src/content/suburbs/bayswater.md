@@ -31,6 +31,9 @@ faqs:
     a: Yes. We move vans, utes and light trucks from workshops and yards all the time. Tell us the business name and which gate is open, plus the vehicle's make and rough weight, so we send the right truck.
   - q: Is it hard to get a tow truck into the streets near Bayswater station?
     a: Not usually, but the area around King William Street gets busy, and some streets have tight parking. If your car is in a narrow lane or behind a shop, tell us so we can plan the approach.
+featured: true
+metaTitle: "Bayswater Towing | 24/7 Tow Truck Bayswater | Quik Tow"
+metaDescription: "Bayswater towing 24/7 for crashes on Tonkin Hwy and Guildford Rd, breakdowns and workshop runs. 25+ years towing Perth. Call now for a fast quote."
 ---
 
 ## Why we get called to Bayswater
@@ -46,6 +49,10 @@ Closer to the town centre, it's mostly residential calls: older family cars that
 Guildford Road runs through the southern part of the suburb, next to the railway line and Bayswater station. King William Street is the main shopping strip, and Garratt Road heads south to the river and across the old bridge to [Ascot](/areas/ascot). Beechboro Road South goes north towards [Morley](/areas/morley), while Collier Road links east to [Bassendean](/areas/bassendean). To the west, Bayswater runs into [Maylands](/areas/maylands).
 
 Riverside Gardens and the river foreshore make for quieter callouts, usually a flat battery after a picnic.
+
+## Towing Bayswater from Osborne Park
+
+Bayswater is one of the closer suburbs to our Osborne Park base, usually about 15 minutes across town off peak. Tonkin Highway on the eastern side and Guildford Road through the middle carry most of the traffic, and that is where most of our Bayswater crash and breakdown calls come from. We have spent more than 25 years [towing in Perth](/), and in Bayswater it is mostly [accident towing](/services/accident-towing-perth), [breakdown towing](/services/breakdown-towing-perth) and [car towing](/car-towing-perth) to local workshops. Next door, we cover [Morley](/areas/morley) and [Maylands](/areas/maylands) every week.
 
 ## Stuck in Bayswater? A few tips
 

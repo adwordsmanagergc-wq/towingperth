@@ -3,9 +3,9 @@ name: "Shipping Container Transport"
 navLabel: "Container Transport"
 icon: container
 order: 4
-h1: "Shipping Container Towing & Transport Perth"
-metaTitle: "Container Towing & Transport Perth | 10 to 40 ft | Quik Tow"
-metaDescription: "Shipping container towing and transport across Perth: 10, 20 and 40 ft containers moved to homes, farms, sites and yards. Call 0419 857 070."
+h1: "Container Towing & Transport Perth"
+metaTitle: "Container Towing Perth | 10 to 40 ft Containers | Quik Tow"
+metaDescription: "Container towing service across Perth: 10, 20 and 40 ft shipping containers moved to homes, farms, sites and yards. 25+ years. Call now for a fast quote."
 lead: "Need a shipping container moved to your home, farm, building site or business yard? We pick up and deliver 10, 20 and 40 foot containers across Perth, with a site check before we quote."
 cardBlurb: "10, 20 and 40 foot containers delivered to homes, farms, building sites and yards, with a site check first."
 included:
@@ -48,7 +48,7 @@ faqs:
 
 Shipping containers have become the go-to answer for storage across Perth. Homeowners use them while they renovate or downsize. Builders use them as lockable site storage. Farmers and hobby farmers use them as sheds for feed, tools and machinery. Businesses keep them in the yard for stock and equipment overflow.
 
-That means containers need moving at all stages of their life. We collect newly bought containers and deliver them to your property, move them between job sites when one build finishes and the next begins, and take them away when you no longer need them. If you're relocating across Perth, we can also move a container you already own from your old place to your new one.
+That means containers need moving at all stages of their life. We collect newly bought containers and deliver them to your property, move them between job sites when one build finishes and the next begins, and take them away when you no longer need them. If you're relocating across Perth, we can also move a container you already own from your old place to your new one. Container moves sit alongside the rest of our [Perth towing](/) work, so the same team quotes and books them.
 
 ## Container sizes and site access
 
