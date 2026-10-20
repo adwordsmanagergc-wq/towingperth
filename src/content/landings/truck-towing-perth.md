@@ -6,6 +6,7 @@ description: "Truck towing Perth 24/7: light and medium trucks, buses and heavy 
 h1: "Truck Towing Perth"
 intro: "Truck towing Perth wide, day and night, for broken down trucks, buses and heavy vehicles. Call or text 0419 857 070 with the make, model and weight and we'll match the right truck to the job."
 related: [/business/fleet-towing-perth, /transport/machinery-transport-perth, /towing/van-towing-perth, /services/accident-towing-perth, /towing/freeway-breakdown-perth, /areas/wangara, /areas/kewdale, /areas/welshpool, /areas/malaga, /areas/kwinana]
+updated: "2026-10-15"
 faqs:
   - q: "What size trucks can you tow?"
     a: "We tow light and medium trucks, buses and heavier vehicles across Perth. The best way to check a specific vehicle is to call with the make, model and gross vehicle mass (GVM) from the compliance plate, and we will confirm the right truck before anyone comes out."

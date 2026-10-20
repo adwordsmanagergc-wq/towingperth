@@ -14,7 +14,8 @@
     "images:generate": "node scripts/make-images.mjs",
     "audit:crawl": "NODE_USE_ENV_PROXY=1 node scripts/crawl-old-site.mjs",
     "audit:suburb-index": "node scripts/build-suburb-index.mjs",
-    "prebuild": "node scripts/generate-redirects.mjs && node scripts/check-content.mjs"
+    "prebuild": "node scripts/generate-redirects.mjs && node scripts/check-content.mjs",
+    "indexnow": "NODE_USE_ENV_PROXY=1 node scripts/indexnow.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

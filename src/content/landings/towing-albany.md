@@ -6,6 +6,7 @@ description: "Albany towing from Perth: booked tilt tray runs between Albany and
 h1: "Albany Towing from Perth"
 intro: "Need a car moved between Albany and Perth? We run booked tilt tray trips down Albany Highway. Call or text 0419 857 070 for a fixed quote on the whole run."
 related: [/tilt-tray-perth, /transport/perth-to-bunbury, /services/vehicle-transport-perth, /transport/non-running-car-transport-perth, /towing/caravan-towing-perth, /roads/albany-highway, /areas/armadale]
+updated: "2026-10-15"
 faqs:
   - q: "Do you have a tow truck in Albany?"
     a: "No. We are a Perth towing company based in Osborne Park, and our trucks start from Perth. For an urgent roadside breakdown in Albany itself, a local Albany operator will usually reach you sooner. Call us when the car needs to come back to Perth, or go from Perth to Albany."

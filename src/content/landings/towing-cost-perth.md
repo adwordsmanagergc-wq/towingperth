@@ -6,6 +6,7 @@ description: "Tow truck prices in Perth explained: distance, vehicle, time of da
 h1: "Tow Truck Prices Perth: What a Tow Costs"
 intro: "The honest answer is that it depends on the job, and we will tell you exactly what yours costs before the truck leaves. Call or text 0419 857 070 any time for an upfront quote."
 related: [/services/breakdown-towing-perth, /services/accident-towing-perth, /insurance-towing, /services/vehicle-transport-perth, /services/4wd-recovery-perth, /areas, /contact]
+updated: "2026-10-20"
 faqs:
   - q: "Why won't you give a price on the website?"
     a: "Because no two tows are the same, and a number on a web page would be wrong for most people. A short call or text with the details gets you a real figure for your job. That figure is the one you pay unless the job turns out to be different from what was described."
@@ -16,6 +17,19 @@ faqs:
   - q: "What makes a tow a recovery job instead of a straight tow?"
     a: "A straight tow is a car sitting on a road or driveway that we can winch or drive straight onto the tray. Recovery work means getting the vehicle out of somewhere first, such as a ditch, soft sand, a steep driveway or a tight basement. It takes more time and gear, so it is quoted differently."
 ---
+
+## How much does a tow truck cost in Perth?
+
+A tow truck in Perth costs whatever the job takes, and we tell you the fixed price on the phone before the truck leaves. We do not publish a single figure because two tows are rarely the same. The price is set by distance, the vehicle, whether it runs, access at both ends and the time of day. The one exception is crash towing, where the WA Government sets the maximum a tow business can charge (see our [accident towing](/services/accident-towing-perth) page for the regulated limits).
+
+| What we look at | Simpler, lower cost job | More work, higher cost job |
+| --- | --- | --- |
+| Distance | Short run within the same area | Long run across Perth or a regional trip |
+| Vehicle | Small car that rolls and steers | Heavy 4WD, truck, bus or lowered car |
+| Condition | Runs, rolls, keys available | Seized wheels, no keys, locked steering |
+| Access | Flat street or open driveway | Underground car park, steep block, locked gate |
+| Timing | Booked ahead for a set day | Immediate callout late at night or on a public holiday |
+| Recovery | Straight onto the tray | Winching from a ditch, sand or mud first |
 
 ## What actually decides the cost of a tow
 

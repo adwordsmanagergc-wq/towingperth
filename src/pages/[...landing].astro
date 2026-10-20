@@ -8,6 +8,7 @@ import PageHero from '~/components/PageHero.astro';
 import FAQ from '~/components/FAQ.astro';
 import CTASection from '~/components/CTASection.astro';
 import CallButton from '~/components/CallButton.astro';
+import LastUpdated from '~/components/LastUpdated.astro';
 import { faqPage, service } from '~/lib/schema';
 import { groupOf, label } from '~/lib/landings';
 
@@ -56,12 +57,13 @@ const schema = [
 ];
 ---
 
-<BaseLayout title={data.title} description={data.description} path={path} og="service" crumbs={crumbs} schema={schema}>
+<BaseLayout title={data.title} description={data.description} path={path} og="service" crumbs={crumbs} schema={schema} updated={data.updated}>
   <PageHero crumbs={crumbs} eyebrow="24/7 across Perth" h1={data.h1} lead={data.intro} />
 
   <section class="py-14 sm:py-20">
     <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem]">
       <article class="prose-copy">
+        <LastUpdated date={data.updated} />
         <Content />
         {showFullCrashNotice && <div class="not-prose mt-10"><CrashTowNotice /></div>}
       </article>

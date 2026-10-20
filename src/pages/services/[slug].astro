@@ -4,6 +4,7 @@ import { getCollection, render, getEntries } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Check from '@lucide/astro/icons/check';
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import LastUpdated from '~/components/LastUpdated.astro';
 import PageHero from '~/components/PageHero.astro';
 import ServiceCard from '~/components/ServiceCard.astro';
 import ServiceIcon from '~/components/ServiceIcon.astro';
@@ -49,12 +50,13 @@ const schema = [
 ];
 ---
 
-<BaseLayout title={data.metaTitle} description={data.metaDescription} path={path} og="service" crumbs={crumbs} schema={schema}>
+<BaseLayout title={data.metaTitle} description={data.metaDescription} path={path} og="service" crumbs={crumbs} schema={schema} updated={data.updated}>
   <PageHero crumbs={crumbs} eyebrow="24/7 across Perth" h1={data.h1} lead={data.lead} />
 
   <section class="py-14 sm:py-20">
     <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem]">
       <article class="prose-copy">
+        <LastUpdated date={data.updated} />
         {
           photo && (
             <Picture

@@ -40,6 +40,8 @@ const services = defineCollection({
     vehicles: z.array(z.string()),
     steps: z.array(z.object({ title: z.string(), text: z.string() })),
     faqs: z.array(faq),
+    // Date of the last substantive content edit, shown as "Last updated" and used as dateModified.
+    updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   }),
 });
 
@@ -106,6 +108,7 @@ const landings = defineCollection({
     intro: z.string(),
     related: z.array(z.string()).default([]),
     faqs: z.array(faq).min(3),
+    updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   }),
 });
 
