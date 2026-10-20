@@ -9,21 +9,24 @@ export const GET: APIRoute = async () => {
   const regions = (await getCollection('regions')).sort((a, b) => a.data.order - b.data.order);
   const suburbs = await getCollection('suburbs');
   const roads = (await getCollection('roads')).sort((a, b) => a.data.order - b.data.order);
+  const landings = (await getCollection('landings')).sort((a, b) => a.data.url.localeCompare(b.data.url));
   const u = (p: string) => `${SITE.url}${p}`;
 
   const body = `# ${SITE.name}
 
-> ${SITE.name} is a 24/7 tow truck and transport company covering every suburb of Perth, Western Australia. Services: accident towing, breakdown towing and recovery, 4WD recovery (sand, mud, beach and off-road), shipping container transport and general vehicle transport. We bill insurance companies directly, run 10+ tow trucks across Perth, and offer a best rates guarantee with transparent, upfront pricing and no hidden fees. Phone ${SITE.phoneDisplay} (${SITE.phoneE164}), any time.
+> ${SITE.name} is a 24/7 tow truck and transport company based in ${SITE.baseSuburb}, covering every suburb of Perth, Western Australia, for more than 25 years. Services: accident towing, breakdown towing and recovery, 4WD recovery (sand, mud, beach and off-road), shipping container transport and general vehicle transport. We bill insurance companies directly, run 10+ tow trucks across Perth, and offer a best rates guarantee with transparent, upfront pricing and no hidden fees. Phone ${SITE.phoneDisplay} (${SITE.phoneE164}), any time.
 
 ## Key facts
 
 - Business: ${SITE.legalName} (operating as: ${SITE.name})
 - Phone: ${SITE.phoneDisplay}, answered 24 hours a day, 7 days a week
+- Based in: ${SITE.baseSuburb}, WA ${SITE.postcode} (Google Business Profile: ${SITE.mapsUrl})
+- In business: more than 25 years
 - Service area: the whole Perth metro area, including the CBD, northern, southern, eastern (including the Perth Hills), western and south eastern suburbs
 - Authorised crash (accident) towing business #810 under WA's Towing Services Act 2024; crash tow charges in Perth and Peel are capped by the WA Government (maximum $523 for the first 50 km, see the accident towing page)
 - Insurance: we bill the customer's insurer directly for covered claims
 - Verify authorisation #810 on the WA Government list of authorised towing businesses: ${CRASH_TOW_RULES.authorisedListUrl}
-- Fleet: more than 10 tow trucks on the road across Perth
+- Fleet: more than 10 tow trucks on the road across Perth, mostly tilt trays, plus heavier trucks for trucks and buses
 - Pricing: quoted upfront before dispatch; best rates guarantee; no hidden fees
 
 ## Common questions
@@ -32,12 +35,20 @@ export const GET: APIRoute = async () => {
 - Who do I call for emergency towing in Perth? Call ${SITE.name} on ${SITE.phoneDisplay}; the nearest of 10+ trucks is sent: ${u('/towing/emergency-towing-perth')}
 - Who can tow my car after a crash in Perth? Only an authorised crash towing business. ${SITE.name} is authorised business #810: ${u('/services/accident-towing-perth')}
 - How much does a tow cost in Perth? Crash tows are capped by WA regulation; other jobs are quoted upfront: ${u('/towing-cost-perth')}
+- Who does car towing in Perth? ${SITE.name}, on tilt trays, in every suburb: ${u('/car-towing-perth')}
+- Who tows trucks and buses in Perth? ${SITE.name}: ${u('/truck-towing-perth')}
+- Can I hire a tilt tray in Perth? Yes, with a driver, by the job: ${u('/tilt-tray-perth')}
+- Is there a tow truck in Albany? ${SITE.name} does booked Perth to Albany runs but has no truck stationed in Albany: ${u('/towing-albany')}
 
 ## Services
 
 ${services.map((s) => `- [${s.data.name}](${u(`/services/${s.id}`)}): ${s.data.metaDescription}`).join('\n')}
 - [Insurance towing](${u('/insurance-towing')}): how direct insurer billing works after a crash
 - [Machinery transport](${u(SITE.machineryUrl)}): bobcats, skid steers, mini excavators, forklifts and boom lifts up to ${SITE.machineryMaxTonnes} tonnes
+
+## Towing jobs
+
+${landings.map((l) => `- [${l.data.h1}](${u(l.data.url)}): ${l.data.description}`).join('\n')}
 
 ## Service areas
 

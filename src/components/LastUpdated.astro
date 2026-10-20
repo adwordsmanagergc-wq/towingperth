@@ -1,0 +1,7 @@
+---
+// Visible "Last updated" label that matches the page's WebPage dateModified.
+interface Props { date?: string }
+const { date } = Astro.props;
+const label = date ? new Date(`${date}T00:00:00+08:00`).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Australia/Perth' }) : '';
+---
+{date && <p class="not-prose mb-6 text-sm text-mute">Last updated <time datetime={date}>{label}</time></p>}

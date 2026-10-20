@@ -144,7 +144,7 @@ export function faqPage(faqs: Faq[]): Json {
   };
 }
 
-export function webPage(opts: { path: string; title: string; description: string }): Json {
+export function webPage(opts: { path: string; title: string; description: string; dateModified?: string }): Json {
   return {
     '@type': 'WebPage',
     '@id': `${absoluteUrl(opts.path)}#webpage`,
@@ -154,6 +154,7 @@ export function webPage(opts: { path: string; title: string; description: string
     isPartOf: { '@id': WEBSITE_ID },
     about: { '@id': BUSINESS_ID },
     inLanguage: 'en-AU',
+    ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
   };
 }
 

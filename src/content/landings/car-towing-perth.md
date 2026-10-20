@@ -6,6 +6,7 @@ description: "Car towing Perth 24/7 on tilt trays: breakdowns, crashes, workshop
 h1: "Car Towing Perth"
 intro: "Car towing Perth wide, 24 hours a day, on tilt tray trucks that carry your car with all four wheels off the road. Call or text 0419 857 070 for a fixed quote and the nearest truck."
 related: [/services/breakdown-towing-perth, /services/accident-towing-perth, /towing/tow-to-mechanic-perth, /services/vehicle-transport-perth, /towing-cost-perth, /areas/osborne-park, /areas/joondalup, /areas/bayswater, /areas/rockingham, /areas/morley]
+updated: "2026-10-15"
 faqs:
   - q: "How much does car towing cost in Perth?"
     a: "It depends on how far the car needs to go, the type of car, whether it rolls and steers, access at both ends and the time of day. We do not publish a flat price because every job is different, but you get a fixed quote on the phone before the truck leaves. See [tow truck prices in Perth](/towing-cost-perth) for what goes into it."

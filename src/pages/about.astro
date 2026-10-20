@@ -25,7 +25,7 @@ const promises = [
 
 <BaseLayout
   title="About Quik Tow & Transport | Perth Towing Company"
-  description="Quik Tow & Transport is a Perth towing and transport company with 10+ trucks, running 24/7 across every suburb. We bill insurers directly."
+  description="Quik Tow & Transport is a Perth towing company based in Osborne Park: 25+ years, 10+ trucks, 24/7 in every suburb, authorised crash tow #810."
   path={path}
   og="general"
   crumbs={crumbs}
@@ -43,7 +43,7 @@ const promises = [
         <!-- TODO: add the company story here: when and why Quik Tow started, who runs it, and anything that sets the team apart. Add licence/accreditation details if you want them shown. -->
         <h2>Towing and transport for all of Perth</h2>
         <p>
-          {SITE.name} runs a fleet of more than 10 tow trucks across the Perth metro area, 24 hours a day. Our drivers handle everything from
+          {SITE.name} is a Perth towing company based in {SITE.baseSuburb}. We have been towing in Perth for more than 25 years and run a fleet of more than 10 tow trucks across the metro area, 24 hours a day. Our drivers handle everything from
           freeway crashes and flat batteries in shopping centre car parks to 4WDs bogged on the coast and shipping containers on the move between
           industrial yards.
         </p>
@@ -57,6 +57,21 @@ const promises = [
           phone number, a clear price before we send a truck, and no surprises on the bill. When it's an insurance job, we deal with your insurer
           directly so you can focus on getting home.
         </p>
+        <h2>Quik Tow &amp; Transport at a glance</h2>
+        <table>
+          <tbody>
+            <tr><th scope="row">Trading name</th><td>{SITE.name} (also searched as Quick Tow)</td></tr>
+            <tr><th scope="row">Registered company</th><td>{SITE.legalName}</td></tr>
+            <tr><th scope="row">Based in</th><td>{SITE.baseSuburb}, WA {SITE.postcode}</td></tr>
+            <tr><th scope="row">In business</th><td>More than 25 years</td></tr>
+            <tr><th scope="row">Crash towing authorisation</th><td><a href={CRASH_TOW_RULES.authorisedListUrl} rel="noopener">WA authorised crash towing business #{SITE.crashTowAuthorisation}</a></td></tr>
+            <tr><th scope="row">Hours</th><td>24 hours a day, 7 days a week, including public holidays</td></tr>
+            <tr><th scope="row">Fleet</th><td>More than 10 tow trucks, mostly tilt trays, plus machinery transport up to {SITE.machineryMaxTonnes} tonnes</td></tr>
+            <tr><th scope="row">Service area</th><td>Every Perth metro suburb, plus booked regional runs from Perth</td></tr>
+            <tr><th scope="row">Phone and text</th><td><a href={SITE.phoneHref} data-position="about-facts">{SITE.phoneDisplay}</a></td></tr>
+            <tr><th scope="row">Google Business Profile</th><td><a href={SITE.mapsUrl}>Quik Tow &amp; Transport Towing Perth</a></td></tr>
+          </tbody>
+        </table>
         <h2>What we do</h2>
         <ul>
           {services.map((s) => <li><a href={`/services/${s.id}`}>{s.data.name}</a>: {s.data.cardBlurb}</li>)}

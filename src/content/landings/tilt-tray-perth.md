@@ -6,6 +6,7 @@ description: "Tilt tray Perth and WA: cars, 4WDs, machinery and containers moved
 h1: "Tilt Tray Perth"
 intro: "Tilt tray towing and tilt tray hire across Perth and WA, 24/7. Call or text 0419 857 070 with what needs moving and we'll quote the job before the truck leaves."
 related: [/car-towing-perth, /services/vehicle-transport-perth, /transport/machinery-transport-perth, /transport/non-running-car-transport-perth, /transport/perth-to-bunbury, /towing-albany, /areas/osborne-park, /areas/canning-vale, /areas/midland]
+updated: "2026-10-20"
 faqs:
   - q: "What is a tilt tray truck?"
     a: "A tilt tray is a tow truck with a flat bed that slides back and tilts down to the ground. The vehicle or load is winched or driven up onto it, strapped down and carried with nothing touching the road."
@@ -22,6 +23,18 @@ faqs:
 A tilt tray truck has a flat bed that slides back and tilts down to the ground. The vehicle is winched or driven up, strapped at the wheels and carried with nothing on the road. It is the safest way to move almost any car, and it is how we do nearly every job.
 
 We have been running tilt trays around Perth for more than 25 years, from our base in Osborne Park. More than 10 trucks work across the city, so for most tilt tray jobs there is one not too far away, day or night.
+
+## Tilt tray or heavy tow truck: which do I need?
+
+Most cars, utes, 4WDs, motorbikes and small machines go on a tilt tray. Trucks, buses and heavier loads need a bigger truck. If you are not sure, describe the vehicle when you call and we will send the right one.
+
+| | Tilt tray | Heavy tow truck |
+| --- | --- | --- |
+| Best for | Cars, utes, 4WDs, EVs, motorbikes, small plant | Trucks, buses, coaches, heavy vehicles |
+| How it carries | Whole vehicle on the tray, all wheels off the road | Lifts or carries the vehicle, sized to its weight |
+| Safe for automatics, AWD and EVs | Yes, nothing on the road turns | Planned job by job |
+| Typical jobs | Breakdowns, crashes, workshop runs, sales | Fleet breakdowns, depot moves, bus recovery |
+| Learn more | [Car towing](/car-towing-perth) | [Truck towing](/truck-towing-perth) |
 
 ## What a tilt tray can carry
 

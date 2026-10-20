@@ -6,6 +6,7 @@ description: "Cheap tow truck in Perth without the catches: upfront fixed quotes
 h1: "Cheap Tow Truck Perth"
 intro: "Good value towing in Perth means a fair price you know before we start, with no extras added at the end. Call or text 0419 857 070 for an upfront quote, day or night."
 related: [/services/breakdown-towing-perth, /services/vehicle-transport-perth, /insurance-towing, /towing-cost-perth, /areas, /contact]
+updated: "2026-10-15"
 faqs:
   - q: "What does your best rates guarantee mean?"
     a: "It means we aim to give you the best rate for your job, and we stand behind the quote we give. Call or text with your details and we will tell you the price before anything is booked."

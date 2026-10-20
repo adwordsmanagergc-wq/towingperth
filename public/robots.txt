@@ -1,4 +1,39 @@
+# Search engines and AI search assistants are welcome to crawl and cite this site.
 User-agent: *
+Allow: /
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+# ChatGPT search and ChatGPT browsing on a user's request
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+# Claude search and Claude fetching on a user's request
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+User-agent: Perplexity-User
 Allow: /
 Disallow: /api/
 

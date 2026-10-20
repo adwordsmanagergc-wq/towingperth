@@ -99,6 +99,17 @@
   .prose-copy ol {
     @apply list-decimal space-y-2 pl-6 marker:font-bold marker:text-hivis;
   }
+  /* Comparison tables: scroll inside themselves on narrow screens, never the page. */
+  .prose-copy table {
+    @apply block w-full max-w-full overflow-x-auto border-collapse text-left text-base;
+  }
+  .prose-copy th,
+  .prose-copy td {
+    @apply border border-steel px-3 py-2 align-top;
+  }
+  .prose-copy th {
+    @apply bg-coal font-semibold text-white;
+  }
   .on-light .prose-copy {
     @apply text-slate;
   }

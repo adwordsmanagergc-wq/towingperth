@@ -6,6 +6,7 @@ description: "Caravan towing Perth for vans that won't move, broken tow cars, st
 h1: "Caravan Towing Perth"
 intro: "Caravan stuck, tow vehicle broken down or van damaged in a crash? Call 0419 857 070 and we'll organise the right truck to move your caravan anywhere in Perth, 24/7."
 related: [/towing/boat-transport-perth, /services/breakdown-towing-perth, /services/accident-towing-perth, /services/vehicle-transport-perth, /insurance-towing, /areas, /roads/great-eastern-highway, /roads/albany-highway, /contact]
+updated: "2026-10-15"
 faqs:
   - q: "What do you need to know about my caravan?"
     a: "The length, the ATM (aggregate trailer mass) and roughly how loaded it is right now. The ATM is on the compliance plate, usually near the A-frame or inside the door. Also tell us if it's single or tandem axle and whether the brakes and wheels turn."
