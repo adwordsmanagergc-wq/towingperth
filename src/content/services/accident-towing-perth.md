@@ -33,6 +33,7 @@ steps:
     text: "The driver loads the car onto the tilt tray once you have taken out anything you need from inside."
   - title: "Delivered and billed"
     text: "We drop the car at your chosen repairer, home or assessing centre and send the invoice to your insurer where the claim allows."
+updated: "2026-10-20"
 faqs:
   - q: "Who decides which tow truck takes my car after a crash?"
     a: "You do. It's your car, and you can choose the tow company you call. If a truck turns up that you didn't ask for, you don't have to hand over keys or sign anything. The exception is when police need the road cleared urgently, so follow their directions at the scene."
@@ -46,15 +47,15 @@ faqs:
     a: "Crash towing charges in Perth and Peel are capped by the WA Government. The maximum is $523 to tow a crashed car the first 50 km, then $4.75 per km, plus up to $149 after hours, $27 a day storage and a one-off $95 admin fee. Extra recovery work, like winching a car out of a ditch, is charged at a reasonable rate. For covered insurance claims we bill your insurer directly."
 ---
 
-## Accident towing across Perth
+## When does a car need accident towing?
 
-Most crashes we're called to are ordinary ones. A rear-ender in peak hour on the freeway. A car turning right that misjudged the gap. A shopping centre car park bump that left a wheel pointing the wrong way. A single car that slid into a kerb or a pole on a wet night. In every case the car either can't be driven or shouldn't be, and someone needs to move it safely.
+A car needs accident towing when a crash leaves it unable to be driven, or unsafe to drive, and in WA only an authorised crash towing business can tow it from the scene. Most crashes we're called to are ordinary ones. A rear-ender in peak hour on the freeway. A car turning right that misjudged the gap. A shopping centre car park bump that left a wheel pointing the wrong way. A single car that slid into a kerb or a pole on a wet night. In every case the car either can't be driven or shouldn't be, and someone needs to move it safely.
 
 A car can look fine and still be unsafe to drive. A pushed-back wheel, a cracked radiator, a deployed airbag or a broken headlight are all good reasons to have it carried on a tilt tray rather than limped home. We load damaged cars fully onto the tray, which protects the driveline and any evidence the assessor needs to see. Crash scenes are a big share of the [towing across Perth](/) we do every week. Trucks and buses involved in a crash are covered too, see [truck and bus towing](/truck-towing-perth).
 
 With more than 10 trucks working across Perth at any hour, we can usually get a driver moving quickly.
 
-## After a crash in WA: what to do and who picks the tow truck
+## What should I do after a crash in WA, and who picks the tow truck?
 
 The first few minutes matter most. A simple order to follow:
 
@@ -68,9 +69,9 @@ Then comes the tow. The choice of tow company is yours. Trucks sometimes arrive 
 
 If it turns out your car wasn't in a crash but simply died on the road, our [breakdown towing](/services/breakdown-towing-perth) team handles that. If it needs moving again later, say from your home to a repairer, that's a [vehicle transport](/services/vehicle-transport-perth) job.
 
-## Insurance billing after an accident
+## Can you bill my insurer directly after an accident?
 
-Paying a towing bill on the spot after a crash is the last thing most people want. Here is how direct billing works with us:
+Yes. For covered claims we bill your insurer directly, so you usually pay nothing on the day. Paying a towing bill on the spot after a crash is the last thing most people want. Here is how direct billing works with us:
 
 1. **Lodge your claim.** Call your insurer from the scene or once you're home, and note the claim number.
 2. **Tell us the details.** Give us your insurer's name, the claim number and where the car should go: your repairer, your home or an assessing centre.
@@ -79,6 +80,6 @@ Paying a towing bill on the spot after a crash is the last thing most people wan
 
 If you're not insured, or the claim isn't accepted, the charges are still capped. Accident towing is regulated in WA: we're authorised crash tow business #810, the most we can charge is set by law, and you sign an Authority to Tow showing the costs before we move your car. The full list of regulated charges is below. For the full detail, read [how direct insurance billing works](/insurance-towing).
 
-## Where we work
+## Where do you provide accident towing in Perth?
 
 We run accident towing around the clock in every Perth suburb. That takes in the freeways and highways through the [northern suburbs](/areas/northern-suburbs), the growth corridors of the [southern suburbs](/areas/southern-suburbs), the hills roads of the [eastern suburbs](/areas/eastern-suburbs), the coastal strip in the [western suburbs](/areas/western-suburbs) and the busy arterials of the [south-eastern suburbs](/areas/south-eastern-suburbs). Wherever the crash happened, call 0419 857 070 and tell us the nearest cross street.
