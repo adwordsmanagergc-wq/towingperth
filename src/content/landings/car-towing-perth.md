@@ -6,7 +6,7 @@ description: "Car towing Perth 24/7 on tilt trays: breakdowns, crashes, workshop
 h1: "Car Towing Perth"
 intro: "Car towing Perth wide, 24 hours a day, on tilt tray trucks that carry your car with all four wheels off the road. Call or text 0419 857 070 for a fixed quote and the nearest truck."
 related: [/services/breakdown-towing-perth, /services/accident-towing-perth, /towing/tow-to-mechanic-perth, /services/vehicle-transport-perth, /towing-cost-perth, /areas/osborne-park, /areas/joondalup, /areas/bayswater, /areas/rockingham, /areas/morley]
-updated: "2026-10-15"
+updated: "2026-10-20"
 faqs:
   - q: "How much does car towing cost in Perth?"
     a: "It depends on how far the car needs to go, the type of car, whether it rolls and steers, access at both ends and the time of day. We do not publish a flat price because every job is different, but you get a fixed quote on the phone before the truck leaves. See [tow truck prices in Perth](/towing-cost-perth) for what goes into it."
@@ -39,7 +39,7 @@ Most of what we carry is everyday cars, but our vehicle towing covers a lot more
 
 If it is bigger than a van, our [truck and bus towing](/truck-towing-perth) page covers heavy vehicles.
 
-## When people call us for a car tow
+## When should I call a tow truck for my car?
 
 **Breakdowns.** Flat batteries that will not jump, failed starters, overheating, snapped belts, gearbox and clutch failures. We take the car home or straight to your mechanic. See [breakdown towing](/services/breakdown-towing-perth).
 
@@ -49,13 +49,13 @@ If it is bigger than a van, our [truck and bus towing](/truck-towing-perth) page
 
 **Sales and moves.** A car bought on Marketplace or at auction, a car going to a new owner, or a car that needs moving when you change house. See [vehicle transport](/services/vehicle-transport-perth).
 
-## A car towing service near you, in every suburb
+## Is there a car towing service near me?
 
-People often search for car towing near me when they are already stuck. The quickest way to get help is to call or text 0419 857 070 with the nearest cross street, or drop a map pin. Our trucks work the whole metro area, from Two Rocks to Secret Harbour and from Cottesloe to Mundaring, so there is usually one not far away.
+Yes. We tow cars in every Perth suburb, 24/7, with more than 10 trucks spread across the city. People often search for car towing near me when they are already stuck. The quickest way to get help is to call or text 0419 857 070 with the nearest cross street, or drop a map pin. Our trucks work the whole metro area, from Two Rocks to Secret Harbour and from Cottesloe to Mundaring, so there is usually one not far away.
 
 Some of the areas we tow cars in every week include [Osborne Park](/areas/osborne-park), [Joondalup](/areas/joondalup), [Bayswater](/areas/bayswater), [Morley](/areas/morley) and [Rockingham](/areas/rockingham). If you are on the edge of the metro area, call and we will confirm. It is all part of the same 24/7 [towing Perth](/) service.
 
-## What to have ready when you call
+## What do I need to tell you when I call?
 
 To give you a fixed quote quickly, we ask:
 

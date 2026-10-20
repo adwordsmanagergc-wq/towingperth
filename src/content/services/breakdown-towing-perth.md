@@ -32,6 +32,7 @@ steps:
     text: "Keep your hazard lights on and wait somewhere away from traffic. Our driver will call if they need help finding you."
   - title: "Towed where you choose"
     text: "Your car is loaded on the tilt tray and delivered to your mechanic, home or another address in Perth."
+updated: "2026-10-20"
 faqs:
   - q: "Can you take my car to my own mechanic?"
     a: "Yes. Tell us the workshop name and suburb and we'll take it there. If the workshop is closed when we arrive, let us know beforehand so we can agree on a safe drop-off and key arrangement with you and the workshop."
@@ -45,13 +46,13 @@ faqs:
     a: "It depends on how far the car is going, the type of vehicle, the time of day and how easy it is to reach. We quote before we start, there are no hidden fees and our best rates guarantee applies."
 ---
 
-## Breakdown towing across Perth
+## What is breakdown towing?
 
-A breakdown rarely happens somewhere convenient. We get calls from people stopped in the left lane of the freeway, from parents whose car won't start at the school pick-up, from tradies whose ute died on site and from drivers who came back to a car park to find nothing happens when they turn the key. Some cars give warning signs for days. Others stop with no notice at all. If a warning light comes on or the temperature gauge starts to climb, pull over as soon as it's safe. Driving on can turn a modest repair into a much bigger one.
+Breakdown towing means we collect a car that won't start or can't be driven safely and carry it on a tilt tray to your mechanic, your home or anywhere else in Perth, 24 hours a day. A breakdown rarely happens somewhere convenient. We get calls from people stopped in the left lane of the freeway, from parents whose car won't start at the school pick-up, from tradies whose ute died on site and from drivers who came back to a car park to find nothing happens when they turn the key. Some cars give warning signs for days. Others stop with no notice at all. If a warning light comes on or the temperature gauge starts to climb, pull over as soon as it's safe. Driving on can turn a modest repair into a much bigger one.
 
 Whatever the situation, the job is the same: get your car off the road or out of the way safely and take it somewhere it can be fixed. With more than 10 trucks on the road across Perth, there's usually one not too far from you. Breakdowns are the most common call for our [towing Perth](/) team, day or night. Most of these jobs are everyday [car towing](/car-towing-perth), and when it is a truck or bus that has stopped, see [truck towing](/truck-towing-perth).
 
-## Why cars break down, and what we can and can't do roadside
+## Why do cars break down, and can it be fixed roadside?
 
 Most of the breakdowns we tow come down to a handful of causes:
 
@@ -67,10 +68,10 @@ Tilt tray towing is the safest way to move a car that won't drive. The whole veh
 
 If your car broke down because of a collision, our [accident towing](/services/accident-towing-perth) page covers what to do at the scene. If your car isn't broken but just needs moving, for example to a buyer or a new home, see [vehicle transport](/services/vehicle-transport-perth).
 
-## Insurance and roadside cover
+## Does insurance or roadside assistance cover breakdown towing?
 
-Some insurance policies and roadside assistance memberships include breakdown towing. If yours does, give us the details when you call and we can bill your insurer directly where the policy allows it. Otherwise, we'll quote upfront. The price depends on distance, the vehicle, the time of day and how easy the car is to reach. Our pricing is transparent and backed by a best rates guarantee. You can read more about [how direct insurance billing works](/insurance-towing).
+Some insurance policies and roadside assistance memberships include breakdown towing. If yours does, give us the details when you call and we can bill your insurer directly where the policy allows it. Otherwise, we'll quote upfront. The price depends on distance, the vehicle, the time of day and how easy the car is to reach. Our pricing is transparent and backed by a best rates guarantee. You can read more about [how direct insurance billing works](/insurance-towing). Not sure whether to ring your roadside provider or us? See [roadside assistance vs a tow truck](/towing/roadside-assistance-vs-tow-truck).
 
-## Where we work
+## Which Perth suburbs do you cover for breakdowns?
 
 We tow broken-down cars 24 hours a day from every corner of Perth. That includes the coastal and freeway suburbs of the [northern suburbs](/areas/northern-suburbs), the fast-growing estates of the [southern suburbs](/areas/southern-suburbs), the hills and highways in the [eastern suburbs](/areas/eastern-suburbs), the older streets of the [western suburbs](/areas/western-suburbs) and the busy shopping and industrial areas of the [south-eastern suburbs](/areas/south-eastern-suburbs). Call 0419 857 070 and tell us the nearest street or landmark.
